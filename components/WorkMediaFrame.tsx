@@ -69,13 +69,9 @@ export function WorkMediaFrame({
               </div>
             </div>
           )}
-
-          <div className="showcase-mediaOverlay">
-            <span className="showcase-mediaBadge">{mediaLabel}</span>
-            <h3 className="showcase-mediaTitle">{mediaTitle}</h3>
-            <p className="showcase-mediaNote">{mediaNote}</p>
-          </div>
         </div>
+
+      
       </div>
     </div>
   );

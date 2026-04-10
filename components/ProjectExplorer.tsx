@@ -19,9 +19,17 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
   }
 
   const activeProject = projectItems[activeProjectIndex] ?? projectItems[0];
+  const projectTags = Array.isArray(activeProject.tags) ? activeProject.tags : [];
+  const projectDetails = Array.isArray(activeProject.detailItems)
+    ? activeProject.detailItems
+    : [];
+  const projectHighlights = Array.isArray(activeProject.highlights)
+    ? activeProject.highlights
+    : [];
+  const projectMedia = Array.isArray(activeProject.media) ? activeProject.media : [];
   const activeProjectMedia =
-    activeProject.media.length > 0
-      ? activeProject.media
+    projectMedia.length > 0
+      ? projectMedia
       : [
           {
             kind: "image" as const,
@@ -74,7 +82,7 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
     );
   });
 
-  const projectTagItems = activeProject.tags.map((tag) => (
+  const projectTagItems = projectTags.map((tag) => (
     <span className="tag" key={`${activeProject.slug}-${tag}`}>
       {tag}
     </span>
@@ -110,14 +118,14 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
     );
   });
 
-  const projectDetailItems = activeProject.detailItems.map((detailItem) => (
+  const projectDetailItems = projectDetails.map((detailItem) => (
     <article className="projectDetailCard" key={detailItem.label}>
       <span className="metric-label">{detailItem.label}</span>
       <p className="projectDetailValue">{detailItem.value}</p>
     </article>
   ));
 
-  const projectHighlightItems = activeProject.highlights.map((highlightItem) => (
+  const projectHighlightItems = projectHighlights.map((highlightItem) => (
     <li key={highlightItem}>{highlightItem}</li>
   ));
 

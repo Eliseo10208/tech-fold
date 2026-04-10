@@ -131,13 +131,17 @@
               "kind": "video",
               "label": "Primary video",
               "title": "Walkthrough of the AI operating system",
-              "note": "Ideal for a narrated demo showing the builder, tasks, follow-up and coordination between humans and agents."
+              "note": "Ideal for a narrated demo showing the builder, tasks, follow-up and coordination between humans and agents.",
+              "src": "",
+              "poster": ""
             },
             {
               "kind": "image",
               "label": "Supporting image",
               "title": "Flow, builder or dashboard still",
-              "note": "A strong slot for a key screenshot when you want to reinforce structure, traceability or product UX."
+              "note": "A strong slot for a key screenshot when you want to reinforce structure, traceability or product UX.",
+              "src": "",
+              "alt": "Screenshot of the Handbook flow, builder or dashboard"
             }
           ]
         },
@@ -175,13 +179,17 @@
               "kind": "video",
               "label": "Primary video",
               "title": "Conversational module flow",
-              "note": "Designed for a short recording that shows interaction, automation behavior and operational response inside the product."
+              "note": "Designed for a short recording that shows interaction, automation behavior and operational response inside the product.",
+              "src": "",
+              "poster": ""
             },
             {
               "kind": "image",
               "label": "Supporting image",
               "title": "Panel or conversation state",
-              "note": "Useful for documenting the UI, flow states or visual evidence when the video does not tell the whole story."
+              "note": "Useful for documenting the UI, flow states or visual evidence when the video does not tell the whole story.",
+              "src": "",
+              "alt": "Screenshot of the panel or conversation state in Nanti"
             }
           ]
         },
@@ -219,13 +227,17 @@
               "kind": "image",
               "label": "Primary image",
               "title": "Pipeline, DAG or analytics dashboard",
-              "note": "Use this slot for screenshots of the pipeline, a system architecture or any view that represents the workflow."
+              "note": "Use this slot for screenshots of the pipeline, a system architecture or any view that represents the workflow.",
+              "src": "",
+              "alt": "Screenshot of a pipeline, DAG or analytics dashboard at Agora"
             },
             {
               "kind": "image",
               "label": "Secondary image",
               "title": "Related component or interface view",
-              "note": "Helpful for showing that the work was not only data-focused, but also connected to product and interface systems."
+              "note": "Helpful for showing that the work was not only data-focused, but also connected to product and interface systems.",
+              "src": "",
+              "alt": "Screenshot of a related interface connected to the Agora system"
             }
           ]
         },
@@ -263,13 +275,17 @@
               "kind": "image",
               "label": "Primary image",
               "title": "Authentication and validation flow",
-              "note": "A strong place for screenshots of login, camera verification or identity checks."
+              "note": "A strong place for screenshots of login, camera verification or identity checks.",
+              "src": "",
+              "alt": "Screenshot of the authentication and validation flow in the voting system"
             },
             {
               "kind": "image",
               "label": "Secondary image",
               "title": "Key screens from the voting system",
-              "note": "Useful for documenting the voting experience, duplicate prevention or any state inside the protected process."
+              "note": "Useful for documenting the voting experience, duplicate prevention or any state inside the protected process.",
+              "src": "",
+              "alt": "Screenshot of key screens from the secure voting system"
             }
           ]
         }

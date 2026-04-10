@@ -312,7 +312,7 @@ export default async function HomePage({ params }: HomePageProps) {
 
           <div className="stack-grid">
             {stackItems.map((item) => (
-              <article className="stack-card" key={item.title}>
+              <article className="stack-group" key={item.title}>
                 <div className="stackCardHeader">
                   <span className="eyebrow">{t("stack.groupLabel")}</span>
                   <h3 className="stack-title">{item.title}</h3>

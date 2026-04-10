@@ -131,13 +131,17 @@
               "kind": "video",
               "label": "Video principal",
               "title": "Walkthrough del sistema operativo con IA",
-              "note": "Ideal para un demo narrado donde se vea el builder, tareas, seguimiento y coordinación entre humanos y agentes."
+              "note": "Ideal para un demo narrado donde se vea el builder, tareas, seguimiento y coordinación entre humanos y agentes.",
+              "src": "https://pub-f16c4383be88435db8879fe20136da99.r2.dev/Video-Lanzamiento-Final.mp4",
+              "poster": ""
             },
             {
               "kind": "image",
               "label": "Imagen de apoyo",
               "title": "Vista del flujo, builder o dashboard",
-              "note": "Buen espacio para una captura clave cuando quieras reforzar estructura, trazabilidad o UX del producto."
+              "note": "Buen espacio para una captura clave cuando quieras reforzar estructura, trazabilidad o UX del producto.",
+              "src": "",
+              "alt": "Captura del flujo, builder o dashboard de Handbook"
             }
           ]
         },
@@ -175,13 +179,17 @@
               "kind": "video",
               "label": "Video principal",
               "title": "Flujo del módulo conversacional",
-              "note": "Pensado para una grabación corta donde se vea interacción, automatización y respuesta operativa dentro del producto."
+              "note": "Pensado para una grabación corta donde se vea interacción, automatización y respuesta operativa dentro del producto.",
+              "src": "",
+              "poster": ""
             },
             {
               "kind": "image",
               "label": "Imagen de apoyo",
               "title": "Vista del panel o estado de conversación",
-              "note": "Útil para documentar la UI, estados del flujo o evidencia visual cuando el video no cuente todo."
+              "note": "Útil para documentar la UI, estados del flujo o evidencia visual cuando el video no cuente todo.",
+              "src": "",
+              "alt": "Captura del panel o estado de conversación en Nanti"
             }
           ]
         },
@@ -219,13 +227,17 @@
               "kind": "image",
               "label": "Imagen principal",
               "title": "Pipeline, DAG o dashboard de analytics",
-              "note": "Aquí puedes colocar screenshots del pipeline, una arquitectura o alguna vista que represente el workflow."
+              "note": "Aquí puedes colocar screenshots del pipeline, una arquitectura o alguna vista que represente el workflow.",
+              "src": "",
+              "alt": "Captura de pipeline, DAG o dashboard de analytics en Agora"
             },
             {
               "kind": "image",
               "label": "Imagen secundaria",
               "title": "Vista de componente o interfaz relacionada",
-              "note": "Útil para enseñar que el trabajo no fue solo data, sino también producto e interfaz."
+              "note": "Útil para enseñar que el trabajo no fue solo data, sino también producto e interfaz.",
+              "src": "",
+              "alt": "Captura de interfaz relacionada al sistema de Agora"
             }
           ]
         },
@@ -263,13 +275,17 @@
               "kind": "image",
               "label": "Imagen principal",
               "title": "Flujo de autenticación y validación",
-              "note": "Buen lugar para capturas del login, verificación por cámara o comprobaciones de identidad."
+              "note": "Buen lugar para capturas del login, verificación por cámara o comprobaciones de identidad.",
+              "src": "",
+              "alt": "Captura del flujo de autenticación y validación del sistema de votación"
             },
             {
               "kind": "image",
               "label": "Imagen secundaria",
               "title": "Pantallas clave del sistema de votación",
-              "note": "Sirve para documentar la experiencia, prevención de duplicados o cualquier estado dentro del proceso protegido."
+              "note": "Sirve para documentar la experiencia, prevención de duplicados o cualquier estado dentro del proceso protegido.",
+              "src": "",
+              "alt": "Captura de pantallas clave del sistema de votación"
             }
           ]
         }
