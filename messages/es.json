@@ -1,0 +1,436 @@
+{
+  "Metadata": {
+    "title": "Rodrigo Eliseo García | Full Stack AI Engineer",
+    "description": "Ingeniero Full Stack AI que construye interfaces pulidas, sistemas backend confiables y flujos de IA en producción para operaciones reales."
+  },
+  "HomePage": {
+    "identity": {
+      "name": "Rodrigo Eliseo García",
+      "role": "Full Stack AI Engineer",
+      "eyebrow": "AI Systems Engineer / Full Stack AI Engineer"
+    },
+    "navigation": {
+      "ariaLabel": "Navegación principal",
+      "about": "Visión",
+      "work": "Proyectos",
+      "experience": "Trayectoria",
+      "stack": "Stack",
+      "contact": "Contacto",
+      "cta": "Hablemos"
+    },
+    "hero": {
+      "title": "Construyo productos con IA, rigor backend y frontend de alta ejecución.",
+      "description": "Ingeniero Full Stack AI enfocado en sistemas productivos que conectan interfaces, servicios, automatización y flujos de datos. Entrego software que se ve refinado, escala con orden y resuelve problemas operativos reales.",
+      "primaryCta": "Ver trabajo destacado",
+      "secondaryCta": "Ver trayectoria",
+      "sideTitle": "De UX a arquitectura.",
+      "sideDescription": "Mi ventaja está en la combinación: frontend pulido, backend confiable y funciones con IA aterrizadas en workflows reales en lugar de demos vacíos.",
+      "badges": [
+        "IA en producción",
+        "Backend que escala",
+        "Frontend con criterio"
+      ]
+    },
+    "credibility": {
+      "ariaLabel": "Señales de credibilidad",
+      "items": [
+        {
+          "label": "Enfoque",
+          "value": "Automatización con IA, sistemas de producto y workflows operativos"
+        },
+        {
+          "label": "Stack base",
+          "value": "Next.js, Nest.js, TypeScript, Python, Airflow y AWS"
+        },
+        {
+          "label": "Construido para",
+          "value": "Automatización de soporte, infraestructura analítica y flujos sensibles"
+        },
+        {
+          "label": "Forma de trabajo",
+          "value": "Claridad de producto, systems thinking y entrega end-to-end"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Por qué este perfil",
+      "title": "Rigor backend con gusto frontend.",
+      "description": "La idea es que recruiters y founders entiendan rápido que este no es otro perfil generalista. El trabajo combina interfaces de producto confiables, sistemas backend sólidos y automatización con IA conectada a operaciones reales.",
+      "highlight": {
+        "eyebrow": "Posicionamiento",
+        "title": "IA + backend + frontend de ejecución fuerte, entregados como un solo sistema.",
+        "description": "Esa mezcla es lo que vuelve memorable al portafolio. Demuestra la capacidad de moverse del detalle visual a diseño de servicios, lógica de automatización y entrega en producción sin perder calidad en ninguna capa.",
+        "points": [
+          "Interfaces pulidas con product thinking",
+          "Servicios backend e integraciones type-safe",
+          "Workflows con IA diseñados para uso operativo real"
+        ]
+      },
+      "items": [
+        {
+          "title": "IA en producción, no hype",
+          "description": "Funciones con OpenAI, automatización conversacional y diseño de flujos conectados a soporte, procesos y necesidades operativas reales."
+        },
+        {
+          "title": "Bases backend serias",
+          "description": "Servicios, APIs, pipelines e integraciones pensadas para ser confiables, mantenibles y type-safe bajo presión real de producto."
+        },
+        {
+          "title": "UI que genera confianza",
+          "description": "Interfaces que se sienten cuidadas, legibles y modernas, con suficiente criterio frontend para comunicar ejecución fuerte y buen gusto de producto."
+        }
+      ]
+    },
+    "work": {
+      "eyebrow": "Proyectos destacados",
+      "title": "Casos seleccionados que muestran tanto cuidado visual como profundidad de sistemas.",
+      "description": "Un explorer guiado con espacio para walkthroughs de producto, capturas de interfaz y contexto operativo. La idea es mostrar trabajo que se ve pulido por fuera y serio por dentro.",
+      "navigatorLabel": "Selector de proyectos",
+      "projectLabel": "Proyecto activo",
+      "mediaRailLabel": "Selector de medios",
+      "highlightsLabel": "Resultados y puntos clave",
+      "previousProject": "Proyecto anterior",
+      "nextProject": "Siguiente proyecto",
+      "meta": {
+        "role": "Rol",
+        "company": "Empresa / contexto",
+        "period": "Periodo"
+      },
+      "items": [
+        {
+          "slug": "handbook",
+          "navLabel": "Handbook",
+          "navHint": "workflows con IA / sistemas de producto",
+          "title": "Handbook AI Workflow Automation",
+          "company": "Handbook",
+          "role": "AI Full-Stack Engineer",
+          "period": "2026 - Actualidad",
+          "summary": "Producto de workflows que convierte procesos de negocio en tareas ejecutables donde personas y sistemas con IA colaboran, dan seguimiento y empujan trabajo operativo real.",
+          "tags": ["LLM Systems", "Product Architecture", "Operations"],
+          "detailItems": [
+            {
+              "label": "Problema",
+              "value": "Los equipos necesitan software que haga más que mostrar tareas. Debe entender procesos, enrutar trabajo y mantener trazabilidad entre personas e IA."
+            },
+            {
+              "label": "Mi rol",
+              "value": "Trabajo sobre arquitectura de producto, LLM systems y diseño de interfaces que convierten flujos operativos complejos en software más accionable."
+            },
+            {
+              "label": "Por qué importa",
+              "value": "Es la pieza más fuerte del portafolio para demostrar product thinking, systems design, automatización real y software con IA más allá del chat demo."
+            }
+          ],
+          "highlights": [
+            "Posiciona el perfil alrededor de systems work, AI automation y product engineering.",
+            "Muestra una mezcla fuerte de narrativa visual, trazabilidad y ejecución full stack.",
+            "Puede llevar tanto un walkthrough de producto como imágenes de dashboards, builders u orquestación."
+          ],
+          "media": [
+            {
+              "kind": "video",
+              "label": "Video principal",
+              "title": "Walkthrough del sistema operativo con IA",
+              "note": "Ideal para un demo narrado donde se vea el builder, tareas, seguimiento y coordinación entre humanos y agentes."
+            },
+            {
+              "kind": "image",
+              "label": "Imagen de apoyo",
+              "title": "Vista del flujo, builder o dashboard",
+              "note": "Buen espacio para una captura clave cuando quieras reforzar estructura, trazabilidad o UX del producto."
+            }
+          ]
+        },
+        {
+          "slug": "nanti",
+          "navLabel": "Nanti",
+          "navHint": "automatización de soporte / LLM",
+          "title": "Automatización de soporte con LLM en Nanti",
+          "company": "Nanti System",
+          "role": "Full Stack AI Integration Engineer",
+          "period": "2023 - 2024",
+          "summary": "Módulo conversacional full stack construido con Nest.js, Angular y OpenAI API para operar soporte real mediante WhatsApp y tawk.io.",
+          "tags": ["Nest.js", "Angular", "OpenAI API"],
+          "detailItems": [
+            {
+              "label": "Problema",
+              "value": "El soporte operativo necesitaba responder más rápido y automatizar acciones sin perder control ni claridad sobre lo que el sistema hacía."
+            },
+            {
+              "label": "Mi rol",
+              "value": "Diseñé y entregué la integración full stack entre frontend, backend y OpenAI API con patrones más resilientes y type-safe."
+            },
+            {
+              "label": "Impacto",
+              "value": "El sistema automatizó el 40% de acciones de soporte y mejoró la eficiencia del frontend en un flujo ya conectado al negocio."
+            }
+          ],
+          "highlights": [
+            "Caso fuerte para mostrar IA en producción y no solo prototipos.",
+            "Conecta con claridad Nest.js, Angular y canales operativos reales.",
+            "Buen candidato para un video corto y una o dos capturas complementarias."
+          ],
+          "media": [
+            {
+              "kind": "video",
+              "label": "Video principal",
+              "title": "Flujo del módulo conversacional",
+              "note": "Pensado para una grabación corta donde se vea interacción, automatización y respuesta operativa dentro del producto."
+            },
+            {
+              "kind": "image",
+              "label": "Imagen de apoyo",
+              "title": "Vista del panel o estado de conversación",
+              "note": "Útil para documentar la UI, estados del flujo o evidencia visual cuando el video no cuente todo."
+            }
+          ]
+        },
+        {
+          "slug": "agora",
+          "navLabel": "Agora",
+          "navHint": "analytics / sistemas de datos",
+          "title": "Data Pipelines para analytics en Agora",
+          "company": "Agora Partnerships",
+          "role": "Full Stack & Data Engineer",
+          "period": "2024 - 2026",
+          "summary": "Trabajo sobre DAGs en Python y Airflow, servicios backend, integraciones de API y sistemas frontend para operaciones críticas de analytics.",
+          "tags": ["Python", "Airflow", "Analytics"],
+          "detailItems": [
+            {
+              "label": "Problema",
+              "value": "Los equipos dependen de datos y analytics confiables, así que los pipelines y servicios que los alimentan no pueden ser frágiles."
+            },
+            {
+              "label": "Mi rol",
+              "value": "Mantuve DAGs críticos, apoyé arquitectura backend con integraciones de API y contribuí a sistemas frontend más escalables."
+            },
+            {
+              "label": "Resultados",
+              "value": "El trabajo aportó menos errores en producción, mejor carga inicial y bases más sólidas para producto, SEO y mantenibilidad."
+            }
+          ],
+          "highlights": [
+            "Demuestra que el perfil no es solo UI, sino también confiabilidad y operaciones con datos.",
+            "Buen caso para diagramas, capturas de DAGs o dashboards de analytics.",
+            "Refuerza la mezcla de backend, data y frontend con impacto medible."
+          ],
+          "media": [
+            {
+              "kind": "image",
+              "label": "Imagen principal",
+              "title": "Pipeline, DAG o dashboard de analytics",
+              "note": "Aquí puedes colocar screenshots del pipeline, una arquitectura o alguna vista que represente el workflow."
+            },
+            {
+              "kind": "image",
+              "label": "Imagen secundaria",
+              "title": "Vista de componente o interfaz relacionada",
+              "note": "Útil para enseñar que el trabajo no fue solo data, sino también producto e interfaz."
+            }
+          ]
+        },
+        {
+          "slug": "voting",
+          "navLabel": "Voting",
+          "navHint": "seguridad / identidad",
+          "title": "Sistema seguro de votación digital",
+          "company": "Asociación Mexicana de Genética Humana",
+          "role": "Full Stack Developer",
+          "period": "Proyecto especial",
+          "summary": "Plataforma de votación digital con autenticación reforzada, validación de identidad y controles antifraude para un proceso sensible.",
+          "tags": ["Security", "Identity", "PHP"],
+          "detailItems": [
+            {
+              "label": "Problema",
+              "value": "El proceso de votación requería participación digital confiable con controles sólidos de autenticación, identidad y prevención de duplicados."
+            },
+            {
+              "label": "Mi rol",
+              "value": "Construí el flujo con 2FA, validación por cámara, matching de foto de INE y lógica para proteger el proceso contra fraude."
+            },
+            {
+              "label": "Por qué destaca",
+              "value": "Aunque no sea el stack más moderno, este caso demuestra ownership, seguridad y capacidad para resolver un problema real de alta sensibilidad."
+            }
+          ],
+          "highlights": [
+            "Excelente pieza para mostrar pensamiento de seguridad y validación de identidad.",
+            "Aporta variedad al portafolio porque no todo gira en torno a IA.",
+            "Se presta mejor a capturas del flujo que a un demo narrado largo."
+          ],
+          "media": [
+            {
+              "kind": "image",
+              "label": "Imagen principal",
+              "title": "Flujo de autenticación y validación",
+              "note": "Buen lugar para capturas del login, verificación por cámara o comprobaciones de identidad."
+            },
+            {
+              "kind": "image",
+              "label": "Imagen secundaria",
+              "title": "Pantallas clave del sistema de votación",
+              "note": "Sirve para documentar la experiencia, prevención de duplicados o cualquier estado dentro del proceso protegido."
+            }
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "eyebrow": "Trayectoria",
+      "title": "Prueba de trabajo real entre workflows con IA, analytics e ingeniería de producto.",
+      "description": "Estos roles muestran repetibilidad: no solo un proyecto fuerte, sino varios entornos donde interfaces, backend y automatización tuvieron que trabajar juntos.",
+      "items": [
+        {
+          "company": "Handbook",
+          "role": "AI Full-Stack Engineer",
+          "period": "Feb 2026 - Actualidad",
+          "location": "Híbrido · San Francisco, California, Estados Unidos",
+          "summary": "Enfocado en arquitectura de producto y sistemas con LLM para software que modela, da seguimiento y automatiza workflows operativos complejos."
+        },
+        {
+          "company": "Agora Partnerships",
+          "role": "Full Stack & Data Engineer",
+          "period": "Ago 2024 - Ene 2026",
+          "location": "Remoto",
+          "summary": "Construcción de servicios backend, mantenimiento de DAGs en Airflow para analytics críticos y contribuciones frontend con mejoras medibles en performance, SEO y confiabilidad."
+        },
+        {
+          "company": "Nanti System",
+          "role": "Full Stack AI Integration Engineer",
+          "period": "Feb 2023 - Sep 2024",
+          "location": "Remoto",
+          "summary": "Diseño y despliegue de un módulo de integración de IA con Nest.js, Angular y OpenAI API, mejorando la automatización del soporte y la eficiencia del frontend."
+        },
+        {
+          "company": "Black Horse Technologies",
+          "role": "Software Engineer · Freelance",
+          "period": "Sep 2025 - Dic 2025",
+          "location": "Remoto",
+          "summary": "Colaboración freelance de corta duración enfocada en entrega de producto e implementación de software a medida."
+        },
+        {
+          "company": "M&T Studio / Zona Sana",
+          "role": "Full Stack Web Developer · Freelance",
+          "period": "Abr 2023 - Ago 2023",
+          "location": "Remoto",
+          "summary": "Entrega de módulos en Next.js y APIs con Node.js/Express que redujeron el abandono de formularios y soportaron más de 1000 solicitudes diarias con baja latencia."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Cómo trabajo",
+      "title": "Claridad de producto, entrega seria de sistemas.",
+      "description": "El proceso se mantiene consistente entre IA, backend e interfaces: entender el problema operativo, diseñar la forma correcta del sistema, entregar con claridad y medir qué mejoró.",
+      "items": [
+        {
+          "step": "01",
+          "title": "Aterrizar el cuello de botella real",
+          "description": "Empiezo por aislar qué está frenando de verdad al workflow, ya sea en la interfaz, en la lógica backend o en el handoff operativo."
+        },
+        {
+          "step": "02",
+          "title": "Diseñar entre producto y arquitectura",
+          "description": "Las mejores soluciones suelen necesitar ambas cosas: interacción cuidada en la superficie y estructura backend que aguante uso real."
+        },
+        {
+          "step": "03",
+          "title": "Entregar con confiabilidad y evidencia",
+          "description": "La meta no es solo liberar. Es dejar un sistema que equipos puedan operar, mantener y medir con confianza."
+        }
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "Resultados",
+      "title": "Resultados medibles, no promesas vagas.",
+      "description": "La señal más fuerte para un recruiter es evidencia: más automatización, mejor performance, menos errores en producción y sistemas que los equipos podían usar de verdad."
+    },
+    "metrics": {
+      "items": [
+        {
+          "label": "Automatización",
+          "title": "40% del soporte automatizado",
+          "description": "Workflows asistidos por LLM desplegados en producción mediante WhatsApp y tawk.io."
+        },
+        {
+          "label": "Confiabilidad",
+          "title": "25% menos errores en producción",
+          "description": "Impulsado por sistemas type-safe, interfaces más limpias y arquitectura más resiliente."
+        },
+        {
+          "label": "Performance",
+          "title": "20% de mejora en carga inicial",
+          "description": "Entrega frontend más eficiente gracias a componentes escalables y una arquitectura de UI más fuerte."
+        },
+        {
+          "label": "Entrega",
+          "title": "1000+ solicitudes diarias",
+          "description": "APIs en Node.js y Express soportando tráfico productivo con baja latencia."
+        }
+      ]
+    },
+    "stack": {
+      "eyebrow": "Stack de ejecución",
+      "title": "Cómodo entre interfaz, servicios, IA y entrega.",
+      "description": "El stack importa porque soporta el posicionamiento: trabajo de producto pulido en frontend, backend confiable e integración pragmática de IA y datos.",
+      "groupLabel": "Capacidad",
+      "items": [
+        {
+          "title": "Frontend",
+          "items": ["React.js", "Next.js", "Angular", "Tailwind CSS", "Redux", "Zustand", "SSR / SSG"]
+        },
+        {
+          "title": "Backend y arquitectura",
+          "items": ["TypeScript", "Node.js", "Nest.js", "Express.js", "APIs", "Microservicios", "WebSockets", "Arquitectura limpia"]
+        },
+        {
+          "title": "IA y datos",
+          "items": ["OpenAI API", "Automatización conversacional", "Python", "ETL", "Apache Airflow", "Pipelines para analytics"]
+        },
+        {
+          "title": "Cloud y entrega",
+          "items": ["AWS", "Docker", "GitHub", "GitLab", "CI/CD", "MySQL", "MariaDB", "MongoDB"]
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "CTA final",
+      "title": "¿Buscas a alguien que pueda conectar IA, backend y frontend de ejecución fuerte?",
+      "description": "Estoy abierto a roles remotos y equipos de producto que necesiten interfaces pulidas, sistemas backend sólidos y funciones con IA que realmente sirvan al workflow.",
+      "primaryCta": "Enviar correo",
+      "secondaryCta": "Ver LinkedIn",
+      "primaryHref": "mailto:Eliseo10208@gmail.com",
+      "secondaryHref": "https://linkedin.com/in/rodrigo-garcia-76303224a",
+      "links": [
+        {
+          "label": "Email",
+          "value": "Eliseo10208@gmail.com",
+          "href": "mailto:Eliseo10208@gmail.com"
+        },
+        {
+          "label": "GitHub",
+          "value": "github.com/Eliseo10208",
+          "href": "https://github.com/Eliseo10208"
+        },
+        {
+          "label": "LinkedIn",
+          "value": "linkedin.com/in/rodrigo-garcia-76303224a",
+          "href": "https://linkedin.com/in/rodrigo-garcia-76303224a"
+        },
+        {
+          "label": "Teléfono",
+          "value": "+52 961 123 9207",
+          "href": "tel:+529611239207"
+        },
+        {
+          "label": "Ubicación",
+          "value": "Tuxtla Gutiérrez, Chiapas, México",
+          "href": "https://www.google.com/maps/search/Tuxtla+Gutierrez,+Chiapas,+Mexico"
+        }
+      ]
+    },
+    "footer": {
+      "availability": "Disponible para roles remotos de producto, AI systems y full stack.",
+      "note": "Base en Tuxtla Gutiérrez, México. Abierto a oportunidades de startup, product engineering y automatización."
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "Metadata": {
+    "title": "Rodrigo Eliseo Garcia | Full Stack AI Engineer",
+    "description": "Full Stack AI Engineer building polished interfaces, reliable backend systems and production AI workflows for real operations."
+  },
+  "HomePage": {
+    "identity": {
+      "name": "Rodrigo Eliseo Garcia",
+      "role": "Full Stack AI Engineer",
+      "eyebrow": "AI Systems Engineer / Full Stack AI Engineer"
+    },
+    "navigation": {
+      "ariaLabel": "Main navigation",
+      "about": "Overview",
+      "work": "Projects",
+      "experience": "Track record",
+      "stack": "Stack",
+      "contact": "Contact",
+      "cta": "Let's talk"
+    },
+    "hero": {
+      "title": "I build AI-powered products with backend rigor and frontend polish.",
+      "description": "Full Stack AI Engineer focused on production systems that connect interfaces, services, automation and data workflows. I ship software that looks refined, scales cleanly and solves operational problems.",
+      "primaryCta": "View featured work",
+      "secondaryCta": "See track record",
+      "sideTitle": "From UX to architecture.",
+      "sideDescription": "My edge is the combination: polished frontend execution, reliable backend systems and AI features grounded in real workflows instead of demo theater.",
+      "badges": [
+        "AI automation in production",
+        "Backend systems that scale",
+        "Frontend execution with taste"
+      ]
+    },
+    "credibility": {
+      "ariaLabel": "Credibility highlights",
+      "items": [
+        {
+          "label": "Focus",
+          "value": "AI automation, product systems and operational workflows"
+        },
+        {
+          "label": "Core stack",
+          "value": "Next.js, Nest.js, TypeScript, Python, Airflow and AWS"
+        },
+        {
+          "label": "Built for",
+          "value": "Support automation, analytics infrastructure and secure user flows"
+        },
+        {
+          "label": "Working style",
+          "value": "Product clarity, systems thinking and end-to-end delivery"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Why this profile",
+      "title": "Backend rigor with frontend taste.",
+      "description": "The goal is simple: make it obvious to recruiters and founders that this is not just another generalist profile. The work combines product interfaces people trust, backend systems teams can rely on and AI automation tied to real operations.",
+      "highlight": {
+        "eyebrow": "Positioning",
+        "title": "AI + backend + frontend execution, shipped as one system.",
+        "description": "That combination is what makes the portfolio memorable. It shows the ability to move from interface detail to service design, automation logic and production delivery without losing quality in either layer.",
+        "points": [
+          "Polished interfaces with product thinking",
+          "Type-safe backend services and integrations",
+          "AI workflows designed for real operational use"
+        ]
+      },
+      "items": [
+        {
+          "title": "Production AI, not hype",
+          "description": "OpenAI-powered features, conversational automation and workflow design tied to real support, process and operational needs."
+        },
+        {
+          "title": "Serious backend foundations",
+          "description": "Backend services, APIs, data pipelines and integrations designed to be reliable, type-safe and maintainable under real product pressure."
+        },
+        {
+          "title": "UI quality that earns trust",
+          "description": "Interfaces that feel considered, readable and modern, with enough frontend craft to show strong execution and product taste."
+        }
+      ]
+    },
+    "work": {
+      "eyebrow": "Featured projects",
+      "title": "Selected case studies that show both interface craft and systems depth.",
+      "description": "A guided project explorer with room for product walkthroughs, interface stills and operational context. The goal is to show work that feels polished on the surface and serious underneath.",
+      "navigatorLabel": "Project selector",
+      "projectLabel": "Active project",
+      "mediaRailLabel": "Media selector",
+      "highlightsLabel": "Results and key points",
+      "previousProject": "Previous project",
+      "nextProject": "Next project",
+      "meta": {
+        "role": "Role",
+        "company": "Company / context",
+        "period": "Period"
+      },
+      "items": [
+        {
+          "slug": "handbook",
+          "navLabel": "Handbook",
+          "navHint": "AI workflows / product systems",
+          "title": "Handbook AI Workflow Automation",
+          "company": "Handbook",
+          "role": "AI Full-Stack Engineer",
+          "period": "2026 - Present",
+          "summary": "A workflow product that turns business processes into executable tasks where people and AI systems can collaborate, track progress and move operational work forward.",
+          "tags": ["LLM Systems", "Product Architecture", "Operations"],
+          "detailItems": [
+            {
+              "label": "Problem",
+              "value": "Teams need software that does more than display tasks. It must understand processes, route work and maintain traceability across people and AI."
+            },
+            {
+              "label": "My role",
+              "value": "I work across product architecture, LLM systems and interface design that turns complex operational flows into more actionable software."
+            },
+            {
+              "label": "Why it matters",
+              "value": "This is the strongest portfolio piece for product thinking, systems design, real automation and AI software beyond chat demos."
+            }
+          ],
+          "highlights": [
+            "Positions the profile around systems work, AI automation and product engineering.",
+            "Shows a strong mix of visual storytelling, traceability and full-stack execution.",
+            "Can carry both a product walkthrough and still images from dashboards, builders or orchestration views."
+          ],
+          "media": [
+            {
+              "kind": "video",
+              "label": "Primary video",
+              "title": "Walkthrough of the AI operating system",
+              "note": "Ideal for a narrated demo showing the builder, tasks, follow-up and coordination between humans and agents."
+            },
+            {
+              "kind": "image",
+              "label": "Supporting image",
+              "title": "Flow, builder or dashboard still",
+              "note": "A strong slot for a key screenshot when you want to reinforce structure, traceability or product UX."
+            }
+          ]
+        },
+        {
+          "slug": "nanti",
+          "navLabel": "Nanti",
+          "navHint": "Support automation / LLM",
+          "title": "LLM Support Automation at Nanti",
+          "company": "Nanti System",
+          "role": "Full Stack AI Integration Engineer",
+          "period": "2023 - 2024",
+          "summary": "A full-stack conversational module built with Nest.js, Angular and the OpenAI API to operate real support flows through WhatsApp and tawk.io.",
+          "tags": ["Nest.js", "Angular", "OpenAI API"],
+          "detailItems": [
+            {
+              "label": "Problem",
+              "value": "Operational support needed faster responses and more automation without losing control or clarity around what the system was doing."
+            },
+            {
+              "label": "My role",
+              "value": "I designed and shipped the full-stack integration across frontend, backend and the OpenAI API using more resilient, type-safe patterns."
+            },
+            {
+              "label": "Impact",
+              "value": "The system automated 40% of support actions and improved frontend efficiency inside a workflow already tied to the business."
+            }
+          ],
+          "highlights": [
+            "A strong case for showing production AI rather than prototypes.",
+            "Connects Nest.js, Angular and real operational channels clearly.",
+            "A good candidate for one short demo plus one or two supporting screenshots."
+          ],
+          "media": [
+            {
+              "kind": "video",
+              "label": "Primary video",
+              "title": "Conversational module flow",
+              "note": "Designed for a short recording that shows interaction, automation behavior and operational response inside the product."
+            },
+            {
+              "kind": "image",
+              "label": "Supporting image",
+              "title": "Panel or conversation state",
+              "note": "Useful for documenting the UI, flow states or visual evidence when the video does not tell the whole story."
+            }
+          ]
+        },
+        {
+          "slug": "agora",
+          "navLabel": "Agora",
+          "navHint": "Analytics / data systems",
+          "title": "Data Pipelines for Analytics at Agora",
+          "company": "Agora Partnerships",
+          "role": "Full Stack & Data Engineer",
+          "period": "2024 - 2026",
+          "summary": "Work across Python and Airflow DAGs, backend services, API integrations and frontend systems supporting analytics-critical operations.",
+          "tags": ["Python", "Airflow", "Analytics"],
+          "detailItems": [
+            {
+              "label": "Problem",
+              "value": "Teams depend on reliable data and analytics, so the pipelines and services behind them cannot be fragile."
+            },
+            {
+              "label": "My role",
+              "value": "I maintained critical DAGs, supported backend architecture with API integrations and contributed to more scalable frontend systems."
+            },
+            {
+              "label": "Results",
+              "value": "The work contributed to fewer production errors, faster initial loads and stronger foundations for product, SEO and maintainability."
+            }
+          ],
+          "highlights": [
+            "Shows that the profile is not only about UI, but also reliability and data operations.",
+            "A great fit for diagrams, DAG screenshots or analytics dashboards.",
+            "Reinforces the mix of backend, data and frontend with measurable impact."
+          ],
+          "media": [
+            {
+              "kind": "image",
+              "label": "Primary image",
+              "title": "Pipeline, DAG or analytics dashboard",
+              "note": "Use this slot for screenshots of the pipeline, a system architecture or any view that represents the workflow."
+            },
+            {
+              "kind": "image",
+              "label": "Secondary image",
+              "title": "Related component or interface view",
+              "note": "Helpful for showing that the work was not only data-focused, but also connected to product and interface systems."
+            }
+          ]
+        },
+        {
+          "slug": "voting",
+          "navLabel": "Voting",
+          "navHint": "Security / identity",
+          "title": "Secure Digital Voting System",
+          "company": "Mexican Association of Human Genetics",
+          "role": "Full Stack Developer",
+          "period": "Special project",
+          "summary": "A digital voting platform with stronger authentication, identity validation and anti-fraud controls for a sensitive process.",
+          "tags": ["Security", "Identity", "PHP"],
+          "detailItems": [
+            {
+              "label": "Problem",
+              "value": "The voting process required trustworthy digital participation with strong controls for authentication, identity and duplicate prevention."
+            },
+            {
+              "label": "My role",
+              "value": "I built the flow with 2FA, camera validation, voter ID photo matching and logic to protect the process against fraud."
+            },
+            {
+              "label": "Why it stands out",
+              "value": "Even if it is not the most modern stack, this case shows ownership, security thinking and the ability to solve a high-sensitivity real-world problem."
+            }
+          ],
+          "highlights": [
+            "Excellent piece for demonstrating security thinking and identity validation.",
+            "Adds range to the portfolio because not everything revolves around AI.",
+            "Best presented with key flow screenshots rather than a long narrated demo."
+          ],
+          "media": [
+            {
+              "kind": "image",
+              "label": "Primary image",
+              "title": "Authentication and validation flow",
+              "note": "A strong place for screenshots of login, camera verification or identity checks."
+            },
+            {
+              "kind": "image",
+              "label": "Secondary image",
+              "title": "Key screens from the voting system",
+              "note": "Useful for documenting the voting experience, duplicate prevention or any state inside the protected process."
+            }
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "eyebrow": "Track record",
+      "title": "Proof of work across AI workflows, analytics infrastructure and product delivery.",
+      "description": "These roles show repeatability: not just one strong project, but multiple environments where interfaces, backend systems and automation had to work together.",
+      "items": [
+        {
+          "company": "Handbook",
+          "role": "AI Full-Stack Engineer",
+          "period": "Feb 2026 - Present",
+          "location": "Hybrid · San Francisco, California, United States",
+          "summary": "Focused on product architecture and LLM systems for software that models, tracks and automates complex operational workflows."
+        },
+        {
+          "company": "Agora Partnerships",
+          "role": "Full Stack & Data Engineer",
+          "period": "Aug 2024 - Jan 2026",
+          "location": "Remote",
+          "summary": "Built backend services, maintained Airflow DAGs for critical analytics and contributed frontend systems with measurable gains in performance, SEO and reliability."
+        },
+        {
+          "company": "Nanti System",
+          "role": "Full Stack AI Integration Engineer",
+          "period": "Feb 2023 - Sep 2024",
+          "location": "Remote",
+          "summary": "Designed and deployed an AI integration module across Nest.js, Angular and OpenAI API, improving support automation and frontend efficiency."
+        },
+        {
+          "company": "Black Horse Technologies",
+          "role": "Software Engineer · Freelance",
+          "period": "Sep 2025 - Dec 2025",
+          "location": "Remote",
+          "summary": "Short-term freelance engineering engagement supporting product delivery and custom software implementation."
+        },
+        {
+          "company": "M&T Studio / Zona Sana",
+          "role": "Full Stack Web Developer · Freelance",
+          "period": "Apr 2023 - Aug 2023",
+          "location": "Remote",
+          "summary": "Delivered Next.js modules and Node.js/Express APIs that reduced form abandonment and handled more than 1000 daily requests with low latency."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "How I work",
+      "title": "Clear product thinking, serious systems delivery.",
+      "description": "The process stays consistent across AI, backend and interface work: understand the operational problem, design the right system shape, ship with clarity and measure what improved.",
+      "items": [
+        {
+          "step": "01",
+          "title": "Frame the real bottleneck",
+          "description": "I start by isolating what is actually slowing the workflow down, whether that lives in the interface, the backend logic or the operational handoff."
+        },
+        {
+          "step": "02",
+          "title": "Design across product and architecture",
+          "description": "The best solutions usually need both: thoughtful interaction design on the surface and backend structure that can hold under real usage."
+        },
+        {
+          "step": "03",
+          "title": "Ship with reliability and evidence",
+          "description": "The goal is not only to release. It is to leave behind a system that teams can operate, maintain and measure with confidence."
+        }
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "Outcomes",
+      "title": "Measurable results, not vague promises.",
+      "description": "The strongest signal for recruiters is evidence: automation lifted, performance improved, fewer errors in production and systems that teams could actually use."
+    },
+    "metrics": {
+      "items": [
+        {
+          "label": "Automation",
+          "title": "40% support automation",
+          "description": "LLM-assisted workflows deployed in production through WhatsApp and tawk.io."
+        },
+        {
+          "label": "Reliability",
+          "title": "25% fewer production errors",
+          "description": "Driven by type-safe systems, cleaner interfaces and more resilient architecture."
+        },
+        {
+          "label": "Performance",
+          "title": "20% faster initial load",
+          "description": "Improved frontend delivery through scalable components and stronger UI architecture."
+        },
+        {
+          "label": "Delivery",
+          "title": "1000+ daily requests",
+          "description": "Node.js and Express APIs supporting production traffic with low latency."
+        }
+      ]
+    },
+    "stack": {
+      "eyebrow": "Execution stack",
+      "title": "Comfortable across interface, services, AI and delivery.",
+      "description": "The stack matters because it supports the positioning: polished product work on the frontend, reliable backend architecture and pragmatic AI and data integration.",
+      "groupLabel": "Capability",
+      "items": [
+        {
+          "title": "Frontend",
+          "items": ["React.js", "Next.js", "Angular", "Tailwind CSS", "Redux", "Zustand", "SSR / SSG"]
+        },
+        {
+          "title": "Backend and architecture",
+          "items": ["TypeScript", "Node.js", "Nest.js", "Express.js", "APIs", "Microservices", "WebSockets", "Clean architecture"]
+        },
+        {
+          "title": "AI and data",
+          "items": ["OpenAI API", "Conversational automation", "Python", "ETL", "Apache Airflow", "Analytics pipelines"]
+        },
+        {
+          "title": "Cloud and delivery",
+          "items": ["AWS", "Docker", "GitHub", "GitLab", "CI/CD", "MySQL", "MariaDB", "MongoDB"]
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Final CTA",
+      "title": "Looking for someone who can bridge AI, backend and frontend execution?",
+      "description": "I'm open to remote roles and product teams that need polished interfaces, solid backend systems and AI features that actually serve the workflow.",
+      "primaryCta": "Email me",
+      "secondaryCta": "View LinkedIn",
+      "primaryHref": "mailto:Eliseo10208@gmail.com",
+      "secondaryHref": "https://linkedin.com/in/rodrigo-garcia-76303224a",
+      "links": [
+        {
+          "label": "Email",
+          "value": "Eliseo10208@gmail.com",
+          "href": "mailto:Eliseo10208@gmail.com"
+        },
+        {
+          "label": "GitHub",
+          "value": "github.com/Eliseo10208",
+          "href": "https://github.com/Eliseo10208"
+        },
+        {
+          "label": "LinkedIn",
+          "value": "linkedin.com/in/rodrigo-garcia-76303224a",
+          "href": "https://linkedin.com/in/rodrigo-garcia-76303224a"
+        },
+        {
+          "label": "Phone",
+          "value": "+52 961 123 9207",
+          "href": "tel:+529611239207"
+        },
+        {
+          "label": "Location",
+          "value": "Tuxtla Gutierrez, Chiapas, Mexico",
+          "href": "https://www.google.com/maps/search/Tuxtla+Gutierrez,+Chiapas,+Mexico"
+        }
+      ]
+    },
+    "footer": {
+      "availability": "Open to remote product, AI systems and full-stack roles.",
+      "note": "Based in Tuxtla Gutierrez, Mexico. Available for startup, product engineering and automation-focused opportunities."
+    }
+  }
+}

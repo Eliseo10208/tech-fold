@@ -1,0 +1,187 @@
+"use client";
+
+import type { ProjectItem } from "@/types/portfolio";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
+import { WorkMediaFrame } from "./WorkMediaFrame";
+
+type ProjectExplorerProps = {
+  projectItems: ProjectItem[];
+};
+
+export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
+  const t = useTranslations("HomePage.work");
+  const [activeProjectIndex, setActiveProjectIndex] = useState(0);
+  const [activeMediaIndex, setActiveMediaIndex] = useState(0);
+
+  const activeProject = projectItems[activeProjectIndex];
+  const activeMedia = activeProject.media[activeMediaIndex];
+
+  function selectProject(nextProjectIndex: number) {
+    setActiveProjectIndex(nextProjectIndex);
+    setActiveMediaIndex(0);
+  }
+
+  function goToAdjacentProject(direction: "previous" | "next") {
+    const lastProjectIndex = projectItems.length - 1;
+    const nextProjectIndex =
+      direction === "next"
+        ? activeProjectIndex === lastProjectIndex
+          ? 0
+          : activeProjectIndex + 1
+        : activeProjectIndex === 0
+          ? lastProjectIndex
+          : activeProjectIndex - 1;
+
+    selectProject(nextProjectIndex);
+  }
+
+  const projectTabs = projectItems.map((projectItem, projectIndex) => {
+    const isActive = projectIndex === activeProjectIndex;
+
+    return (
+      <button
+        aria-controls={`project-panel-${projectItem.slug}`}
+        aria-selected={isActive}
+        className={
+          isActive ? "projectTabButton projectTabButtonActive" : "projectTabButton"
+        }
+        id={`project-tab-${projectItem.slug}`}
+        key={projectItem.slug}
+        onClick={() => selectProject(projectIndex)}
+        role="tab"
+        type="button"
+      >
+        <span className="projectTabLabel">{projectItem.navLabel}</span>
+        <span className="projectTabHint">{projectItem.navHint}</span>
+      </button>
+    );
+  });
+
+  const projectTagItems = activeProject.tags.map((tag) => (
+    <span className="tag" key={`${activeProject.slug}-${tag}`}>
+      {tag}
+    </span>
+  ));
+
+  const projectMetaItems = [
+    { label: t("meta.role"), value: activeProject.role },
+    { label: t("meta.company"), value: activeProject.company },
+    { label: t("meta.period"), value: activeProject.period },
+  ].map((metaItem) => (
+    <div className="projectMetaCard" key={metaItem.label}>
+      <span className="metric-label">{metaItem.label}</span>
+      <p className="projectMetaValue">{metaItem.value}</p>
+    </div>
+  ));
+
+  const projectMediaItems = activeProject.media.map((mediaItem, mediaIndex) => {
+    const isActive = mediaIndex === activeMediaIndex;
+
+    return (
+      <button
+        className={
+          isActive ? "projectMediaThumb projectMediaThumbActive" : "projectMediaThumb"
+        }
+        key={`${activeProject.slug}-${mediaItem.title}`}
+        onClick={() => setActiveMediaIndex(mediaIndex)}
+        type="button"
+      >
+        <span className="projectMediaThumbType">{mediaItem.kind}</span>
+        <span className="projectMediaThumbTitle">{mediaItem.title}</span>
+        <span className="projectMediaThumbNote">{mediaItem.label}</span>
+      </button>
+    );
+  });
+
+  const projectDetailItems = activeProject.detailItems.map((detailItem) => (
+    <article className="projectDetailCard" key={detailItem.label}>
+      <span className="metric-label">{detailItem.label}</span>
+      <p className="projectDetailValue">{detailItem.value}</p>
+    </article>
+  ));
+
+  const projectHighlightItems = activeProject.highlights.map((highlightItem) => (
+    <li key={highlightItem}>{highlightItem}</li>
+  ));
+
+  return (
+    <section className="projectExplorer">
+      <div
+        aria-label={t("navigatorLabel")}
+        className="projectTabRail"
+        role="tablist"
+      >
+        {projectTabs}
+      </div>
+
+      <article
+        aria-labelledby={`project-tab-${activeProject.slug}`}
+        className="projectStage"
+        id={`project-panel-${activeProject.slug}`}
+        role="tabpanel"
+      >
+        <div className="projectBoardCard projectBoardMediaCard">
+          <WorkMediaFrame
+            mediaAlt={activeMedia.alt}
+            mediaKind={activeMedia.kind}
+            mediaLabel={activeMedia.label}
+            mediaNote={activeMedia.note}
+            mediaPoster={activeMedia.poster}
+            mediaSrc={activeMedia.src}
+            mediaTitle={activeMedia.title}
+            priority
+          />
+        </div>
+
+        <article className="projectBoardCard projectBoardIntroCard">
+          <div className="projectStageHeader">
+            <span className="project-index">{t("projectLabel")}</span>
+            <h3 className="projectStageTitle">{activeProject.title}</h3>
+            <p className="projectStageSummary">{activeProject.summary}</p>
+
+            <div className="tag-row">{projectTagItems}</div>
+          </div>
+        </article>
+
+        <section className="projectBoardCard projectBoardMetaCard">
+          <div className="projectMetaGrid">{projectMetaItems}</div>
+        </section>
+
+        <section className="projectBoardCard projectBoardGalleryCard">
+          <div aria-label={t("mediaRailLabel")} className="projectMediaRail">
+            {projectMediaItems}
+          </div>
+        </section>
+
+        <section className="projectBoardCard projectBoardDetailsCard">
+          <div className="projectDetailGrid">{projectDetailItems}</div>
+        </section>
+
+        <section className="projectBoardCard projectBoardHighlightsCard projectHighlightsBlock">
+          <span className="metric-label">{t("highlightsLabel")}</span>
+          <ul className="projectHighlightList">{projectHighlightItems}</ul>
+        </section>
+
+        <nav className="projectBoardCard projectBoardFooterCard">
+          <div className="projectFooterNav">
+            <button
+              className="projectFooterButton"
+              onClick={() => goToAdjacentProject("previous")}
+              type="button"
+            >
+              {t("previousProject")}
+            </button>
+            <button
+              className="projectFooterButton projectFooterButtonPrimary"
+              onClick={() => goToAdjacentProject("next")}
+              type="button"
+            >
+              {t("nextProject")}
+            </button>
+          </div>
+        </nav>
+      </article>
+    </section>
+  );
+}
