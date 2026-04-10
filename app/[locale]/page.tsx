@@ -1,5 +1,6 @@
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
+import { TechBubbleCloud } from "@/components/TechBubbleCloud";
 import type { ProjectItem } from "@/types/portfolio";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -83,11 +84,12 @@ export default async function HomePage({ params }: HomePageProps) {
   const stackItems = t.raw("stack.items") as StackItem[];
   const contactLinks = t.raw("contact.links") as ContactLink[];
   const footerCopy = t.raw("footer") as FooterCopy;
+  const heroMetricItems = metricItems.slice(0, 4);
 
   return (
     <main className="site-page">
-      <div className="site-shell">
-        <header className="site-headerShell">
+      <header className="site-headerShell">
+        <div className="site-shell">
           <div className="site-header">
             <a className="brand-mark" href="#top">
               {identity.name}
@@ -118,59 +120,57 @@ export default async function HomePage({ params }: HomePageProps) {
               </a>
             </div>
           </div>
-        </header>
+        </div>
+      </header>
 
-        <section className="site-topStage" id="top">
-          <div className="hero-panel">
-            <div className="hero-copy">
-              <span className="eyebrow">{identity.eyebrow}</span>
-              <h1 className="hero-title">{t("hero.title")}</h1>
-              <p className="hero-description">{t("hero.description")}</p>
+      <div className="site-shell">
+        <section className="heroSection" id="top">
+          <article className="heroMainCard">
+            <span className="eyebrow">{identity.eyebrow}</span>
+            <h1 className="hero-title">{t("hero.title")}</h1>
+            <p className="hero-description">{t("hero.description")}</p>
 
-              <div className="hero-actions">
-                <a className="primary-button" href="#selected-work">
-                  {t("hero.primaryCta")}
-                </a>
-                <a className="secondary-button" href="#experience">
-                  {t("hero.secondaryCta")}
-                </a>
-              </div>
-
-              <div className="hero-badgeRow">
-                {heroBadges.map((badgeItem) => (
-                  <span className="hero-badge" key={badgeItem}>
-                    {badgeItem}
-                  </span>
-                ))}
-              </div>
+            <div className="hero-actions">
+              <a className="primary-button" href="#selected-work">
+                {t("hero.primaryCta")}
+              </a>
+              <a className="secondary-button" href="#experience">
+                {t("hero.secondaryCta")}
+              </a>
             </div>
 
-            <div className="hero-aside">
-              <article className="signal-card">
-                <span className="eyebrow">{identity.role}</span>
-                <h2 className="signal-title">{t("hero.sideTitle")}</h2>
-                <p className="signal-copy">{t("hero.sideDescription")}</p>
-              </article>
+            <div className="hero-badgeRow">
+              {heroBadges.map((badgeItem) => (
+                <span className="hero-badge" key={badgeItem}>
+                  {badgeItem}
+                </span>
+              ))}
+            </div>
+          </article>
 
-              <div className="hero-miniGrid">
+          <div className="heroSideColumn">
+            <article className="heroProfileCard">
+              <span className="eyebrow">{identity.role}</span>
+              <h2 className="signal-title">{t("hero.sideTitle")}</h2>
+              <p className="signal-copy">{t("hero.sideDescription")}</p>
+
+              <ul className="heroFeatureList">
                 {aboutHighlight.points.map((pointItem) => (
-                  <article className="hero-miniCard" key={`${aboutHighlight.eyebrow}-${pointItem}`}>
-                    <span className="metric-label">{aboutHighlight.eyebrow}</span>
-                    <p className="hero-miniCopy">{pointItem}</p>
-                  </article>
+                  <li key={`${aboutHighlight.eyebrow}-${pointItem}`}>{pointItem}</li>
                 ))}
-              </div>
+              </ul>
+            </article>
+
+            <div className="heroStatsGrid">
+              {heroMetricItems.map((item) => (
+                <article className="heroStatCard" key={item.title}>
+                  <span className="metric-label">{item.label}</span>
+                  <h3 className="metric-title">{item.title}</h3>
+                  <p className="metric-copy">{item.description}</p>
+                </article>
+              ))}
             </div>
           </div>
-        </section>
-
-        <section className="credibilityStrip" aria-label={t("credibility.ariaLabel")}>
-          {credibilityItems.map((item) => (
-            <article className="credibilityItem" key={item.label}>
-              <span className="credibilityLabel">{item.label}</span>
-              <p className="credibilityValue">{item.value}</p>
-            </article>
-          ))}
         </section>
 
         <section className="section-block" id="about">
@@ -183,8 +183,8 @@ export default async function HomePage({ params }: HomePageProps) {
             <p className="section-copy">{t("about.description")}</p>
           </div>
 
-          <div className="aboutBento">
-            <article className="aboutHighlightCard">
+          <div className="aboutGrid">
+            <article className="aboutSummaryCard">
               <span className="eyebrow">{aboutHighlight.eyebrow}</span>
               <h3 className="aboutHighlightTitle">{aboutHighlight.title}</h3>
               <p className="aboutHighlightDescription">{aboutHighlight.description}</p>
@@ -194,10 +194,19 @@ export default async function HomePage({ params }: HomePageProps) {
                   <li key={pointItem}>{pointItem}</li>
                 ))}
               </ul>
+
+              <div className="overviewFactList" aria-label={t("credibility.ariaLabel")}>
+                {credibilityItems.map((item) => (
+                  <article className="overviewFactCard" key={item.label}>
+                    <span className="credibilityLabel">{item.label}</span>
+                    <p className="credibilityValue">{item.value}</p>
+                  </article>
+                ))}
+              </div>
             </article>
 
             {aboutItems.map((item) => (
-              <article className="pillar-card" key={item.title}>
+              <article className="infoCard" key={item.title}>
                 <h3 className="pillar-title">{item.title}</h3>
                 <p className="pillar-copy">{item.description}</p>
               </article>
@@ -228,9 +237,9 @@ export default async function HomePage({ params }: HomePageProps) {
             <p className="section-copy">{t("experience.description")}</p>
           </div>
 
-          <div className="experience-list">
+          <div className="experienceList">
             {experienceItems.map((item) => (
-              <article className="experience-card" key={`${item.company}-${item.role}`}>
+              <article className="experienceItemCard" key={`${item.company}-${item.role}`}>
                 <div className="experience-head">
                   <div>
                     <h3 className="experience-company">{item.company}</h3>
@@ -304,20 +313,19 @@ export default async function HomePage({ params }: HomePageProps) {
           <div className="stack-grid">
             {stackItems.map((item) => (
               <article className="stack-card" key={item.title}>
-                <span className="eyebrow">{t("stack.groupLabel")}</span>
-                <h3 className="stack-title">{item.title}</h3>
-                <ul className="stack-list">
-                  {item.items.map((stackItem) => (
-                    <li key={stackItem}>{stackItem}</li>
-                  ))}
-                </ul>
+                <div className="stackCardHeader">
+                  <span className="eyebrow">{t("stack.groupLabel")}</span>
+                  <h3 className="stack-title">{item.title}</h3>
+                </div>
+
+                <TechBubbleCloud items={item.items} />
               </article>
             ))}
           </div>
         </section>
 
         <section className="section-block" id="contact">
-          <div className="surface-panel surface-panel-light contact-panel">
+          <div className="contactPanel">
             <div className="contact-copy">
               <span className="eyebrow">{t("contact.eyebrow")}</span>
               <h2 className="section-title">{t("contact.title")}</h2>
@@ -338,7 +346,7 @@ export default async function HomePage({ params }: HomePageProps) {
               </div>
             </div>
 
-            <div className="contact-list">
+            <div className="contactListCard">
               {contactLinks.map((item) => (
                 <a
                   className="contact-item contact-link"

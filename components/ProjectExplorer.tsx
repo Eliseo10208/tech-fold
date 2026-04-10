@@ -14,8 +14,23 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
   const [activeProjectIndex, setActiveProjectIndex] = useState(0);
   const [activeMediaIndex, setActiveMediaIndex] = useState(0);
 
-  const activeProject = projectItems[activeProjectIndex];
-  const activeMedia = activeProject.media[activeMediaIndex];
+  if (projectItems.length === 0) {
+    return null;
+  }
+
+  const activeProject = projectItems[activeProjectIndex] ?? projectItems[0];
+  const activeProjectMedia =
+    activeProject.media.length > 0
+      ? activeProject.media
+      : [
+          {
+            kind: "image" as const,
+            label: t("projectLabel"),
+            note: activeProject.summary,
+            title: activeProject.title,
+          },
+        ];
+  const activeMedia = activeProjectMedia[activeMediaIndex] ?? activeProjectMedia[0];
 
   function selectProject(nextProjectIndex: number) {
     setActiveProjectIndex(nextProjectIndex);
@@ -50,6 +65,7 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
         key={projectItem.slug}
         onClick={() => selectProject(projectIndex)}
         role="tab"
+        tabIndex={isActive ? 0 : -1}
         type="button"
       >
         <span className="projectTabLabel">{projectItem.navLabel}</span>
@@ -75,7 +91,7 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
     </div>
   ));
 
-  const projectMediaItems = activeProject.media.map((mediaItem, mediaIndex) => {
+  const projectMediaItems = activeProjectMedia.map((mediaItem, mediaIndex) => {
     const isActive = mediaIndex === activeMediaIndex;
 
     return (

@@ -55,7 +55,7 @@
     "about": {
       "eyebrow": "Why this profile",
       "title": "Backend rigor with frontend taste.",
-      "description": "The goal is simple: make it obvious to recruiters and founders that this is not just another generalist profile. The work combines product interfaces people trust, backend systems teams can rely on and AI automation tied to real operations.",
+      "description": "The work combines product interfaces people trust, backend systems teams can rely on and AI automation tied to real operations. It is built for teams that need visual execution and serious systems delivery at the same time.",
       "highlight": {
         "eyebrow": "Positioning",
         "title": "AI + backend + frontend execution, shipped as one system.",
@@ -84,7 +84,7 @@
     "work": {
       "eyebrow": "Featured projects",
       "title": "Selected case studies that show both interface craft and systems depth.",
-      "description": "A guided project explorer with room for product walkthroughs, interface stills and operational context. The goal is to show work that feels polished on the surface and serious underneath.",
+      "description": "Each case study combines product context, implementation responsibility and measurable impact, with room for walkthroughs, stills and operational detail.",
       "navigatorLabel": "Project selector",
       "projectLabel": "Active project",
       "mediaRailLabel": "Media selector",

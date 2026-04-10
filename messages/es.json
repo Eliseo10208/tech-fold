@@ -55,7 +55,7 @@
     "about": {
       "eyebrow": "Por qué este perfil",
       "title": "Rigor backend con gusto frontend.",
-      "description": "La idea es que recruiters y founders entiendan rápido que este no es otro perfil generalista. El trabajo combina interfaces de producto confiables, sistemas backend sólidos y automatización con IA conectada a operaciones reales.",
+      "description": "El trabajo combina interfaces de producto confiables, sistemas backend sólidos y automatización con IA conectada a operaciones reales. Está pensado para equipos que necesitan ejecución visual y delivery serio de sistemas al mismo tiempo.",
       "highlight": {
         "eyebrow": "Posicionamiento",
         "title": "IA + backend + frontend de ejecución fuerte, entregados como un solo sistema.",
@@ -84,7 +84,7 @@
     "work": {
       "eyebrow": "Proyectos destacados",
       "title": "Casos seleccionados que muestran tanto cuidado visual como profundidad de sistemas.",
-      "description": "Un explorer guiado con espacio para walkthroughs de producto, capturas de interfaz y contexto operativo. La idea es mostrar trabajo que se ve pulido por fuera y serio por dentro.",
+      "description": "Cada caso combina contexto de producto, responsabilidad de implementación e impacto medible, con espacio para walkthroughs, capturas y detalle operativo.",
       "navigatorLabel": "Selector de proyectos",
       "projectLabel": "Proyecto activo",
       "mediaRailLabel": "Selector de medios",
