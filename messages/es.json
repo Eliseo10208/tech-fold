@@ -1,83 +1,84 @@
 {
   "Metadata": {
-    "title": "Rodrigo Eliseo García | Full Stack AI Engineer",
-    "description": "Ingeniero Full Stack AI que construye interfaces pulidas, sistemas backend confiables y flujos de IA en producción para operaciones reales."
+    "title": "Rodrigo Eliseo García | AI Full Stack Engineer",
+    "description": "Ingeniero de software enfocado en AI Systems & Automation, NestJS, Next.js, TypeScript, Airflow, OpenAI y AWS."
   },
   "HomePage": {
     "identity": {
       "name": "Rodrigo Eliseo García",
-      "role": "Full Stack AI Engineer",
-      "eyebrow": "AI Systems Engineer / Full Stack AI Engineer"
+      "role": "AI Full Stack Engineer",
+      "eyebrow": "AI Full Stack Engineer | AI Systems & Automation"
     },
     "navigation": {
       "ariaLabel": "Navegación principal",
-      "about": "Visión",
+      "about": "Perfil",
       "work": "Proyectos",
       "experience": "Trayectoria",
       "stack": "Stack",
+      "credentials": "Credenciales",
       "contact": "Contacto",
       "cta": "Hablemos"
     },
     "hero": {
-      "title": "Construyo productos con IA, rigor backend y frontend de alta ejecución.",
-      "description": "Ingeniero Full Stack AI enfocado en sistemas productivos que conectan interfaces, servicios, automatización y flujos de datos. Entrego software que se ve refinado, escala con orden y resuelve problemas operativos reales.",
+      "title": "Construyo sistemas con IA que automatizan operaciones reales.",
+      "description": "Combino FullStack + Data + AI para llevar productos de idea a producción con impacto medible. Trabajo con NestJS, Next.js, TypeScript, Python, Airflow, OpenAI y AWS.",
       "primaryCta": "Ver trabajo destacado",
       "secondaryCta": "Ver trayectoria",
-      "sideTitle": "De UX a arquitectura.",
-      "sideDescription": "Mi ventaja está en la combinación: frontend pulido, backend confiable y funciones con IA aterrizadas en workflows reales en lugar de demos vacíos.",
+      "sideTitle": "FullStack + Data + AI.",
+      "sideDescription": "No solo desarrollo features: diseño sistemas donde backend, frontend, data y AI trabajan como una sola unidad, con arquitectura type-safe y foco operativo.",
       "badges": [
-        "IA en producción",
-        "Backend que escala",
-        "Frontend con criterio"
+        "AI Systems & Automation",
+        "Data Pipelines (Airflow)",
+        "NestJS / Next.js / TypeScript"
       ]
     },
     "credibility": {
       "ariaLabel": "Señales de credibilidad",
       "items": [
         {
-          "label": "Enfoque",
-          "value": "Automatización con IA, sistemas de producto y workflows operativos"
+          "label": "Headline actual",
+          "value": "AI Systems & Automation | NestJS, Next.js, TypeScript, Airflow, OpenAI y AWS"
         },
         {
-          "label": "Stack base",
-          "value": "Next.js, Nest.js, TypeScript, Python, Airflow y AWS"
+          "label": "Ubicación actual",
+          "value": "Área metropolitana de Ciudad de México, México"
         },
         {
-          "label": "Construido para",
-          "value": "Automatización de soporte, infraestructura analítica y flujos sensibles"
+          "label": "Especialidad",
+          "value": "Sistemas AI-driven, automatización conversacional y data pipelines"
         },
         {
-          "label": "Forma de trabajo",
-          "value": "Claridad de producto, systems thinking y entrega end-to-end"
+          "label": "Roles objetivo",
+          "value": "AI Full Stack Engineer, AI Systems Engineer y Data + AI Engineer"
         }
       ]
     },
     "about": {
-      "eyebrow": "Por qué este perfil",
-      "title": "Rigor backend con gusto frontend.",
-      "description": "El trabajo combina interfaces de producto confiables, sistemas backend sólidos y automatización con IA conectada a operaciones reales. Está pensado para equipos que necesitan ejecución visual y delivery serio de sistemas al mismo tiempo.",
+      "eyebrow": "Perfil real",
+      "title": "Sistemas AI-driven, arquitectura type-safe y producto con impacto medible.",
+      "description": "Soy ingeniero full stack especializado en sistemas con IA y data pipelines. Diseño arquitecturas donde la inteligencia artificial no es un feature, sino el núcleo operativo del sistema.",
       "highlight": {
-        "eyebrow": "Posicionamiento",
-        "title": "IA + backend + frontend de ejecución fuerte, entregados como un solo sistema.",
-        "description": "Esa mezcla es lo que vuelve memorable al portafolio. Demuestra la capacidad de moverse del detalle visual a diseño de servicios, lógica de automatización y entrega en producción sin perder calidad en ninguna capa.",
+        "eyebrow": "Resumen",
+        "title": "FullStack + Data + AI para llevar productos de idea a producción.",
+        "description": "Trabajo con Nest.js, Next.js y TypeScript para la capa de producto, Python y Airflow para orquestación y pipelines, y OpenAI + AWS + Docker para automatización, despliegue y escalabilidad.",
         "points": [
-          "Interfaces pulidas con product thinking",
-          "Servicios backend e integraciones type-safe",
-          "Workflows con IA diseñados para uso operativo real"
+          "Nest.js / Next.js / TypeScript con arquitectura type-safe",
+          "Python + Airflow para pipelines y orquestación",
+          "OpenAI + AWS + Docker para automatización y despliegue"
         ]
       },
       "items": [
         {
-          "title": "IA en producción, no hype",
-          "description": "Funciones con OpenAI, automatización conversacional y diseño de flujos conectados a soporte, procesos y necesidades operativas reales."
+          "title": "IA en producción, no experimental",
+          "description": "Diseño sistemas donde la IA está integrada al flujo operativo real, especialmente en automatización conversacional, soporte y ejecución de procesos."
         },
         {
-          "title": "Bases backend serias",
-          "description": "Servicios, APIs, pipelines e integraciones pensadas para ser confiables, mantenibles y type-safe bajo presión real de producto."
+          "title": "Backend y datos con rigor",
+          "description": "Trabajo con servicios, APIs, ETL y pipelines en Python/Airflow para que analytics, automatización y producto compartan una base confiable."
         },
         {
-          "title": "UI que genera confianza",
-          "description": "Interfaces que se sienten cuidadas, legibles y modernas, con suficiente criterio frontend para comunicar ejecución fuerte y buen gusto de producto."
+          "title": "Impacto comprobado",
+          "description": "He automatizado 40% del soporte, reducido 25% errores en producción, mejorado 20% el performance frontend y aumentado 15% el tráfico orgánico."
         }
       ]
     },
@@ -89,6 +90,9 @@
       "projectLabel": "Proyecto activo",
       "mediaRailLabel": "Selector de medios",
       "highlightsLabel": "Resultados y puntos clave",
+      "openExternal": "Visitar sitio",
+      "websiteFallbackLabel": "Sitio disponible",
+      "websiteFallbackNote": "Este caso todavía no tiene video o imágenes públicas, así que aquí mostramos el sitio real del proyecto.",
       "previousProject": "Proyecto anterior",
       "nextProject": "Siguiente proyecto",
       "meta": {
@@ -104,7 +108,7 @@
           "title": "Handbook AI Workflow Automation",
           "company": "Handbook",
           "role": "AI Full-Stack Engineer",
-          "period": "2026 - Actualidad",
+          "period": "Feb 2026 - Actualidad",
           "summary": "Producto de workflows que convierte procesos de negocio en tareas ejecutables donde personas y sistemas con IA colaboran, dan seguimiento y empujan trabajo operativo real.",
           "tags": ["LLM Systems", "Product Architecture", "Operations"],
           "detailItems": [
@@ -151,8 +155,10 @@
           "navHint": "automatización de soporte / LLM",
           "title": "Automatización de soporte con LLM en Nanti",
           "company": "Nanti System",
-          "role": "Full Stack AI Integration Engineer",
-          "period": "2023 - 2024",
+          "role": "Full Stack AI Engineer",
+          "period": "Feb 2023 - Sep 2024",
+          "externalLabel": "Ver nanti system",
+          "externalUrl": "https://nantisystem.com/quienes-somos/",
           "summary": "Módulo conversacional full stack construido con Nest.js, Angular y OpenAI API para operar soporte real mediante WhatsApp y tawk.io.",
           "tags": ["Nest.js", "Angular", "OpenAI API"],
           "detailItems": [
@@ -200,8 +206,10 @@
           "title": "Data Pipelines para analytics en Agora",
           "company": "Agora Partnerships",
           "role": "Full Stack & Data Engineer",
-          "period": "2024 - 2026",
-          "summary": "Trabajo sobre DAGs en Python y Airflow, servicios backend, integraciones de API y sistemas frontend para operaciones críticas de analytics.",
+          "period": "Sep 2024 - Ene 2026",
+          "externalLabel": "Ver agora2030.org",
+          "externalUrl": "https://agora2030.org",
+          "summary": "Servicios backend, DAGs críticos en Python/Airflow, integraciones de API y trabajo frontend con mejoras medibles en performance, SEO y confiabilidad.",
           "tags": ["Python", "Airflow", "Analytics"],
           "detailItems": [
             {
@@ -214,13 +222,13 @@
             },
             {
               "label": "Resultados",
-              "value": "El trabajo aportó menos errores en producción, mejor carga inicial y bases más sólidas para producto, SEO y mantenibilidad."
+              "value": "Reduje 20% el tiempo de carga inicial, 25% los errores en producción y aumenté 15% el tráfico orgánico mientras fortalecía la base analítica del producto."
             }
           ],
           "highlights": [
-            "Demuestra que el perfil no es solo UI, sino también confiabilidad y operaciones con datos.",
-            "Buen caso para diagramas, capturas de DAGs o dashboards de analytics.",
-            "Refuerza la mezcla de backend, data y frontend con impacto medible."
+            "Reduje 20% la carga inicial mediante una librería de componentes escalable en Next.js + Tailwind.",
+            "Disminuí 25% los errores en producción con TypeScript, Redux y arquitectura type-safe.",
+            "Aumenté 15% el tráfico orgánico y aseguré la disponibilidad analítica con ETL en Python y Airflow."
           ],
           "media": [
             {
@@ -293,72 +301,72 @@
     },
     "experience": {
       "eyebrow": "Trayectoria",
-      "title": "Prueba de trabajo real entre workflows con IA, analytics e ingeniería de producto.",
-      "description": "Estos roles muestran repetibilidad: no solo un proyecto fuerte, sino varios entornos donde interfaces, backend y automatización tuvieron que trabajar juntos.",
+      "title": "Experiencia real entre AI systems, data pipelines y software de producto.",
+      "description": "Actualizada con la versión de perfil exportada desde LinkedIn el 20 de abril de 2026, para que la landing refleje tu trayectoria actual y no una aproximación vieja.",
       "items": [
         {
           "company": "Handbook",
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Actualidad",
-          "location": "Híbrido · San Francisco, California, Estados Unidos",
-          "summary": "Enfocado en arquitectura de producto y sistemas con LLM para software que modela, da seguimiento y automatiza workflows operativos complejos."
+          "location": "San Francisco, California, Estados Unidos",
+          "summary": "Product Architecture & LLM Systems para software que modela, da seguimiento y automatiza workflows operativos complejos."
         },
         {
           "company": "Agora Partnerships",
           "role": "Full Stack & Data Engineer",
-          "period": "Ago 2024 - Ene 2026",
+          "period": "Sep 2024 - Ene 2026",
           "location": "Remoto",
-          "summary": "Construcción de servicios backend, mantenimiento de DAGs en Airflow para analytics críticos y contribuciones frontend con mejoras medibles en performance, SEO y confiabilidad."
-        },
-        {
-          "company": "Nanti System",
-          "role": "Full Stack AI Integration Engineer",
-          "period": "Feb 2023 - Sep 2024",
-          "location": "Remoto",
-          "summary": "Diseño y despliegue de un módulo de integración de IA con Nest.js, Angular y OpenAI API, mejorando la automatización del soporte y la eficiencia del frontend."
+          "summary": "Construcción de servicios backend, mantenimiento de DAGs críticos en Airflow y mejoras frontend con impacto medible en performance, SEO y confiabilidad."
         },
         {
           "company": "Black Horse Technologies",
-          "role": "Software Engineer · Freelance",
+          "role": "Software Engineer · Freelance / Contract",
           "period": "Sep 2025 - Dic 2025",
-          "location": "Remoto",
+          "location": "Nueva York, Estados Unidos",
           "summary": "Colaboración freelance de corta duración enfocada en entrega de producto e implementación de software a medida."
+        },
+        {
+          "company": "Nanti System",
+          "role": "Full Stack AI Engineer",
+          "period": "Feb 2023 - Sep 2024",
+          "location": "Ciudad de México, México",
+          "summary": "Diseño e implementación de un sistema conversacional con OpenAI integrado en Nest.js y Angular, automatizando 40% del soporte y mejorando la eficiencia del frontend."
         },
         {
           "company": "M&T Studio / Zona Sana",
           "role": "Full Stack Web Developer · Freelance",
           "period": "Abr 2023 - Ago 2023",
-          "location": "Remoto",
-          "summary": "Entrega de módulos en Next.js y APIs con Node.js/Express que redujeron el abandono de formularios y soportaron más de 1000 solicitudes diarias con baja latencia."
+          "location": "Tuxtla Gutiérrez, Chiapas, México",
+          "summary": "Módulos en Next.js y APIs con Node.js/Express para e-commerce farmacéutico, reduciendo 12% el abandono en formularios y soportando 1000+ solicitudes diarias."
         }
       ]
     },
     "process": {
       "eyebrow": "Cómo trabajo",
-      "title": "Claridad de producto, entrega seria de sistemas.",
-      "description": "El proceso se mantiene consistente entre IA, backend e interfaces: entender el problema operativo, diseñar la forma correcta del sistema, entregar con claridad y medir qué mejoró.",
+      "title": "Del cuello de botella operativo a un sistema que sí aguanta producción.",
+      "description": "La forma de trabajo que refleja el perfil real: detectar el problema operativo, diseñar sistema en vez de feature aislado y medir el impacto con datos concretos.",
       "items": [
         {
           "step": "01",
-          "title": "Aterrizar el cuello de botella real",
-          "description": "Empiezo por aislar qué está frenando de verdad al workflow, ya sea en la interfaz, en la lógica backend o en el handoff operativo."
+          "title": "Encontrar el cuello de botella real",
+          "description": "Primero aíslo qué está frenando la operación, ya sea en soporte, analytics, backend, UI o en el handoff entre equipos y sistemas."
         },
         {
           "step": "02",
-          "title": "Diseñar entre producto y arquitectura",
-          "description": "Las mejores soluciones suelen necesitar ambas cosas: interacción cuidada en la superficie y estructura backend que aguante uso real."
+          "title": "Diseñar sistema, no solo pantalla",
+          "description": "Las mejores soluciones combinan arquitectura type-safe, flujos claros de producto e integraciones que de verdad soporten uso real."
         },
         {
           "step": "03",
-          "title": "Entregar con confiabilidad y evidencia",
-          "description": "La meta no es solo liberar. Es dejar un sistema que equipos puedan operar, mantener y medir con confianza."
+          "title": "Liberar con impacto medible",
+          "description": "La meta no es solo publicar: es dejar un sistema que automatice, reduzca errores, mejore performance y pueda operarse con confianza."
         }
       ]
     },
     "outcomes": {
       "eyebrow": "Resultados",
-      "title": "Resultados medibles, no promesas vagas.",
-      "description": "La señal más fuerte para un recruiter es evidencia: más automatización, mejor performance, menos errores en producción y sistemas que los equipos podían usar de verdad."
+      "title": "Impacto comprobado en soporte, estabilidad, performance y conversión.",
+      "description": "El perfil exportado desde LinkedIn y el resto de tu historial convergen en la misma señal: automatización real, menos errores, más velocidad y mejores resultados de producto."
     },
     "metrics": {
       "items": [
@@ -378,9 +386,9 @@
           "description": "Entrega frontend más eficiente gracias a componentes escalables y una arquitectura de UI más fuerte."
         },
         {
-          "label": "Entrega",
-          "title": "1000+ solicitudes diarias",
-          "description": "APIs en Node.js y Express soportando tráfico productivo con baja latencia."
+          "label": "Crecimiento",
+          "title": "15% más tráfico orgánico",
+          "description": "Resultado de mejoras en SEO técnico, estructura frontend y calidad general del producto."
         }
       ]
     },
@@ -408,14 +416,48 @@
         }
       ]
     },
+    "credentials": {
+      "eyebrow": "Credenciales",
+      "title": "Formación, certificaciones e idiomas que respaldan la ejecución.",
+      "description": "Este bloque resume la parte más curricular del perfil actual para que el portafolio no se quede solo en narrativa y proyectos.",
+      "items": [
+        {
+          "title": "Educación",
+          "description": "Base formal en software y programación aplicada, alineada con el tipo de sistemas que hoy estás construyendo.",
+          "entries": [
+            "Ingeniería de Software — Universidad Politécnica de Chiapas",
+            "Técnico en Programación — CETIS 138 (2020)"
+          ]
+        },
+        {
+          "title": "Certificaciones",
+          "description": "El perfil actual combina UX, cloud y fundamentos de redes/sistemas para complementar la práctica full stack.",
+          "entries": [
+            "Google UX Design Specialization (2024)",
+            "AWS Academy Cloud Architecting (2024) y Introduction to Cloud (2024)",
+            "AWS Academy Cloud Foundations (2022)",
+            "Cisco: Network Support and Security, Operating Systems Basics y Networking Basics (2024)"
+          ]
+        },
+        {
+          "title": "Idiomas y mercado",
+          "description": "Preparado para colaborar con equipos de producto, startups y entornos remotos con expectativa internacional.",
+          "entries": [
+            "Español nativo",
+            "Inglés intermedio B1, cerca de B2",
+            "Abierto a roles remotos y equipos internacionales"
+          ]
+        }
+      ]
+    },
     "contact": {
       "eyebrow": "CTA final",
-      "title": "¿Buscas a alguien que pueda conectar IA, backend y frontend de ejecución fuerte?",
-      "description": "Estoy abierto a roles remotos y equipos de producto que necesiten interfaces pulidas, sistemas backend sólidos y funciones con IA que realmente sirvan al workflow.",
+      "title": "Busco roles donde AI, backend y frontend no vivan separados.",
+      "description": "Según tu perfil actual, el mejor encaje está en AI Full Stack Engineer, AI Systems Engineer o Data + AI Engineer dentro de equipos remotos, startups y software de producto.",
       "primaryCta": "Enviar correo",
       "secondaryCta": "Ver LinkedIn",
       "primaryHref": "mailto:Eliseo10208@gmail.com",
-      "secondaryHref": "https://linkedin.com/in/rodrigo-garcia-76303224a",
+      "secondaryHref": "https://www.linkedin.com/in/rodrigo-eliseo-garcia/",
       "links": [
         {
           "label": "Email",
@@ -429,8 +471,8 @@
         },
         {
           "label": "LinkedIn",
-          "value": "linkedin.com/in/rodrigo-garcia-76303224a",
-          "href": "https://linkedin.com/in/rodrigo-garcia-76303224a"
+          "value": "linkedin.com/in/rodrigo-eliseo-garcia",
+          "href": "https://www.linkedin.com/in/rodrigo-eliseo-garcia/"
         },
         {
           "label": "Teléfono",
@@ -439,14 +481,14 @@
         },
         {
           "label": "Ubicación",
-          "value": "Tuxtla Gutiérrez, Chiapas, México",
-          "href": "https://www.google.com/maps/search/Tuxtla+Gutierrez,+Chiapas,+Mexico"
+          "value": "Área metropolitana de Ciudad de México, México",
+          "href": "https://www.google.com/maps/search/Area+metropolitana+de+Ciudad+de+Mexico"
         }
       ]
     },
     "footer": {
-      "availability": "Disponible para roles remotos de producto, AI systems y full stack.",
-      "note": "Base en Tuxtla Gutiérrez, México. Abierto a oportunidades de startup, product engineering y automatización."
+      "availability": "Disponible para roles remotos como AI Full Stack Engineer, AI Systems Engineer y Data + AI Engineer.",
+      "note": "Perfil actualizado a partir de tu export de LinkedIn del 20 de abril de 2026 y alineado con oportunidades de startup, product engineering y automatización."
     }
   }
 }

@@ -1,7 +1,8 @@
-export type ProjectMediaKind = "image" | "video";
+export type ProjectMediaKind = "image" | "video" | "website";
 
 export type ProjectMediaItem = {
   alt?: string;
+  ctaLabel?: string;
   kind: ProjectMediaKind;
   label: string;
   note: string;
@@ -18,6 +19,8 @@ export type ProjectDetailItem = {
 export type ProjectItem = {
   company: string;
   detailItems: ProjectDetailItem[];
+  externalLabel?: string;
+  externalUrl?: string;
   highlights: string[];
   media: ProjectMediaItem[];
   navHint: string;

@@ -20,6 +20,12 @@ type InfoItem = {
   description: string;
 };
 
+type CredentialItem = {
+  title: string;
+  description: string;
+  entries: string[];
+};
+
 type AboutHighlight = {
   eyebrow: string;
   title: string;
@@ -78,6 +84,7 @@ export default async function HomePage({ params }: HomePageProps) {
   const metricItems = t.raw("metrics.items") as MetricItem[];
   const aboutItems = t.raw("about.items") as InfoItem[];
   const aboutHighlight = t.raw("about.highlight") as AboutHighlight;
+  const credentialItems = t.raw("credentials.items") as CredentialItem[];
   const workItems = t.raw("work.items") as ProjectItem[];
   const experienceItems = t.raw("experience.items") as ExperienceItem[];
   const processItems = t.raw("process.items") as ProcessItem[];
@@ -107,6 +114,9 @@ export default async function HomePage({ params }: HomePageProps) {
               </a>
               <a className="header-link" href="#stack">
                 {t("navigation.stack")}
+              </a>
+              <a className="header-link" href="#credentials">
+                {t("navigation.credentials")}
               </a>
               <a className="header-link" href="#contact">
                 {t("navigation.contact")}
@@ -319,6 +329,32 @@ export default async function HomePage({ params }: HomePageProps) {
                 </div>
 
                 <TechBubbleCloud items={item.items} />
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section-block" id="credentials">
+          <div className="section-intro">
+            <div>
+              <span className="eyebrow">{t("credentials.eyebrow")}</span>
+              <h2 className="section-title">{t("credentials.title")}</h2>
+            </div>
+
+            <p className="section-copy">{t("credentials.description")}</p>
+          </div>
+
+          <div className="credentialsGrid">
+            {credentialItems.map((item) => (
+              <article className="infoCard credentialCard" key={item.title}>
+                <h3 className="pillar-title">{item.title}</h3>
+                <p className="pillar-copy">{item.description}</p>
+
+                <ul className="aboutPointList">
+                  {item.entries.map((entry) => (
+                    <li key={entry}>{entry}</li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>

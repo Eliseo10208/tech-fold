@@ -3,6 +3,8 @@ import Image from "next/image";
 
 type TechBubbleCloudProps = {
   items: string[];
+  className?: string;
+  itemClassName?: string;
 };
 
 type GenericGlyphName =
@@ -258,9 +260,13 @@ function TechIcon({ item }: { item: string }) {
   );
 }
 
-export function TechBubbleCloud({ items }: TechBubbleCloudProps) {
+function joinClassNames(...classNames: Array<string | undefined>) {
+  return classNames.filter(Boolean).join(" ");
+}
+
+export function TechBubbleCloud({ items, className, itemClassName }: TechBubbleCloudProps) {
   return (
-    <div className="techBubbleCloud" role="list">
+    <div className={joinClassNames("techBubbleCloud", className)} role="list">
       {items.map((item, index) => {
         const bubbleStyle = {
           "--bubble-index": index,
@@ -269,7 +275,7 @@ export function TechBubbleCloud({ items }: TechBubbleCloudProps) {
         return (
           <span
             aria-label={item}
-            className="techBubble"
+            className={joinClassNames("techBubble", itemClassName)}
             key={item}
             role="listitem"
             style={bubbleStyle}
