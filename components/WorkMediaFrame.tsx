@@ -36,6 +36,7 @@ export function WorkMediaFrame({
 
   const chromeLabel =
     mediaKind === "website" && mediaHostname.length > 0 ? mediaHostname : mediaTitle;
+  const isLogoMedia = mediaKind === "image" && /logo/i.test(`${mediaLabel} ${mediaTitle}`);
 
   return (
     <div className="showcase-mediaPanel" data-media-kind={mediaKind}>
@@ -52,12 +53,12 @@ export function WorkMediaFrame({
       </div>
 
       <div className="showcase-screen">
-        <div className="showcase-mediaAssetWrap">
+        <div className={isLogoMedia ? "showcase-mediaAssetWrap showcase-mediaAssetWrapLogo" : "showcase-mediaAssetWrap"}>
           {mediaSrc ? (
             mediaKind === "image" ? (
               <Image
                 alt={mediaAlt ?? mediaTitle}
-                className="showcase-mediaAsset"
+                className={isLogoMedia ? "showcase-mediaAsset showcase-mediaAssetLogo" : "showcase-mediaAsset"}
                 fill
                 priority={priority}
                 sizes="(max-width: 960px) 100vw, 50vw"

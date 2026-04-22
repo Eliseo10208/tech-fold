@@ -1,7 +1,10 @@
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
+import { CredlyBadge } from "@/components/CredlyBadge";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
 import { TechBubbleCloud } from "@/components/TechBubbleCloud";
 import type { ProjectItem } from "@/types/portfolio";
+import Image from "next/image";
+import Script from "next/script";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type CredibilityItem = {
@@ -63,6 +66,11 @@ type FooterCopy = {
   note: string;
 };
 
+type CertificationItem = {
+  badgeId: string;
+  title: string;
+};
+
 type HomePageProps = {
   params: Promise<{ locale: string }>;
 };
@@ -91,14 +99,31 @@ export default async function HomePage({ params }: HomePageProps) {
   const stackItems = t.raw("stack.items") as StackItem[];
   const contactLinks = t.raw("contact.links") as ContactLink[];
   const footerCopy = t.raw("footer") as FooterCopy;
-  const heroMetricItems = metricItems.slice(0, 4);
+  const certificationItems = t.raw("certifications.items") as CertificationItem[];
+  const heroMetricItems = metricItems.slice(0, 3);
+  const uniqueCertificationItems = certificationItems.filter(
+    (item, index, array) =>
+      array.findIndex((candidate) => candidate.badgeId === item.badgeId) === index,
+  );
 
   return (
     <main className="site-page">
+      <div aria-hidden="true" className="oceanDecor">
+        <span className="oceanDecorItem oceanDecorJellyfish" />
+        <span className="oceanDecorItem oceanDecorWhale" />
+        <span className="oceanDecorItem oceanDecorShark" />
+      </div>
       <header className="site-headerShell">
         <div className="site-shell">
           <div className="site-header">
             <a className="brand-mark" href="#top">
+              <Image
+                alt="Cat icon"
+                className="brand-catIcon"
+                height={30}
+                src="/icons/cat-peek.png"
+                width={40}
+              />
               {identity.name}
             </a>
 
@@ -112,11 +137,8 @@ export default async function HomePage({ params }: HomePageProps) {
               <a className="header-link" href="#experience">
                 {t("navigation.experience")}
               </a>
-              <a className="header-link" href="#stack">
-                {t("navigation.stack")}
-              </a>
-              <a className="header-link" href="#credentials">
-                {t("navigation.credentials")}
+              <a className="header-link" href="#outcomes">
+                {t("navigation.outcomes")}
               </a>
               <a className="header-link" href="#contact">
                 {t("navigation.contact")}
@@ -144,8 +166,8 @@ export default async function HomePage({ params }: HomePageProps) {
               <a className="primary-button" href="#selected-work">
                 {t("hero.primaryCta")}
               </a>
-              <a className="secondary-button" href="#experience">
-                {t("hero.secondaryCta")}
+              <a className="secondary-button" href="#contact">
+                {t("hero.contactCta")}
               </a>
             </div>
 
@@ -181,6 +203,15 @@ export default async function HomePage({ params }: HomePageProps) {
               ))}
             </div>
           </div>
+        </section>
+
+        <section className="impactStrip" aria-label={t("outcomes.eyebrow")}>
+          {metricItems.slice(0, 4).map((item) => (
+            <article className="impactStripItem" key={`impact-${item.title}`}>
+              <span className="metric-label">{item.label}</span>
+              <h2 className="impactStripTitle">{item.title}</h2>
+            </article>
+          ))}
         </section>
 
         <section className="section-block" id="about">
@@ -357,6 +388,21 @@ export default async function HomePage({ params }: HomePageProps) {
                 </ul>
               </article>
             ))}
+          </div>
+          <div className="credentialsBadgesBlock">
+            <span className="eyebrow">{t("certifications.eyebrow")}</span>
+            <Script
+              async
+              id="credly-embed-script"
+              src="https://cdn.credly.com/assets/utilities/embed.js"
+              strategy="afterInteractive"
+            />
+            <p className="section-copy">{t("certifications.description")}</p>
+            <div className="credlyGrid">
+              {uniqueCertificationItems.map((item) => (
+                <CredlyBadge badgeId={item.badgeId} key={item.badgeId} title={item.title} />
+              ))}
+            </div>
           </div>
         </section>
 

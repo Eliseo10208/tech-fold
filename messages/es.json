@@ -14,8 +14,7 @@
       "about": "Perfil",
       "work": "Proyectos",
       "experience": "Trayectoria",
-      "stack": "Stack",
-      "credentials": "Credenciales",
+      "outcomes": "Resultados",
       "contact": "Contacto",
       "cta": "Hablemos"
     },
@@ -24,6 +23,7 @@
       "description": "Combino FullStack + Data + AI para llevar productos de idea a producción con impacto medible. Trabajo con NestJS, Next.js, TypeScript, Python, Airflow, OpenAI y AWS.",
       "primaryCta": "Ver trabajo destacado",
       "secondaryCta": "Ver trayectoria",
+      "contactCta": "Ir a contacto",
       "sideTitle": "FullStack + Data + AI.",
       "sideDescription": "No solo desarrollo features: diseño sistemas donde backend, frontend, data y AI trabajan como una sola unidad, con arquitectura type-safe y foco operativo.",
       "badges": [
@@ -109,43 +109,45 @@
           "company": "Handbook",
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Actualidad",
-          "summary": "Producto de workflows que convierte procesos de negocio en tareas ejecutables donde personas y sistemas con IA colaboran, dan seguimiento y empujan trabajo operativo real.",
+          "externalLabel": "Ver handbookai.io",
+          "externalUrl": "https://www.handbookai.io/en",
+          "summary": "Construido para flujos de operaciones reales: procesos complejos con traspasos, seguimiento, evidencia y SLAs que Handbook convierte en ejecución guiada con dashboards en vivo y registro de auditoría.",
           "tags": ["LLM Systems", "Product Architecture", "Operations"],
           "detailItems": [
             {
               "label": "Problema",
-              "value": "Los equipos necesitan software que haga más que mostrar tareas. Debe entender procesos, enrutar trabajo y mantener trazabilidad entre personas e IA."
+              "value": "Muchas operaciones tienen handoffs, aprobaciones y evidencia dispersa; en la práctica se pierden pasos, tiempos SLA y visibilidad del estado real."
             },
             {
               "label": "Mi rol",
-              "value": "Trabajo sobre arquitectura de producto, LLM systems y diseño de interfaces que convierten flujos operativos complejos en software más accionable."
+              "value": "Como AI Full-Stack Engineer trabajo en Product Architecture & LLM Systems para modelar procesos y convertirlos en ejecución guiada por etapas, reglas, recordatorios y escalaciones."
             },
             {
               "label": "Por qué importa",
-              "value": "Es la pieza más fuerte del portafolio para demostrar product thinking, systems design, automatización real y software con IA más allá del chat demo."
+              "value": "Permite operar casos reales en manufactura, banca y seguros con trazabilidad completa: quién hizo qué, cuándo, y si cumplió los SLA."
             }
           ],
           "highlights": [
-            "Posiciona el perfil alrededor de systems work, AI automation y product engineering.",
-            "Muestra una mezcla fuerte de narrativa visual, trazabilidad y ejecución full stack.",
-            "Puede llevar tanto un walkthrough de producto como imágenes de dashboards, builders u orquestación."
+            "Procesos reales: compras, producción, cobranza, revisión documental y coordinación de siniestros.",
+            "Ejecución guiada con dashboards en vivo, evidencia operativa y auditoría end-to-end.",
+            "Métricas operativas claras: tiempo de ciclo, cumplimiento SLA, entregas a tiempo y tasa de reproceso."
           ],
           "media": [
             {
               "kind": "video",
-              "label": "Video principal",
-              "title": "Walkthrough del sistema operativo con IA",
-              "note": "Ideal para un demo narrado donde se vea el builder, tareas, seguimiento y coordinación entre humanos y agentes.",
+              "label": "Video",
+              "title": "Demo del producto",
+              "note": "Demo funcional del flujo principal.",
               "src": "https://pub-f16c4383be88435db8879fe20136da99.r2.dev/Video-Lanzamiento-Final.mp4",
               "poster": ""
             },
             {
-              "kind": "image",
-              "label": "Imagen de apoyo",
-              "title": "Vista del flujo, builder o dashboard",
-              "note": "Buen espacio para una captura clave cuando quieras reforzar estructura, trazabilidad o UX del producto.",
-              "src": "",
-              "alt": "Captura del flujo, builder o dashboard de Handbook"
+              "kind": "website",
+              "label": "Sitio web",
+              "title": "handbookai.io",
+              "note": "Plataforma de ejecución guiada para procesos complejos con handoffs, evidencia, SLAs y trazabilidad.",
+              "src": "https://www.handbookai.io/en",
+              "ctaLabel": "Abrir landing"
             }
           ]
         },
@@ -168,11 +170,11 @@
             },
             {
               "label": "Mi rol",
-              "value": "Diseñé y entregué la integración full stack entre frontend, backend y OpenAI API con patrones más resilientes y type-safe."
+              "value": "Diseñé e implementé integración full stack con Nest.js + Angular + OpenAI API, optimizando consumo de APIs y gestión de estado en Angular."
             },
             {
               "label": "Impacto",
-              "value": "El sistema automatizó el 40% de acciones de soporte y mejoró la eficiencia del frontend en un flujo ya conectado al negocio."
+              "value": "Automaticé 40% del soporte operativo, mejoré 20% la eficiencia del frontend y aumenté la resiliencia backend con manejo de errores robusto y arquitectura type-safe."
             }
           ],
           "highlights": [
@@ -182,20 +184,12 @@
           ],
           "media": [
             {
-              "kind": "video",
-              "label": "Video principal",
-              "title": "Flujo del módulo conversacional",
-              "note": "Pensado para una grabación corta donde se vea interacción, automatización y respuesta operativa dentro del producto.",
-              "src": "",
-              "poster": ""
-            },
-            {
-              "kind": "image",
-              "label": "Imagen de apoyo",
-              "title": "Vista del panel o estado de conversación",
-              "note": "Útil para documentar la UI, estados del flujo o evidencia visual cuando el video no cuente todo.",
-              "src": "",
-              "alt": "Captura del panel o estado de conversación en Nanti"
+              "kind": "website",
+              "label": "Sitio web",
+              "title": "nantisystem.com",
+              "note": "Telemática para transporte: gestión de flotas, sensores, GPS, SIM M2M y soporte técnico.",
+              "src": "https://nantisystem.com/quienes-somos/",
+              "ctaLabel": "Abrir landing"
             }
           ]
         },
@@ -208,8 +202,8 @@
           "role": "Full Stack & Data Engineer",
           "period": "Sep 2024 - Ene 2026",
           "externalLabel": "Ver agora2030.org",
-          "externalUrl": "https://agora2030.org",
-          "summary": "Servicios backend, DAGs críticos en Python/Airflow, integraciones de API y trabajo frontend con mejoras medibles en performance, SEO y confiabilidad.",
+          "externalUrl": "https://agora2030.org/about-us",
+          "summary": "Como Full Stack & Data Engineer construí servicios backend, pipelines ETL en Python/Airflow e iniciativas frontend con impacto medible en velocidad, estabilidad y crecimiento orgánico.",
           "tags": ["Python", "Airflow", "Analytics"],
           "detailItems": [
             {
@@ -218,11 +212,11 @@
             },
             {
               "label": "Mi rol",
-              "value": "Mantuve DAGs críticos, apoyé arquitectura backend con integraciones de API y contribuí a sistemas frontend más escalables."
+              "value": "Diseñé librería escalable en Next.js + Tailwind, reforcé arquitectura type-safe con TypeScript + Redux y mantuve pipelines analíticos críticos."
             },
             {
               "label": "Resultados",
-              "value": "Reduje 20% el tiempo de carga inicial, 25% los errores en producción y aumenté 15% el tráfico orgánico mientras fortalecía la base analítica del producto."
+              "value": "Reduje 20% la carga inicial, disminuí 25% errores en producción, aumenté 15% tráfico orgánico y aseguré disponibilidad analítica continua."
             }
           ],
           "highlights": [
@@ -232,20 +226,12 @@
           ],
           "media": [
             {
-              "kind": "image",
-              "label": "Imagen principal",
-              "title": "Pipeline, DAG o dashboard de analytics",
-              "note": "Aquí puedes colocar screenshots del pipeline, una arquitectura o alguna vista que represente el workflow.",
-              "src": "",
-              "alt": "Captura de pipeline, DAG o dashboard de analytics en Agora"
-            },
-            {
-              "kind": "image",
-              "label": "Imagen secundaria",
-              "title": "Vista de componente o interfaz relacionada",
-              "note": "Útil para enseñar que el trabajo no fue solo data, sino también producto e interfaz.",
-              "src": "",
-              "alt": "Captura de interfaz relacionada al sistema de Agora"
+              "kind": "website",
+              "label": "Sitio web",
+              "title": "agora2030.org",
+              "note": "Organización enfocada en impacto social y escalamiento de soluciones con base en datos y producto digital.",
+              "src": "https://agora2030.org/about-us",
+              "ctaLabel": "Abrir landing"
             }
           ]
         },
@@ -254,10 +240,10 @@
           "navLabel": "Voting",
           "navHint": "seguridad / identidad",
           "title": "Sistema seguro de votación digital",
-          "company": "Asociación Mexicana de Genética Humana",
-          "role": "Full Stack Developer",
-          "period": "Proyecto especial",
-          "summary": "Plataforma de votación digital con autenticación reforzada, validación de identidad y controles antifraude para un proceso sensible.",
+          "company": "Black Horse Technologies",
+          "role": "Software Engineer · Freelance / Contract",
+          "period": "Sep 2025 - Dic 2025",
+          "summary": "Sistema de votación digital desarrollado en Black Horse Technologies para la Asociación Mexicana de Genética Humana, con autenticación reforzada, validación de identidad y controles antifraude.",
           "tags": ["Security", "Identity", "PHP"],
           "detailItems": [
             {
@@ -302,42 +288,42 @@
     "experience": {
       "eyebrow": "Trayectoria",
       "title": "Experiencia real entre AI systems, data pipelines y software de producto.",
-      "description": "Actualizada con la versión de perfil exportada desde LinkedIn el 20 de abril de 2026, para que la landing refleje tu trayectoria actual y no una aproximación vieja.",
+      "description": "Experiencia profesional en roles de producto, backend, data e IA con foco en ejecución y resultados medibles.",
       "items": [
         {
           "company": "Handbook",
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Actualidad",
-          "location": "San Francisco, California, Estados Unidos",
-          "summary": "Product Architecture & LLM Systems para software que modela, da seguimiento y automatiza workflows operativos complejos."
-        },
-        {
-          "company": "Agora Partnerships",
-          "role": "Full Stack & Data Engineer",
-          "period": "Sep 2024 - Ene 2026",
-          "location": "Remoto",
-          "summary": "Construcción de servicios backend, mantenimiento de DAGs críticos en Airflow y mejoras frontend con impacto medible en performance, SEO y confiabilidad."
+          "location": "San Francisco, California, Estados Unidos · Híbrido",
+          "summary": "Product Architecture & LLM Systems para convertir procesos complejos en ejecución guiada con handoffs, seguimiento, evidencia y SLAs."
         },
         {
           "company": "Black Horse Technologies",
           "role": "Software Engineer · Freelance / Contract",
           "period": "Sep 2025 - Dic 2025",
-          "location": "Nueva York, Estados Unidos",
-          "summary": "Colaboración freelance de corta duración enfocada en entrega de producto e implementación de software a medida."
+          "location": "Área metropolitana de Tuxtla Gutiérrez · Presencial",
+          "summary": "Diseñé y desarrollé un sistema de votación digital para la Asociación Mexicana de Genética Humana con 2FA, validación de identidad (cámara + INE), controles antifraude, PHP y despliegue en cPanel."
+        },
+        {
+          "company": "Agora Partnerships",
+          "role": "Full Stack & Data Engineer",
+          "period": "Sep 2024 - Ene 2026",
+          "location": "Nueva York, Estados Unidos · En remoto",
+          "summary": "Reduje 20% carga inicial con librería en Next.js + Tailwind, disminuí 25% errores en producción con arquitectura type-safe (TypeScript + Redux), incrementé 15% tráfico orgánico y aseguré analytics con ETL en Python + Airflow."
         },
         {
           "company": "Nanti System",
           "role": "Full Stack AI Engineer",
           "period": "Feb 2023 - Sep 2024",
-          "location": "Ciudad de México, México",
-          "summary": "Diseño e implementación de un sistema conversacional con OpenAI integrado en Nest.js y Angular, automatizando 40% del soporte y mejorando la eficiencia del frontend."
+          "location": "Ciudad de México, México · En remoto",
+          "summary": "Automaticé 40% del soporte operativo con un sistema conversacional (OpenAI + Nest.js + Angular), mejoré 20% la eficiencia del frontend y aumenté resiliencia backend con manejo de errores robusto y arquitectura type-safe."
         },
         {
           "company": "M&T Studio / Zona Sana",
           "role": "Full Stack Web Developer · Freelance",
           "period": "Abr 2023 - Ago 2023",
-          "location": "Tuxtla Gutiérrez, Chiapas, México",
-          "summary": "Módulos en Next.js y APIs con Node.js/Express para e-commerce farmacéutico, reduciendo 12% el abandono en formularios y soportando 1000+ solicitudes diarias."
+          "location": "Tuxtla Gutiérrez, Chiapas, México · Híbrido",
+          "summary": "Reduje 12% el abandono en formularios complejos con módulos en Next.js, implementé API escalable en Node.js para 1000+ requests diarios y documenté procesos técnicos para facilitar mantenimiento y escalabilidad."
         }
       ]
     },
@@ -366,7 +352,7 @@
     "outcomes": {
       "eyebrow": "Resultados",
       "title": "Impacto comprobado en soporte, estabilidad, performance y conversión.",
-      "description": "El perfil exportado desde LinkedIn y el resto de tu historial convergen en la misma señal: automatización real, menos errores, más velocidad y mejores resultados de producto."
+      "description": "Resultados medibles en automatización, estabilidad, rendimiento y crecimiento de producto."
     },
     "metrics": {
       "items": [
@@ -419,7 +405,7 @@
     "credentials": {
       "eyebrow": "Credenciales",
       "title": "Formación, certificaciones e idiomas que respaldan la ejecución.",
-      "description": "Este bloque resume la parte más curricular del perfil actual para que el portafolio no se quede solo en narrativa y proyectos.",
+      "description": "Formación y certificaciones relevantes para roles de producto, backend y sistemas con IA.",
       "items": [
         {
           "title": "Educación",
@@ -447,6 +433,49 @@
             "Inglés intermedio B1, cerca de B2",
             "Abierto a roles remotos y equipos internacionales"
           ]
+        }
+      ]
+    },
+    "certifications": {
+      "eyebrow": "Badges verificados",
+      "title": "Prueba de Credly embebida",
+      "description": "Insignias oficiales verificables en Credly.",
+      "items": [
+        {
+          "badgeId": "3431ddd3-2f89-4c29-8da1-b87aecab4f91",
+          "title": "AWS Academy Graduate - Cloud Architecting"
+        },
+        {
+          "badgeId": "a7f0e3c4-0d4f-4de2-9086-051451770696",
+          "title": "AWS Academy Graduate - Cloud Foundations"
+        },
+        {
+          "badgeId": "1f15a48f-cfbd-4f4a-bdbf-568d23e5072a",
+          "title": "AWS Academy Graduate - Cloud Security Foundations"
+        },
+        {
+          "badgeId": "e5592310-e825-409c-9c68-8bec8a717acf",
+          "title": "AWS Academy Graduate - Introduction to Cloud Semester 1"
+        },
+        {
+          "badgeId": "0483b6e5-29bc-4a0e-92bd-fff253a84905",
+          "title": "Introduction to Cybersecurity"
+        },
+        {
+          "badgeId": "15430e0f-ff7c-46db-b5fa-a83a6ad64bbc",
+          "title": "Network Addressing and Basic Troubleshooting"
+        },
+        {
+          "badgeId": "e0cda529-3cf2-45dc-8dc7-abfbff22181e",
+          "title": "Networking Basics"
+        },
+        {
+          "badgeId": "60aa6119-38a9-44c7-b697-5163e53055aa",
+          "title": "Network Support and Security"
+        },
+        {
+          "badgeId": "1bb59de2-0511-44c4-9928-7bccadec909c",
+          "title": "Operating Systems Basics"
         }
       ]
     },
@@ -488,7 +517,7 @@
     },
     "footer": {
       "availability": "Disponible para roles remotos como AI Full Stack Engineer, AI Systems Engineer y Data + AI Engineer.",
-      "note": "Perfil actualizado a partir de tu export de LinkedIn del 20 de abril de 2026 y alineado con oportunidades de startup, product engineering y automatización."
+      "note": "Disponible para colaborar en producto, arquitectura y automatización con IA."
     }
   }
 }

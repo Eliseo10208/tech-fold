@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 160" role="img" aria-labelledby="catPeekTitle catPeekDesc">
+  <title id="catPeekTitle">Gato asomandose</title>
+  <desc id="catPeekDesc">Icono monocromatico de una cara de gato asomandose</desc>
+  <g fill="#091321">
+    <path d="M34 100c0-40 31-68 72-68 9 0 18 2 25 5 8-3 16-5 25-5 41 0 72 28 72 68v9H34z"/>
+    <path d="M73 51l24 20H62z"/>
+    <path d="M183 51l11 20h-35z"/>
+    <ellipse cx="98" cy="96" rx="14" ry="12"/>
+    <ellipse cx="158" cy="96" rx="14" ry="12"/>
+    <ellipse cx="102" cy="96" rx="5" ry="7" fill="#f5fbff"/>
+    <ellipse cx="162" cy="96" rx="5" ry="7" fill="#f5fbff"/>
+    <path d="M124 112c2-2 7-2 9 0l-4 6z"/>
+    <path d="M123 119c-8 2-14 6-18 13" fill="none" stroke="#091321" stroke-linecap="round" stroke-width="4"/>
+    <path d="M133 119c8 2 14 6 18 13" fill="none" stroke="#091321" stroke-linecap="round" stroke-width="4"/>
+    <path d="M25 101h44" fill="none" stroke="#091321" stroke-linecap="round" stroke-width="3"/>
+    <path d="M29 93h35" fill="none" stroke="#091321" stroke-linecap="round" stroke-width="3"/>
+    <path d="M32 110h33" fill="none" stroke="#091321" stroke-linecap="round" stroke-width="3"/>
+    <path d="M231 101h-44" fill="none" stroke="#091321" stroke-linecap="round" stroke-width="3"/>
+    <path d="M227 93h-35" fill="none" stroke="#091321" stroke-linecap="round" stroke-width="3"/>
+    <path d="M224 110h-33" fill="none" stroke="#091321" stroke-linecap="round" stroke-width="3"/>
+    <path d="M0 128h256v5H0z"/>
+  </g>
+</svg>

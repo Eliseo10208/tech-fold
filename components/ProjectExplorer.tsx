@@ -1,6 +1,7 @@
 "use client";
 
 import type { ProjectItem } from "@/types/portfolio";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { WorkMediaFrame } from "./WorkMediaFrame";
@@ -26,7 +27,15 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
   const projectHighlights = Array.isArray(activeProject.highlights)
     ? activeProject.highlights
     : [];
-  const projectMedia = Array.isArray(activeProject.media) ? activeProject.media : [];
+  const projectMedia = Array.isArray(activeProject.media)
+    ? activeProject.media.filter((mediaItem) => {
+        if (!mediaItem.src || mediaItem.src.trim().length === 0) {
+          return false;
+        }
+
+        return true;
+      })
+    : [];
   const activeProjectMedia =
     projectMedia.length > 0
       ? projectMedia
@@ -59,8 +68,16 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
     selectProject(nextProjectIndex);
   }
 
+  const projectIconBySlug: Record<string, { src: string; alt: string }> = {
+    handbook: { src: "/icons/handbook-icon.png", alt: "Logo Handbook" },
+    nanti: { src: "/icons/nanti-icon.png", alt: "Logo Nanti System" },
+    agora: { src: "/icons/agora-icon.png", alt: "Logo Agora Partnerships" },
+    voting: { src: "/icons/voting-icon.svg", alt: "Icono de seguridad de votacion" },
+  };
+
   const projectTabs = projectItems.map((projectItem, projectIndex) => {
     const isActive = projectIndex === activeProjectIndex;
+    const icon = projectIconBySlug[projectItem.slug];
 
     return (
       <button
@@ -76,7 +93,20 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
         tabIndex={isActive ? 0 : -1}
         type="button"
       >
-        <span className="projectTabLabel">{projectItem.navLabel}</span>
+        <span className="projectTabHeader">
+          {icon ? (
+            <span className="projectTabIconWrap" aria-hidden="true">
+              <Image
+                alt={icon.alt}
+                className="projectTabIcon"
+                fill
+                sizes="40px"
+                src={icon.src}
+              />
+            </span>
+          ) : null}
+          <span className="projectTabLabel">{projectItem.navLabel}</span>
+        </span>
         <span className="projectTabHint">{projectItem.navHint}</span>
       </button>
     );
@@ -179,17 +209,11 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
           <div className="projectMetaGrid">{projectMetaItems}</div>
         </section>
 
-        <section className="projectBoardCard projectBoardGalleryCard">
+        <section className="projectBoardCard projectBoardDetailsCard projectHighlightsBlock">
           <div aria-label={t("mediaRailLabel")} className="projectMediaRail">
             {projectMediaItems}
           </div>
-        </section>
-
-        <section className="projectBoardCard projectBoardDetailsCard">
           <div className="projectDetailGrid">{projectDetailItems}</div>
-        </section>
-
-        <section className="projectBoardCard projectBoardHighlightsCard projectHighlightsBlock">
           <span className="metric-label">{t("highlightsLabel")}</span>
           <ul className="projectHighlightList">{projectHighlightItems}</ul>
         </section>

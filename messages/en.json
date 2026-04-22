@@ -14,8 +14,7 @@
       "about": "Profile",
       "work": "Projects",
       "experience": "Track record",
-      "stack": "Stack",
-      "credentials": "Credentials",
+      "outcomes": "Outcomes",
       "contact": "Contact",
       "cta": "Let's talk"
     },
@@ -24,6 +23,7 @@
       "description": "I combine FullStack + Data + AI to take products from idea to production with measurable impact. I work with NestJS, Next.js, TypeScript, Python, Airflow, OpenAI and AWS.",
       "primaryCta": "View featured work",
       "secondaryCta": "See track record",
+      "contactCta": "Jump to contact",
       "sideTitle": "FullStack + Data + AI.",
       "sideDescription": "I do not just ship features: I design systems where backend, frontend, data and AI work as one unit, with type-safe architecture and operational focus.",
       "badges": [
@@ -109,43 +109,45 @@
           "company": "Handbook",
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Present",
-          "summary": "A workflow product that turns business processes into executable tasks where people and AI systems can collaborate, track progress and move operational work forward.",
+          "externalLabel": "Visit handbookai.io",
+          "externalUrl": "https://www.handbookai.io/en",
+          "summary": "Built for real operational workflows: complex processes with handoffs, follow-ups, evidence and SLAs that Handbook turns into guided execution with live dashboards and audit trails.",
           "tags": ["LLM Systems", "Product Architecture", "Operations"],
           "detailItems": [
             {
               "label": "Problem",
-              "value": "Teams need software that does more than display tasks. It must understand processes, route work and maintain traceability across people and AI."
+              "value": "Many operations rely on fragmented handoffs, approvals and evidence collection, which creates missed steps, SLA risk and poor visibility."
             },
             {
               "label": "My role",
-              "value": "I work across product architecture, LLM systems and interface design that turns complex operational flows into more actionable software."
+              "value": "As an AI Full-Stack Engineer, I work across Product Architecture & LLM Systems to model processes and turn them into guided execution with rules, reminders and escalation paths."
             },
             {
               "label": "Why it matters",
-              "value": "This is the strongest portfolio piece for product thinking, systems design, real automation and AI software beyond chat demos."
+              "value": "It demonstrates AI applied to real operations in manufacturing, banking and insurance with SLA visibility and complete auditability."
             }
           ],
           "highlights": [
-            "Positions the profile around systems work, AI automation and product engineering.",
-            "Shows a strong mix of visual storytelling, traceability and full-stack execution.",
-            "Can carry both a product walkthrough and still images from dashboards, builders or orchestration views."
+            "Real workflows: procurement, production, collections, document review and claims coordination.",
+            "Guided execution with live dashboards, evidence capture and end-to-end audit trails.",
+            "Operational metrics: cycle time, SLA compliance, on-time outcomes and rework reduction."
           ],
           "media": [
             {
               "kind": "video",
-              "label": "Primary video",
-              "title": "Walkthrough of the AI operating system",
-              "note": "Ideal for a narrated demo showing the builder, tasks, follow-up and coordination between humans and agents.",
-              "src": "",
+              "label": "Video",
+              "title": "Product demo",
+              "note": "Functional demo of the main flow.",
+              "src": "https://pub-f16c4383be88435db8879fe20136da99.r2.dev/Video-Lanzamiento-Final.mp4",
               "poster": ""
             },
             {
-              "kind": "image",
-              "label": "Supporting image",
-              "title": "Flow, builder or dashboard still",
-              "note": "A strong slot for a key screenshot when you want to reinforce structure, traceability or product UX.",
-              "src": "",
-              "alt": "Screenshot of the Handbook flow, builder or dashboard"
+              "kind": "website",
+              "label": "Website",
+              "title": "handbookai.io",
+              "note": "Guided execution platform for complex processes with handoffs, evidence, SLAs and audit trails.",
+              "src": "https://www.handbookai.io/en",
+              "ctaLabel": "Open landing"
             }
           ]
         },
@@ -168,11 +170,11 @@
             },
             {
               "label": "My role",
-              "value": "I designed and shipped the full-stack integration across frontend, backend and the OpenAI API using more resilient, type-safe patterns."
+              "value": "I designed and implemented the full-stack integration across Nest.js, Angular and OpenAI API, improving API consumption and frontend state management."
             },
             {
               "label": "Impact",
-              "value": "The system automated 40% of support actions and improved frontend efficiency inside a workflow already tied to the business."
+              "value": "I automated 40% of support operations, improved frontend efficiency by 20% and increased backend resilience with robust error handling and type-safe architecture."
             }
           ],
           "highlights": [
@@ -182,20 +184,12 @@
           ],
           "media": [
             {
-              "kind": "video",
-              "label": "Primary video",
-              "title": "Conversational module flow",
-              "note": "Designed for a short recording that shows interaction, automation behavior and operational response inside the product.",
-              "src": "",
-              "poster": ""
-            },
-            {
-              "kind": "image",
-              "label": "Supporting image",
-              "title": "Panel or conversation state",
-              "note": "Useful for documenting the UI, flow states or visual evidence when the video does not tell the whole story.",
-              "src": "",
-              "alt": "Screenshot of the panel or conversation state in Nanti"
+              "kind": "website",
+              "label": "Website",
+              "title": "nantisystem.com",
+              "note": "Transport telematics company: fleet management, sensors, GPS, SIM M2M and technical support.",
+              "src": "https://nantisystem.com/quienes-somos/",
+              "ctaLabel": "Open landing"
             }
           ]
         },
@@ -208,8 +202,8 @@
           "role": "Full Stack & Data Engineer",
           "period": "Sep 2024 - Jan 2026",
           "externalLabel": "View agora2030.org",
-          "externalUrl": "https://agora2030.org",
-          "summary": "Backend services, critical Python/Airflow DAGs, API integrations and frontend work with measurable gains in performance, SEO and reliability.",
+          "externalUrl": "https://agora2030.org/about-us",
+          "summary": "As a Full Stack & Data Engineer I delivered backend services, Python/Airflow ETL pipelines and frontend initiatives with measurable impact on speed, reliability and organic growth.",
           "tags": ["Python", "Airflow", "Analytics"],
           "detailItems": [
             {
@@ -218,11 +212,11 @@
             },
             {
               "label": "My role",
-              "value": "I maintained critical DAGs, supported backend architecture with API integrations and contributed to more scalable frontend systems."
+              "value": "I designed a scalable Next.js + Tailwind component library, strengthened type-safe architecture with TypeScript + Redux, and maintained critical analytics pipelines."
             },
             {
               "label": "Results",
-              "value": "I reduced initial load time by 20%, cut production errors by 25% and increased organic traffic by 15% while strengthening the product's analytics foundation."
+              "value": "I reduced initial load time by 20%, cut production errors by 25%, increased organic traffic by 15% and ensured continuous analytics data availability."
             }
           ],
           "highlights": [
@@ -232,20 +226,12 @@
           ],
           "media": [
             {
-              "kind": "image",
-              "label": "Primary image",
-              "title": "Pipeline, DAG or analytics dashboard",
-              "note": "Use this slot for screenshots of the pipeline, a system architecture or any view that represents the workflow.",
-              "src": "",
-              "alt": "Screenshot of a pipeline, DAG or analytics dashboard at Agora"
-            },
-            {
-              "kind": "image",
-              "label": "Secondary image",
-              "title": "Related component or interface view",
-              "note": "Helpful for showing that the work was not only data-focused, but also connected to product and interface systems.",
-              "src": "",
-              "alt": "Screenshot of a related interface connected to the Agora system"
+              "kind": "website",
+              "label": "Website",
+              "title": "agora2030.org",
+              "note": "Impact-focused organization supported by data-informed programs and digital product execution.",
+              "src": "https://agora2030.org/about-us",
+              "ctaLabel": "Open landing"
             }
           ]
         },
@@ -254,10 +240,10 @@
           "navLabel": "Voting",
           "navHint": "Security / identity",
           "title": "Secure Digital Voting System",
-          "company": "Mexican Association of Human Genetics",
-          "role": "Full Stack Developer",
-          "period": "Special project",
-          "summary": "A digital voting platform with stronger authentication, identity validation and anti-fraud controls for a sensitive process.",
+          "company": "Black Horse Technologies",
+          "role": "Software Engineer · Freelance / Contract",
+          "period": "Sep 2025 - Dec 2025",
+          "summary": "A digital voting platform built at Black Horse Technologies for the Mexican Association of Human Genetics, with stronger authentication, identity validation and anti-fraud controls.",
           "tags": ["Security", "Identity", "PHP"],
           "detailItems": [
             {
@@ -302,49 +288,49 @@
     "experience": {
       "eyebrow": "Track record",
       "title": "Real experience across AI systems, data pipelines and product software.",
-      "description": "Updated against the LinkedIn profile export generated on April 20, 2026, so the landing reflects the current trajectory instead of an older approximation.",
+      "description": "Professional experience across product, backend, data and AI roles with a strong execution focus.",
       "items": [
         {
           "company": "Handbook",
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Present",
-          "location": "San Francisco, California, United States",
-          "summary": "Product Architecture & LLM Systems for software that models, tracks and automates complex operational workflows."
-        },
-        {
-          "company": "Agora Partnerships",
-          "role": "Full Stack & Data Engineer",
-          "period": "Sep 2024 - Jan 2026",
-          "location": "Remote",
-          "summary": "Built backend services, maintained critical Airflow DAGs and shipped frontend improvements with measurable gains in performance, SEO and reliability."
+          "location": "San Francisco, California, United States · Hybrid",
+          "summary": "Product Architecture & LLM Systems to turn complex processes into guided execution with handoffs, follow-ups, evidence and SLA controls."
         },
         {
           "company": "Black Horse Technologies",
           "role": "Software Engineer · Freelance / Contract",
           "period": "Sep 2025 - Dec 2025",
-          "location": "New York, United States",
-          "summary": "Short-term freelance collaboration focused on product delivery and custom software implementation."
+          "location": "Greater Tuxtla Gutierrez Area · On-site",
+          "summary": "Designed and built a digital voting system for the Mexican Association of Human Genetics with 2FA, identity validation (camera + voter ID), anti-fraud controls, PHP implementation and cPanel deployment."
+        },
+        {
+          "company": "Agora Partnerships",
+          "role": "Full Stack & Data Engineer",
+          "period": "Sep 2024 - Jan 2026",
+          "location": "New York, United States · Remote",
+          "summary": "Reduced initial load time by 20% with a scalable Next.js + Tailwind library, cut production errors by 25% with type-safe architecture (TypeScript + Redux), increased organic traffic by 15%, and ensured analytics reliability with Python + Airflow ETL."
         },
         {
           "company": "Nanti System",
           "role": "Full Stack AI Engineer",
           "period": "Feb 2023 - Sep 2024",
-          "location": "Mexico City, Mexico",
-          "summary": "Designed and implemented a conversational system with OpenAI, Nest.js and Angular, automating 40% of support operations and improving frontend efficiency."
+          "location": "Mexico City, Mexico · Remote",
+          "summary": "Automated 40% of operational support with a conversational system (OpenAI + Nest.js + Angular), improved frontend efficiency by 20%, and increased backend resilience through robust error handling and type-safe patterns."
         },
         {
           "company": "M&T Studio / Zona Sana",
           "role": "Full Stack Web Developer · Freelance",
           "period": "Apr 2023 - Aug 2023",
-          "location": "Tuxtla Gutierrez, Chiapas, Mexico",
-          "summary": "Delivered Next.js modules and Node.js/Express APIs for a pharmacy e-commerce flow, reducing form abandonment by 12% and handling 1000+ daily requests."
+          "location": "Tuxtla Gutierrez, Chiapas, Mexico · Hybrid",
+          "summary": "Reduced complex form abandonment by 12% with optimized Next.js modules, implemented a scalable Node.js API handling 1000+ daily requests, and documented technical processes to improve maintainability and scalability."
         }
       ]
     },
     "process": {
       "eyebrow": "How I work",
       "title": "From the real operational bottleneck to a system that can hold in production.",
-      "description": "The workflow reflected in the actual profile: identify the operational problem, design a system instead of an isolated feature and measure impact with concrete outcomes.",
+      "description": "Identify the operational bottleneck, design a resilient system, and ship with measurable outcomes.",
       "items": [
         {
           "step": "01",
@@ -366,7 +352,7 @@
     "outcomes": {
       "eyebrow": "Outcomes",
       "title": "Proven impact in support, stability, performance and conversion.",
-      "description": "The exported profile and the rest of your work history converge on the same signal: real automation, fewer errors, faster product delivery and stronger business outcomes."
+      "description": "Measured impact in automation, reliability, performance and product growth."
     },
     "metrics": {
       "items": [
@@ -419,7 +405,7 @@
     "credentials": {
       "eyebrow": "Credentials",
       "title": "Education, certifications and languages behind the execution.",
-      "description": "This section captures the more curricular side of the current profile so the portfolio does not rely on narrative and projects alone.",
+      "description": "Relevant education and certifications for product, backend and AI systems roles.",
       "items": [
         {
           "title": "Education",
@@ -447,6 +433,49 @@
             "Intermediate English B1, close to B2",
             "Open to remote roles and international teams"
           ]
+        }
+      ]
+    },
+    "certifications": {
+      "eyebrow": "Verified badges",
+      "title": "Embedded Credly test",
+      "description": "Official badges verifiable on Credly.",
+      "items": [
+        {
+          "badgeId": "3431ddd3-2f89-4c29-8da1-b87aecab4f91",
+          "title": "AWS Academy Graduate - Cloud Architecting"
+        },
+        {
+          "badgeId": "a7f0e3c4-0d4f-4de2-9086-051451770696",
+          "title": "AWS Academy Graduate - Cloud Foundations"
+        },
+        {
+          "badgeId": "1f15a48f-cfbd-4f4a-bdbf-568d23e5072a",
+          "title": "AWS Academy Graduate - Cloud Security Foundations"
+        },
+        {
+          "badgeId": "e5592310-e825-409c-9c68-8bec8a717acf",
+          "title": "AWS Academy Graduate - Introduction to Cloud Semester 1"
+        },
+        {
+          "badgeId": "0483b6e5-29bc-4a0e-92bd-fff253a84905",
+          "title": "Introduction to Cybersecurity"
+        },
+        {
+          "badgeId": "15430e0f-ff7c-46db-b5fa-a83a6ad64bbc",
+          "title": "Network Addressing and Basic Troubleshooting"
+        },
+        {
+          "badgeId": "e0cda529-3cf2-45dc-8dc7-abfbff22181e",
+          "title": "Networking Basics"
+        },
+        {
+          "badgeId": "60aa6119-38a9-44c7-b697-5163e53055aa",
+          "title": "Network Support and Security"
+        },
+        {
+          "badgeId": "1bb59de2-0511-44c4-9928-7bccadec909c",
+          "title": "Operating Systems Basics"
         }
       ]
     },
@@ -488,7 +517,7 @@
     },
     "footer": {
       "availability": "Open to remote roles as an AI Full Stack Engineer, AI Systems Engineer or Data + AI Engineer.",
-      "note": "Profile updated from your LinkedIn export generated on April 20, 2026 and aligned with startup, product engineering and automation-focused opportunities."
+      "note": "Available to collaborate on product, architecture and AI automation."
     }
   }
 }
