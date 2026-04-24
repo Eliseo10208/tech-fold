@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
         hostname: "icon.icepanel.io",
         pathname: "/Technology/svg/**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.simpleicons.org",
+        pathname: "/**",
+      },
     ],
   },
 };

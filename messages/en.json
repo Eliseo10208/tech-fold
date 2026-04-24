@@ -380,25 +380,59 @@
     },
     "stack": {
       "eyebrow": "Execution stack",
-      "title": "Comfortable across interface, services, AI and delivery.",
-      "description": "The stack matters because it supports the positioning: polished product work on the frontend, reliable backend architecture and pragmatic AI and data integration.",
+      "title": "Technologies used, grouped like a technical CV.",
+      "description": "Stack organized by key capability areas for AI Full Stack Engineer roles.",
       "groupLabel": "Capability",
       "items": [
         {
+          "title": "Programming languages",
+          "items": ["TypeScript", "JavaScript", "Python", "Kotlin"]
+        },
+        {
           "title": "Frontend",
-          "items": ["React.js", "Next.js", "Angular", "Tailwind CSS", "Redux", "Zustand", "SSR / SSG"]
+          "items": ["React", "Next.js", "Angular", "Vite", "HTML5", "CSS3", "Tailwind CSS", "Redux"]
         },
         {
-          "title": "Backend and architecture",
-          "items": ["TypeScript", "Node.js", "Nest.js", "Express.js", "APIs", "Microservices", "WebSockets", "Clean architecture"]
+          "title": "Backend and APIs",
+          "items": ["Node.js", "APIs REST", "API design", "Hexagonal architecture", "Domain-Driven Design (DDD)"]
         },
         {
-          "title": "AI and data",
-          "items": ["OpenAI API", "Conversational automation", "Python", "ETL", "Apache Airflow", "Analytics pipelines"]
+          "title": "Databases",
+          "items": ["MongoDB", "MySQL", "PostgreSQL", "MariaDB"]
         },
         {
-          "title": "Cloud and delivery",
-          "items": ["AWS", "Docker", "GitHub", "GitLab", "CI/CD", "MySQL", "MariaDB", "MongoDB"]
+          "title": "Artificial Intelligence / ML",
+          "items": [
+            "OpenAI API",
+            "Claude API",
+            "Convolutional neural networks (CNN)",
+            "Image processing",
+            "Machine learning model API integration"
+          ]
+        },
+        {
+          "title": "Mobile",
+          "items": ["Flutter", "Kotlin (Android)"]
+        },
+        {
+          "title": "Tools and DevOps",
+          "items": [
+            "Git",
+            "GitHub",
+            "GitLab",
+            "AWS",
+            "Docker",
+            "Vercel",
+            "CI/CD",
+            "Linux",
+            "npm / package json",
+            "Basic CLI",
+            "Layered separation (controllers, services, domain)"
+          ]
+        },
+        {
+          "title": "Improvement areas (in progress)",
+          "items": ["Testing (basic)", "Technical documentation"]
         }
       ]
     },

@@ -33,6 +33,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-offset);
 }
 
 body {
@@ -70,8 +71,9 @@ button {
 }
 
 .oceanDecor {
-  position: absolute;
+  position: fixed;
   inset: 0;
+  z-index: 0;
   overflow: hidden;
   pointer-events: none;
 }
@@ -114,6 +116,8 @@ button {
 }
 
 .site-shell {
+  position: relative;
+  z-index: 1;
   width: min(calc(100% - 2rem), var(--container-width));
   margin: 0 auto;
 }
@@ -174,6 +178,99 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.15rem;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.mobileNavToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  justify-content: center;
+  min-height: 2.7rem;
+  padding: 0.56rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  color: var(--color-text);
+  background: linear-gradient(180deg, #ffffff, #f3f7fb);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  font-family: var(--font-mono-base), monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
+}
+
+.mobileNavToggle::-webkit-details-marker {
+  display: none;
+}
+
+.mobileNavToggleText {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mobileNavHamburger {
+  display: inline-grid;
+  gap: 0.2rem;
+}
+
+.mobileNavHamburger span {
+  width: 0.95rem;
+  height: 0.1rem;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.mobileNavPanel {
+  display: grid;
+  gap: 0.42rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.9rem;
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+  box-shadow: 0 14px 30px rgba(10, 25, 49, 0.12);
+}
+
+.mobileNavLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: calc(var(--radius-small) - 0.1rem);
+  color: var(--color-text);
+  font-family: var(--font-mono-base), monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+.mobileNavLinkCta {
+  color: var(--color-text-inverse);
+  background: var(--color-accent);
+}
+
+.mobileNavLink:not(.mobileNavLinkCta) {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.mobileNavLocaleWrap {
+  display: grid;
+  justify-content: start;
+  padding: 0.1rem 0.05rem 0.45rem;
+  border-bottom: 1px solid rgba(10, 25, 49, 0.08);
+  margin-bottom: 0.2rem;
+}
+
+.mobileNavBackdrop {
+  display: none;
 }
 
 .header-link {
@@ -244,7 +341,9 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(19rem, 0.8fr);
   gap: 1rem;
-  padding: 2.5rem 0 0;
+  padding: 1.25rem 0 0;
+  min-height: auto;
+  align-content: start;
 }
 
 .heroMainCard,
@@ -479,7 +578,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.8rem;
-  padding-top: 1rem;
+  padding-top: 0.35rem;
 }
 
 .impactStripItem {
@@ -505,7 +604,8 @@ button {
 }
 
 .section-block {
-  padding-top: var(--section-gap);
+  padding-top: clamp(1.4rem, 2.6vw, 2.2rem);
+  min-height: auto;
 }
 
 .section-intro {
@@ -513,7 +613,7 @@ button {
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 1.5rem 2rem;
   align-items: end;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
 }
 
 .section-title {
@@ -1377,13 +1477,13 @@ button {
 
 @media (max-width: 1080px) {
   .site-header {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 0.9rem 0;
+    grid-template-columns: auto 1fr auto;
+    justify-items: stretch;
+    padding: 0;
   }
 
   .header-actions {
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .heroSection,
@@ -1396,6 +1496,17 @@ button {
 
   .projectTabRail {
     position: static;
+    display: flex;
+    overflow-x: auto;
+    gap: 0.6rem;
+    padding-bottom: 0.35rem;
+    scroll-snap-type: x proximity;
+  }
+
+  .projectTabButton {
+    flex: 0 0 auto;
+    min-width: 15.5rem;
+    scroll-snap-align: start;
   }
 
   .heroMainCard {
@@ -1420,6 +1531,136 @@ button {
   }
 }
 
+@media (max-width: 900px) {
+  .site-header {
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
+    min-height: 4.2rem;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .mobileNav {
+    display: block;
+    position: relative;
+    justify-self: end;
+  }
+
+  .mobileNavPanel {
+    position: fixed;
+    top: 4.35rem;
+    left: 1rem;
+    right: 1rem;
+    max-height: calc(100svh - 6rem);
+    overflow-y: auto;
+    z-index: 45;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.85rem;
+    border: 1px solid rgba(10, 25, 49, 0.12);
+    background: #ffffff;
+    box-shadow: 0 12px 28px rgba(10, 25, 49, 0.16);
+  }
+
+  .mobileNavBackdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: rgba(10, 25, 49, 0.28);
+  }
+
+  .header-actions {
+    justify-content: flex-end;
+    width: auto;
+    gap: 0.45rem;
+    align-items: center;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .header-actions > .locale-switcher {
+    display: none;
+  }
+
+  .mobileNavLocaleWrap .locale-switcher {
+    display: inline-flex;
+  }
+
+  .locale-switcher {
+    order: 1;
+  }
+
+  .mobileNav {
+    order: 2;
+  }
+
+  .mobileNavOpen .mobileNavToggle {
+    color: var(--color-text-inverse);
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+  }
+
+  .mobileNavToggle {
+    min-height: 2.6rem;
+    width: auto;
+    padding: 0.52rem 0.72rem;
+    border-radius: 0.75rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+  }
+
+  .mobileNavHamburger {
+    gap: 0.18rem;
+  }
+
+  .mobileNavHamburger span {
+    width: 1.05rem;
+    transition: transform 180ms ease, opacity 180ms ease;
+  }
+
+  .mobileNavOpen .mobileNavHamburger span:nth-child(1) {
+    transform: translateY(0.3rem) rotate(45deg);
+  }
+
+  .mobileNavOpen .mobileNavHamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobileNavOpen .mobileNavHamburger span:nth-child(3) {
+    transform: translateY(-0.3rem) rotate(-45deg);
+  }
+
+  .mobileNavLink {
+    min-height: 2.9rem;
+    border-radius: 0.65rem;
+    border-color: rgba(10, 25, 49, 0.08);
+    background: #f8fbff;
+    font-size: 0.76rem;
+  }
+
+  .mobileNavLinkCta {
+    color: var(--color-text-inverse);
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+  }
+
+  .mobileNavLinkCta {
+    justify-content: center;
+    margin-top: 0.15rem;
+  }
+
+  .mobileNavLocaleWrap {
+    justify-content: flex-start;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.55rem;
+  }
+}
+
 @media (max-width: 760px) {
   .oceanDecor {
     display: none;
@@ -1427,6 +1668,26 @@ button {
 
   .site-shell {
     width: min(calc(100% - 1.25rem), var(--container-width));
+  }
+
+  .heroSection,
+  .section-block {
+    min-height: auto;
+  }
+
+  .heroSection {
+    padding-top: 1.25rem;
+  }
+
+  .header-actions {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .mobileNavPanel {
+    left: 0.75rem;
+    right: 0.75rem;
+    top: 4.45rem;
   }
 
   .heroMainCard,
@@ -1471,6 +1732,28 @@ button {
   .secondary-button,
   .header-cta {
     width: 100%;
+  }
+
+  .projectTabButton {
+    min-width: 78vw;
+  }
+
+  .credlyGrid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 0.7rem;
+    padding-bottom: 0.2rem;
+    scroll-snap-type: x proximity;
+  }
+
+  .credlyBadgeTile {
+    flex: 0 0 auto;
+    width: 158px;
+    min-height: 286px;
+    padding: 0.4rem;
+    scroll-snap-align: start;
   }
 
   .contact-item {

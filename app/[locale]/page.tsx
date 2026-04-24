@@ -1,4 +1,5 @@
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
+import { MobileNav } from "@/components/MobileNav";
 import { CredlyBadge } from "@/components/CredlyBadge";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
 import { TechBubbleCloud } from "@/components/TechBubbleCloud";
@@ -146,6 +147,17 @@ export default async function HomePage({ params }: HomePageProps) {
             </nav>
 
             <div className="header-actions">
+              <MobileNav
+                ariaLabel={t("navigation.ariaLabel")}
+                currentLocale={locale}
+                links={[
+                  { href: "#about", label: t("navigation.about") },
+                  { href: "#selected-work", label: t("navigation.work") },
+                  { href: "#experience", label: t("navigation.experience") },
+                  { href: "#outcomes", label: t("navigation.outcomes") },
+                  { href: "#contact", label: t("navigation.contact") },
+                ]}
+              />
               <LocaleSwitcher currentLocale={locale} />
               <a className="header-cta" href="#contact">
                 {t("navigation.cta")}
