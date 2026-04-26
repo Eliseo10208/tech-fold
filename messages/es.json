@@ -429,10 +429,6 @@
             "CLI básica",
             "Separación de capas (controllers, services, domain)"
           ]
-        },
-        {
-          "title": "Por mejorar (en progreso)",
-          "items": ["Testing (básico)", "Documentación técnica"]
         }
       ]
     },
@@ -443,7 +439,7 @@
       "items": [
         {
           "title": "Educación",
-          "description": "Base formal en software y programación aplicada, alineada con el tipo de sistemas que hoy estás construyendo.",
+          "description": "Base formal en software y programación aplicada para diseñar y mantener sistemas en producción.",
           "entries": [
             "Ingeniería de Software — Universidad Politécnica de Chiapas",
             "Técnico en Programación — CETIS 138 (2020)"
@@ -472,7 +468,7 @@
     },
     "certifications": {
       "eyebrow": "Badges verificados",
-      "title": "Prueba de Credly embebida",
+      "title": "Insignias verificadas en Credly",
       "description": "Insignias oficiales verificables en Credly.",
       "items": [
         {
@@ -516,7 +512,7 @@
     "contact": {
       "eyebrow": "CTA final",
       "title": "Busco roles donde AI, backend y frontend no vivan separados.",
-      "description": "Según tu perfil actual, el mejor encaje está en AI Full Stack Engineer, AI Systems Engineer o Data + AI Engineer dentro de equipos remotos, startups y software de producto.",
+      "description": "Busco roles donde pueda aportar en arquitectura de producto, backend, data e integración de IA con impacto medible.",
       "primaryCta": "Enviar correo",
       "secondaryCta": "Ver LinkedIn",
       "primaryHref": "mailto:Eliseo10208@gmail.com",
@@ -551,7 +547,7 @@
     },
     "footer": {
       "availability": "Disponible para roles remotos como AI Full Stack Engineer, AI Systems Engineer y Data + AI Engineer.",
-      "note": "Disponible para colaborar en producto, arquitectura y automatización con IA."
+      "note": "Enfocado en construir sistemas de producto con IA, backend robusto y métricas claras de impacto."
     }
   }
 }

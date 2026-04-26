@@ -37,14 +37,6 @@ type AboutHighlight = {
   points: string[];
 };
 
-type ExperienceItem = {
-  company: string;
-  role: string;
-  period: string;
-  location: string;
-  summary: string;
-};
-
 type ProcessItem = {
   step: string;
   title: string;
@@ -95,7 +87,6 @@ export default async function HomePage({ params }: HomePageProps) {
   const aboutHighlight = t.raw("about.highlight") as AboutHighlight;
   const credentialItems = t.raw("credentials.items") as CredentialItem[];
   const workItems = t.raw("work.items") as ProjectItem[];
-  const experienceItems = t.raw("experience.items") as ExperienceItem[];
   const processItems = t.raw("process.items") as ProcessItem[];
   const stackItems = t.raw("stack.items") as StackItem[];
   const contactLinks = t.raw("contact.links") as ContactLink[];
@@ -135,9 +126,6 @@ export default async function HomePage({ params }: HomePageProps) {
               <a className="header-link" href="#selected-work">
                 {t("navigation.work")}
               </a>
-              <a className="header-link" href="#experience">
-                {t("navigation.experience")}
-              </a>
               <a className="header-link" href="#outcomes">
                 {t("navigation.outcomes")}
               </a>
@@ -153,7 +141,6 @@ export default async function HomePage({ params }: HomePageProps) {
                 links={[
                   { href: "#about", label: t("navigation.about") },
                   { href: "#selected-work", label: t("navigation.work") },
-                  { href: "#experience", label: t("navigation.experience") },
                   { href: "#outcomes", label: t("navigation.outcomes") },
                   { href: "#contact", label: t("navigation.contact") },
                 ]}
@@ -278,37 +265,6 @@ export default async function HomePage({ params }: HomePageProps) {
           </div>
 
           <ProjectExplorer projectItems={workItems} />
-        </section>
-
-        <section className="section-block" id="experience">
-          <div className="section-intro">
-            <div>
-              <span className="eyebrow">{t("experience.eyebrow")}</span>
-              <h2 className="section-title">{t("experience.title")}</h2>
-            </div>
-
-            <p className="section-copy">{t("experience.description")}</p>
-          </div>
-
-          <div className="experienceList">
-            {experienceItems.map((item) => (
-              <article className="experienceItemCard" key={`${item.company}-${item.role}`}>
-                <div className="experience-head">
-                  <div>
-                    <h3 className="experience-company">{item.company}</h3>
-                    <span className="experience-role">{item.role}</span>
-                  </div>
-                  <span className="project-index">{item.period}</span>
-                </div>
-
-                <div className="experience-meta">
-                  <span>{item.location}</span>
-                </div>
-
-                <p className="experience-summary">{item.summary}</p>
-              </article>
-            ))}
-          </div>
         </section>
 
         <section className="section-block" id="process">

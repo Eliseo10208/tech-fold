@@ -429,10 +429,6 @@
             "Basic CLI",
             "Layered separation (controllers, services, domain)"
           ]
-        },
-        {
-          "title": "Improvement areas (in progress)",
-          "items": ["Testing (basic)", "Technical documentation"]
         }
       ]
     },
@@ -443,7 +439,7 @@
       "items": [
         {
           "title": "Education",
-          "description": "Formal software and programming foundations aligned with the kind of systems you are building today.",
+          "description": "Formal software and programming foundations for designing and maintaining production systems.",
           "entries": [
             "Software Engineering — Universidad Politecnica de Chiapas",
             "Programming Technician — CETIS 138 (2020)"
@@ -472,7 +468,7 @@
     },
     "certifications": {
       "eyebrow": "Verified badges",
-      "title": "Embedded Credly test",
+      "title": "Verified Credly badges",
       "description": "Official badges verifiable on Credly.",
       "items": [
         {
@@ -516,7 +512,7 @@
     "contact": {
       "eyebrow": "Final CTA",
       "title": "I am looking for roles where AI, backend and frontend are not treated as separate tracks.",
-      "description": "Based on the current profile, the strongest fit is in AI Full Stack Engineer, AI Systems Engineer or Data + AI Engineer roles across remote product teams, startups and software companies.",
+      "description": "I am looking for roles where I can contribute to product architecture, backend, data and AI integration with measurable impact.",
       "primaryCta": "Email me",
       "secondaryCta": "View LinkedIn",
       "primaryHref": "mailto:Eliseo10208@gmail.com",
@@ -551,7 +547,7 @@
     },
     "footer": {
       "availability": "Open to remote roles as an AI Full Stack Engineer, AI Systems Engineer or Data + AI Engineer.",
-      "note": "Available to collaborate on product, architecture and AI automation."
+      "note": "Focused on building product systems with AI, robust backend foundations and clear impact metrics."
     }
   }
 }
