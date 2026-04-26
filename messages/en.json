@@ -189,6 +189,7 @@
               "title": "nantisystem.com",
               "note": "Transport telematics company: fleet management, sensors, GPS, SIM M2M and technical support.",
               "src": "https://nantisystem.com/quienes-somos/",
+              "background": "/projects/nanti-Landing.png",
               "ctaLabel": "Open landing"
             }
           ]
@@ -231,6 +232,7 @@
               "title": "agora2030.org",
               "note": "Impact-focused organization supported by data-informed programs and digital product execution.",
               "src": "https://agora2030.org/about-us",
+              "background": "/projects/agoraLanding.png",
               "ctaLabel": "Open landing"
             }
           ]
@@ -270,7 +272,7 @@
               "label": "Primary image",
               "title": "Authentication and validation flow",
               "note": "A strong place for screenshots of login, camera verification or identity checks.",
-              "src": "",
+              "src": "/projects/votingLanding.png",
               "alt": "Screenshot of the authentication and validation flow in the voting system"
             },
             {
@@ -278,7 +280,7 @@
               "label": "Secondary image",
               "title": "Key screens from the voting system",
               "note": "Useful for documenting the voting experience, duplicate prevention or any state inside the protected process.",
-              "src": "",
+              "src": "/projects/votingLanding.png",
               "alt": "Screenshot of key screens from the secure voting system"
             }
           ]

@@ -2,6 +2,7 @@ export type ProjectMediaKind = "image" | "video" | "website";
 
 export type ProjectMediaItem = {
   alt?: string;
+  background?: string;
   ctaLabel?: string;
   kind: ProjectMediaKind;
   label: string;

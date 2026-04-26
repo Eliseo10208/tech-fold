@@ -3,7 +3,7 @@ import type { ProjectMediaKind } from "@/types/portfolio";
 
 type WorkMediaFrameProps = {
   mediaAlt?: string;
-  mediaCtaLabel?: string;
+  mediaBackground?: string;
   mediaKind: ProjectMediaKind;
   mediaLabel: string;
   mediaPoster?: string;
@@ -15,7 +15,7 @@ type WorkMediaFrameProps = {
 
 export function WorkMediaFrame({
   mediaAlt,
-  mediaCtaLabel,
+  mediaBackground,
   mediaKind,
   mediaLabel,
   mediaPoster,
@@ -36,7 +36,10 @@ export function WorkMediaFrame({
 
   const chromeLabel =
     mediaKind === "website" && mediaHostname.length > 0 ? mediaHostname : mediaTitle;
+  const chromeCtaLabel =
+    mediaKind === "website" && mediaSrc ? `${chromeLabel} · Abrir` : chromeLabel;
   const isLogoMedia = mediaKind === "image" && /logo/i.test(`${mediaLabel} ${mediaTitle}`);
+  const hasWebsiteBackground = mediaKind === "website" && Boolean(mediaBackground);
 
   return (
     <div className="showcase-mediaPanel" data-media-kind={mediaKind}>
@@ -47,9 +50,21 @@ export function WorkMediaFrame({
           <span className="showcase-windowDot" />
         </div>
 
-        <div className="showcase-windowAddress">
-          <span className="showcase-windowAddressText">{chromeLabel}</span>
-        </div>
+        {mediaKind === "website" && mediaSrc ? (
+          <a
+            aria-label={`Abrir ${chromeLabel}`}
+            className="showcase-windowAddress showcase-windowAddressLink"
+            href={mediaSrc}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <span className="showcase-windowAddressText">{chromeCtaLabel}</span>
+          </a>
+        ) : (
+          <div className="showcase-windowAddress">
+            <span className="showcase-windowAddressText">{chromeLabel}</span>
+          </div>
+        )}
       </div>
 
       <div className="showcase-screen">
@@ -76,19 +91,28 @@ export function WorkMediaFrame({
               </video>
             ) : (
               <div className="showcase-sitePreview">
-                <div className="showcase-siteCanvas">
-                  <span className="showcase-siteEyebrow">{mediaLabel}</span>
-                  <h4 className="showcase-siteTitle">{mediaHostname || mediaTitle}</h4>
-                  <p className="showcase-siteUrl">{mediaSrc}</p>
-                  <a
-                    className="showcase-siteButton"
-                    href={mediaSrc}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    {mediaCtaLabel ?? "Visit site"}
-                  </a>
-                </div>
+                {mediaBackground ? (
+                  <Image
+                    alt=""
+                    aria-hidden="true"
+                    className="showcase-siteBackground"
+                    fill
+                    priority={priority}
+                    sizes="(max-width: 960px) 100vw, 50vw"
+                    src={mediaBackground}
+                  />
+                ) : null}
+                {hasWebsiteBackground ? (
+                  <div className="showcase-siteOverlay">
+                    <span className="showcase-siteDomain">{mediaHostname || mediaTitle}</span>
+                  </div>
+                ) : (
+                  <div className="showcase-siteCanvas">
+                    <span className="showcase-siteEyebrow">{mediaLabel}</span>
+                    <h4 className="showcase-siteTitle">{mediaHostname || mediaTitle}</h4>
+                    <p className="showcase-siteUrl">{mediaSrc}</p>
+                  </div>
+                )}
               </div>
             )
           ) : (

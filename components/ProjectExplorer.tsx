@@ -158,13 +158,6 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
   const projectHighlightItems = projectHighlights.map((highlightItem) => (
     <li key={highlightItem}>{highlightItem}</li>
   ));
-  const hasExternalUrl =
-    typeof activeProject.externalUrl === "string" && activeProject.externalUrl.length > 0;
-  const externalLabel =
-    activeProject.externalLabel && activeProject.externalLabel.length > 0
-      ? activeProject.externalLabel
-      : t("openExternal");
-
   return (
     <section className="projectExplorer">
       <div
@@ -184,6 +177,7 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
         <div className="projectBoardCard projectBoardMediaCard">
           <WorkMediaFrame
             mediaAlt={activeMedia.alt}
+            mediaBackground={activeMedia.background}
             mediaCtaLabel={activeMedia.ctaLabel}
             mediaKind={activeMedia.kind}
             mediaLabel={activeMedia.label}
@@ -220,16 +214,6 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
 
         <nav className="projectBoardCard projectBoardFooterCard">
           <div className="projectFooterNav">
-            {hasExternalUrl ? (
-              <a
-                className="projectFooterButton projectFooterButtonLink"
-                href={activeProject.externalUrl}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {externalLabel}
-              </a>
-            ) : null}
             <button
               className="projectFooterButton"
               onClick={() => goToAdjacentProject("previous")}
