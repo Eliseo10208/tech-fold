@@ -178,7 +178,6 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
           <WorkMediaFrame
             mediaAlt={activeMedia.alt}
             mediaBackground={activeMedia.background}
-            mediaCtaLabel={activeMedia.ctaLabel}
             mediaKind={activeMedia.kind}
             mediaLabel={activeMedia.label}
             mediaNote={activeMedia.note}
