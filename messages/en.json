@@ -1,100 +1,124 @@
 {
   "Metadata": {
     "title": "Rodrigo Eliseo Garcia | AI Full Stack Engineer",
-    "description": "Software engineer focused on AI Systems & Automation, NestJS, Next.js, TypeScript, Airflow, OpenAI and AWS."
+    "description": "AI Full Stack Engineer. I turn operational processes into AI workflows: Python, FastAPI, TypeScript, Next.js, React, PostgreSQL and OpenAI Agents."
   },
   "HomePage": {
     "identity": {
       "name": "Rodrigo Eliseo Garcia",
       "role": "AI Full Stack Engineer",
-      "eyebrow": "AI Full Stack Engineer | AI Systems & Automation"
+      "eyebrow": "AI Full Stack Engineer | Python · FastAPI · Next.js · OpenAI"
     },
     "navigation": {
       "ariaLabel": "Main navigation",
       "about": "Profile",
-      "work": "Projects",
+      "work": "Case studies",
       "experience": "Track record",
+      "lab": "Lab",
       "outcomes": "Outcomes",
       "contact": "Contact",
       "cta": "Let's talk"
     },
     "hero": {
-      "title": "I build AI systems that automate real operations.",
-      "description": "I combine FullStack + Data + AI to take products from idea to production with measurable impact. I work with NestJS, Next.js, TypeScript, Python, Airflow, OpenAI and AWS.",
-      "primaryCta": "View featured work",
-      "secondaryCta": "See track record",
-      "contactCta": "Jump to contact",
-      "sideTitle": "FullStack + Data + AI.",
-      "sideDescription": "I do not just ship features: I design systems where backend, frontend, data and AI work as one unit, with type-safe architecture and operational focus.",
+      "title": "From manual process to the system that runs it.",
+      "description": "I come from Handbook (San Francisco), where I developed features for an AI workflow automation platform and worked directly with customers: gathering requirements, turning them into tasks and shipping them with FastAPI, PostgreSQL, Next.js, TypeScript and OpenAI Agents.",
+      "primaryCta": "See real cases",
+      "contactCta": "Get in touch",
+      "sideEyebrow": "Latest work",
+      "sideTitle": "Handbook, Feb–Jul 2026.",
+      "sideDescription": "An AI workflow automation platform for operations with handoffs, evidence and SLAs. What I built there:",
+      "sidePoints": [
+        "Cyclic workflows: iteration guards, recovery, versioned snapshots and execution history",
+        "Conversational LLM intake plus audio transcription to generate workflows",
+        "Visual graph editor (React Flow + ELK.js) with real-time collaboration and autosave"
+      ],
+      "availability": "Available immediately · Mexico City · Remote (CST) · AI Full Stack / AI Systems / Product Engineer",
       "badges": [
-        "AI Systems & Automation",
-        "Data Pipelines (Airflow)",
-        "NestJS / Next.js / TypeScript"
+        "OpenAI Agents · Structured outputs · HITL",
+        "FastAPI · Next.js · PostgreSQL",
+        "Pytest · Jest · Playwright"
+      ],
+      "facts": [
+        {
+          "label": "Latest role",
+          "title": "AI Full-Stack Engineer at Handbook",
+          "description": "Feb–Jul 2026 · San Francisco (hybrid) · Product Architecture & LLM Systems."
+        },
+        {
+          "label": "Ramp-up",
+          "title": "51 PRs · 53 commits to main",
+          "description": "Backend, frontend, AI, integrations and tests over five months."
+        },
+        {
+          "label": "Experience",
+          "title": "3+ years end-to-end",
+          "description": "From customer discovery to deploy: product, data and AI."
+        }
       ]
     },
     "credibility": {
-      "ariaLabel": "Credibility highlights",
+      "ariaLabel": "Profile facts",
       "items": [
         {
-          "label": "Current headline",
-          "value": "AI Systems & Automation | NestJS, Next.js, TypeScript, Airflow, OpenAI and AWS"
+          "label": "Latest role",
+          "value": "AI Full-Stack Engineer at Handbook (AIPlaybookHQ), Feb–Jul 2026"
         },
         {
-          "label": "Current location",
-          "value": "Greater Mexico City Metropolitan Area, Mexico"
+          "label": "Based in",
+          "value": "Mexico City · remote or hybrid"
         },
         {
-          "label": "Specialization",
-          "value": "AI-driven systems, conversational automation and data pipelines"
+          "label": "Specialty",
+          "value": "LLM workflows: agents, function calling, structured outputs and human-in-the-loop"
         },
         {
-          "label": "Target roles",
-          "value": "AI Full Stack Engineer, AI Systems Engineer and Data + AI Engineer"
+          "label": "Looking for",
+          "value": "AI Full Stack, AI Systems or Product Engineer — available immediately"
         }
       ]
     },
     "about": {
-      "eyebrow": "Real profile",
-      "title": "AI-driven systems, type-safe architecture and product work with measurable impact.",
-      "description": "I am a full stack engineer specialized in AI systems and data pipelines. I design architectures where artificial intelligence is not a feature, but the operational core of the system.",
+      "eyebrow": "Who I am",
+      "title": "End-to-end engineer: from requirements to production.",
+      "description": "I have spent three years building software that runs businesses: LLM-automated support, data pipelines, workflow platforms and a digital election. Before writing code, I talk to the people who operate the process.",
       "highlight": {
-        "eyebrow": "Summary",
-        "title": "FullStack + Data + AI to take products from idea to production.",
-        "description": "I work with Nest.js, Next.js and TypeScript for product delivery, Python and Airflow for orchestration and pipelines, and OpenAI + AWS + Docker for automation, deployment and scalability.",
+        "eyebrow": "In short",
+        "title": "I talk to the customer, model the process, build the system.",
+        "description": "Product with Next.js and TypeScript; backend with FastAPI or Nest.js on PostgreSQL; data orchestration with Airflow; and LLMs with agents, structured outputs and human-in-the-loop.",
         "points": [
-          "Nest.js / Next.js / TypeScript with type-safe architecture",
-          "Python + Airflow for pipelines and orchestration",
-          "OpenAI + AWS + Docker for automation and deployment"
+          "FastAPI + Pydantic + SQLAlchemy and Nest.js, on PostgreSQL",
+          "OpenAI Agents with structured outputs and human-in-the-loop",
+          "Tests and CI as a baseline: Playwright, Pytest, Jest, GitHub Actions"
         ]
       },
       "items": [
         {
-          "title": "Production AI, not experimental",
-          "description": "I design systems where AI is tied to real operational workflows, especially in conversational automation, support and process execution."
+          "title": "I gather requirements with the customer",
+          "description": "I talk directly with customers and operators: what they do, where it gets stuck, what evidence they need. That becomes a technical backlog and automatable workflows."
         },
         {
-          "title": "Backend and data rigor",
-          "description": "I work across services, APIs, ETL and Python/Airflow pipelines so analytics, automation and product can share a reliable foundation."
+          "title": "LLMs in production",
+          "description": "I integrate LLMs into operational flows with function calling, structured outputs, traceability and human intervention points."
         },
         {
-          "title": "Proven impact",
-          "description": "I have automated 40% of support operations, reduced production errors by 25%, improved frontend performance by 20% and increased organic traffic by 15%."
+          "title": "Data and quality as a baseline",
+          "description": "Airflow DAGs for analytics, reliable ETL and a real testing culture: Playwright, Pytest, Jest, React Testing Library, MSW, Pyright and Ruff."
         }
       ]
     },
     "work": {
-      "eyebrow": "Featured projects",
-      "title": "Selected case studies that show both interface craft and systems depth.",
-      "description": "Each case study combines product context, implementation responsibility and measurable impact, with room for walkthroughs, stills and operational detail.",
+      "eyebrow": "Real cases",
+      "title": "Four systems in production, across different industries.",
+      "description": "LLM workflows, automated support, analytics pipelines and a digital election: each case with context, my exact role and what was left running.",
       "navigatorLabel": "Project selector",
-      "projectLabel": "Active project",
+      "projectLabel": "Active case",
       "mediaRailLabel": "Media selector",
-      "highlightsLabel": "Results and key points",
+      "highlightsLabel": "What was left running",
       "openExternal": "Visit website",
       "websiteFallbackLabel": "Live website",
       "websiteFallbackNote": "This case does not have public video or image assets yet, so the live project site is shown here instead.",
-      "previousProject": "Previous project",
-      "nextProject": "Next project",
+      "previousProject": "Previous case",
+      "nextProject": "Next case",
       "meta": {
         "role": "Role",
         "company": "Company / context",
@@ -104,33 +128,34 @@
         {
           "slug": "handbook",
           "navLabel": "Handbook",
-          "navHint": "AI workflows / product systems",
-          "title": "Handbook AI Workflow Automation",
-          "company": "Handbook",
-          "role": "AI Full-Stack Engineer",
-          "period": "Feb 2026 - Present",
+          "navHint": "AI workflow automation",
+          "title": "LLM workflow automation at Handbook",
+          "company": "Handbook / AIPlaybookHQ",
+          "role": "AI Full-Stack Engineer · Product Architecture & LLM Systems",
+          "period": "Feb 2026 - Jul 2026",
           "externalLabel": "Visit handbookai.io",
           "externalUrl": "https://www.handbookai.io/en",
-          "summary": "Built for real operational workflows: complex processes with handoffs, follow-ups, evidence and SLAs that Handbook turns into guided execution with live dashboards and audit trails.",
-          "tags": ["LLM Systems", "Product Architecture", "Operations"],
+          "summary": "A platform that turns processes with handoffs, evidence and SLAs into guided execution. I developed workflow builder features and coordinated delivery with customers — FastAPI, PostgreSQL, Next.js, React and OpenAI Agents.",
+          "tags": ["FastAPI", "OpenAI Agents", "Next.js", "PostgreSQL"],
           "detailItems": [
             {
               "label": "Problem",
-              "value": "Many operations rely on fragmented handoffs, approvals and evidence collection, which creates missed steps, SLA risk and poor visibility."
+              "value": "Manufacturing, banking and insurance operations live in emails and spreadsheets: missed steps, untracked SLAs and zero traceability of who did what."
             },
             {
               "label": "My role",
-              "value": "As an AI Full-Stack Engineer, I work across Product Architecture & LLM Systems to model processes and turn them into guided execution with rules, reminders and escalation paths."
+              "value": "Full stack development and customer coordination: I gathered and clarified requirements, turned them into prioritized tasks and coordinated delivery."
             },
             {
-              "label": "Why it matters",
-              "value": "It demonstrates AI applied to real operations in manufacturing, banking and insurance with SLA visibility and complete auditability."
+              "label": "What I built",
+              "value": "Cyclic workflows with guards and snapshots, LLM intake with audio transcription, dynamic forms on case schemas, configurable HTTP integrations, email templates (Gmail, Outlook, Zoho) and real-time collaboration."
             }
           ],
           "highlights": [
-            "Real workflows: procurement, production, collections, document review and claims coordination.",
-            "Guided execution with live dashboards, evidence capture and end-to-end audit trails.",
-            "Operational metrics: cycle time, SLA compliance, on-time outcomes and rework reduction."
+            "51 PRs and 53 commits to main in five months, across backend, frontend, AI, integrations and tests.",
+            "Workflow execution with cycles: iteration guards, recovery, versioned snapshots and execution history.",
+            "Conversational LLM intake plus audio ingestion/transcription to turn unstructured sources into executable workflows.",
+            "Visual graph editor (React Flow + ELK.js) with real-time collaboration, autosave and drag/serialization performance work."
           ],
           "media": [
             {
@@ -139,13 +164,13 @@
               "title": "Product demo",
               "note": "Functional demo of the main flow.",
               "src": "https://pub-f16c4383be88435db8879fe20136da99.r2.dev/Video-Lanzamiento-Final.mp4",
-              "poster": ""
+              "poster": "/projects/handbook-poster.jpg"
             },
             {
               "kind": "website",
               "label": "Website",
               "title": "handbookai.io",
-              "note": "Guided execution platform for complex processes with handoffs, evidence, SLAs and audit trails.",
+              "note": "Guided execution platform for complex processes with handoffs, evidence, SLAs and traceability.",
               "src": "https://www.handbookai.io/en",
               "ctaLabel": "Open landing"
             }
@@ -154,40 +179,40 @@
         {
           "slug": "nanti",
           "navLabel": "Nanti",
-          "navHint": "Support automation / LLM",
-          "title": "LLM Support Automation at Nanti",
+          "navHint": "support automation / LLM",
+          "title": "LLM support automation at Nanti",
           "company": "Nanti System",
           "role": "Full Stack AI Engineer",
           "period": "Feb 2023 - Sep 2024",
-          "externalLabel": "View Nanti System",
+          "externalLabel": "Visit nanti system",
           "externalUrl": "https://nantisystem.com/quienes-somos/",
-          "summary": "A full-stack conversational module built with Nest.js, Angular and the OpenAI API to operate real support flows through WhatsApp and tawk.io.",
+          "summary": "Full stack conversational module built with Nest.js, Angular and the OpenAI API, handling real support through WhatsApp and tawk.io for a transport telematics company.",
           "tags": ["Nest.js", "Angular", "OpenAI API"],
           "detailItems": [
             {
               "label": "Problem",
-              "value": "Operational support needed faster responses and more automation without losing control or clarity around what the system was doing."
+              "value": "Support operations needed faster responses and automated actions without losing control or clarity over what the system did on the team's behalf."
             },
             {
               "label": "My role",
-              "value": "I designed and implemented the full-stack integration across Nest.js, Angular and OpenAI API, improving API consumption and frontend state management."
+              "value": "I designed, orchestrated and deployed the full integration: Nest.js backend, Angular frontend and OpenAI-powered flows connected to the real support channels."
             },
             {
               "label": "Impact",
-              "value": "I automated 40% of support operations, improved frontend efficiency by 20% and increased backend resilience with robust error handling and type-safe architecture."
+              "value": "I automated 40% of support actions, improved frontend efficiency by 20% and hardened backend resilience with robust error handling."
             }
           ],
           "highlights": [
-            "A strong case for showing production AI rather than prototypes.",
-            "Connects Nest.js, Angular and real operational channels clearly.",
-            "A good candidate for one short demo plus one or two supporting screenshots."
+            "40% of support actions automated with flows connected to WhatsApp and tawk.io.",
+            "20% frontend efficiency gain by optimizing API consumption and state management in Angular.",
+            "More resilient backend with robust error handling and type-safe patterns in Nest.js."
           ],
           "media": [
             {
               "kind": "website",
               "label": "Website",
               "title": "nantisystem.com",
-              "note": "Transport telematics company: fleet management, sensors, GPS, SIM M2M and technical support.",
+              "note": "Transport telematics: fleet management, sensors, GPS, M2M SIMs and technical support.",
               "src": "https://nantisystem.com/quienes-somos/",
               "background": "/projects/nanti-Landing.png",
               "ctaLabel": "Open landing"
@@ -197,40 +222,41 @@
         {
           "slug": "agora",
           "navLabel": "Agora",
-          "navHint": "Analytics / data systems",
-          "title": "Data Pipelines for Analytics at Agora",
+          "navHint": "data pipelines / analytics",
+          "title": "Data pipelines and frontend at Agora Partnerships",
           "company": "Agora Partnerships",
           "role": "Full Stack & Data Engineer",
           "period": "Sep 2024 - Jan 2026",
-          "externalLabel": "View agora2030.org",
+          "externalLabel": "Visit agora2030.org",
           "externalUrl": "https://agora2030.org/about-us",
-          "summary": "As a Full Stack & Data Engineer I delivered backend services, Python/Airflow ETL pipelines and frontend initiatives with measurable impact on speed, reliability and organic growth.",
-          "tags": ["Python", "Airflow", "Analytics"],
+          "summary": "Python/Airflow DAGs for analytics pipelines, backend architecture with microservices and a Next.js component library — with measured results in speed, stability and traffic.",
+          "tags": ["Python", "Airflow", "Next.js"],
           "detailItems": [
             {
               "label": "Problem",
-              "value": "Teams depend on reliable data and analytics, so the pipelines and services behind them cannot be fragile."
+              "value": "Teams depended on analytics to make decisions, but the pipelines and services feeding them could not be fragile or go unmaintained."
             },
             {
               "label": "My role",
-              "value": "I designed a scalable Next.js + Tailwind component library, strengthened type-safe architecture with TypeScript + Redux, and maintained critical analytics pipelines."
+              "value": "I developed and maintained Python/Airflow DAGs for critical data flows, collaborated on microservice design and API integrations, and led the Next.js + Tailwind component library."
             },
             {
               "label": "Results",
-              "value": "I reduced initial load time by 20%, cut production errors by 25%, increased organic traffic by 15% and ensured continuous analytics data availability."
+              "value": "20% faster initial load, 25% fewer production errors with TypeScript + Redux, 15% more organic traffic and continuous availability of analytics flows."
             }
           ],
           "highlights": [
-            "Reduced initial load time by 20% through a scalable Next.js + Tailwind component library.",
-            "Cut production errors by 25% with TypeScript, Redux and type-safe architecture.",
-            "Increased organic traffic by 15% while keeping analytics available through Python and Airflow ETL."
+            "Python/Airflow DAGs that improved consistency and availability of critical data flows.",
+            "Scalable component library in Next.js + Tailwind that cut initial load time by 20%.",
+            "25% fewer production errors with type-safe patterns in TypeScript and Redux.",
+            "15% more organic traffic in one quarter through technical SEO improvements."
           ],
           "media": [
             {
               "kind": "website",
               "label": "Website",
               "title": "agora2030.org",
-              "note": "Impact-focused organization supported by data-informed programs and digital product execution.",
+              "note": "Organization focused on social impact and scaling solutions through data and digital product.",
               "src": "https://agora2030.org/about-us",
               "background": "/projects/agoraLanding.png",
               "ctaLabel": "Open landing"
@@ -240,48 +266,40 @@
         {
           "slug": "voting",
           "navLabel": "Voting",
-          "navHint": "Security / identity",
-          "title": "Secure Digital Voting System",
+          "navHint": "security / identity",
+          "title": "Secure digital voting system",
           "company": "Black Horse Technologies",
-          "role": "Software Engineer · Freelance / Contract",
+          "role": "Software Engineer · Freelance",
           "period": "Sep 2025 - Dec 2025",
-          "summary": "A digital voting platform built at Black Horse Technologies for the Mexican Association of Human Genetics, with stronger authentication, identity validation and anti-fraud controls.",
-          "tags": ["Security", "Identity", "PHP"],
+          "summary": "Digital election for the Mexican Association of Human Genetics: 2FA, identity matching against the national ID and anti-duplicate controls. The stack (PHP/cPanel) was fixed by the client; the security design was the challenge.",
+          "tags": ["Security", "Identity", "2FA"],
           "detailItems": [
             {
               "label": "Problem",
-              "value": "The voting process required trustworthy digital participation with strong controls for authentication, identity and duplicate prevention."
+              "value": "A real election required trustworthy digital participation: strong authentication, verified identity and zero duplicate votes."
             },
             {
               "label": "My role",
-              "value": "I built the flow with 2FA, camera validation, voter ID photo matching and logic to protect the process against fraud."
+              "value": "I built the full flow: 2FA, camera validation, photo matching against the national ID and the anti-fraud logic that protects the integrity of the process."
             },
             {
-              "label": "Why it stands out",
-              "value": "Even if it is not the most modern stack, this case shows ownership, security thinking and the ability to solve a high-sensitivity real-world problem."
+              "label": "Context",
+              "value": "The client fixed the stack (PHP and cPanel). The real challenge was the security design: identity, duplicate prevention and traceability in a real election."
             }
           ],
           "highlights": [
-            "Excellent piece for demonstrating security thinking and identity validation.",
-            "Adds range to the portfolio because not everything revolves around AI.",
-            "Best presented with key flow screenshots rather than a long narrated demo."
+            "Multi-factor authentication and identity validation to protect every vote.",
+            "Anti-fraud controls that prevent duplicates and reinforce process integrity.",
+            "A traceable, secure flow for a highly sensitive digital election."
           ],
           "media": [
             {
               "kind": "image",
-              "label": "Primary image",
+              "label": "Screenshot",
               "title": "Authentication and validation flow",
-              "note": "A strong place for screenshots of login, camera verification or identity checks.",
+              "note": "2FA, camera verification and national ID matching before casting a vote.",
               "src": "/projects/votingLanding.png",
-              "alt": "Screenshot of the authentication and validation flow in the voting system"
-            },
-            {
-              "kind": "image",
-              "label": "Secondary image",
-              "title": "Key screens from the voting system",
-              "note": "Useful for documenting the voting experience, duplicate prevention or any state inside the protected process.",
-              "src": "/projects/votingLanding.png",
-              "alt": "Screenshot of key screens from the secure voting system"
+              "alt": "Screenshot of the voting system authentication and validation flow"
             }
           ]
         }
@@ -289,159 +307,231 @@
     },
     "experience": {
       "eyebrow": "Track record",
-      "title": "Real experience across AI systems, data pipelines and product software.",
-      "description": "Professional experience across product, backend, data and AI roles with a strong execution focus.",
+      "title": "Three years of work, role by role.",
+      "description": "Each role with its period, context and what was delivered. Available immediately.",
       "items": [
         {
-          "company": "Handbook",
+          "company": "Handbook / AIPlaybookHQ",
           "role": "AI Full-Stack Engineer",
-          "period": "Feb 2026 - Present",
-          "location": "San Francisco, California, United States · Hybrid",
-          "summary": "Product Architecture & LLM Systems to turn complex processes into guided execution with handoffs, follow-ups, evidence and SLA controls."
+          "period": "Feb 2026 - Jul 2026",
+          "location": "San Francisco, USA · Hybrid",
+          "summary": "Developed features for the AI workflow automation platform (cyclic workflows, LLM intake, dynamic forms, integrations) and coordinated delivery with customers. 51 PRs to main."
         },
         {
           "company": "Black Horse Technologies",
-          "role": "Software Engineer · Freelance / Contract",
+          "role": "Software Engineer · Freelance",
           "period": "Sep 2025 - Dec 2025",
-          "location": "Greater Tuxtla Gutierrez Area · On-site",
-          "summary": "Designed and built a digital voting system for the Mexican Association of Human Genetics with 2FA, identity validation (camera + voter ID), anti-fraud controls, PHP implementation and cPanel deployment."
+          "location": "Tuxtla Gutierrez, Mexico · On-site",
+          "summary": "Fixed-scope contract, delivered and closed: digital voting system for the Mexican Association of Human Genetics with 2FA, camera + national ID identity validation and anti-fraud controls."
         },
         {
           "company": "Agora Partnerships",
           "role": "Full Stack & Data Engineer",
           "period": "Sep 2024 - Jan 2026",
-          "location": "New York, United States · Remote",
-          "summary": "Reduced initial load time by 20% with a scalable Next.js + Tailwind library, cut production errors by 25% with type-safe architecture (TypeScript + Redux), increased organic traffic by 15%, and ensured analytics reliability with Python + Airflow ETL."
+          "location": "New York, USA · Remote",
+          "summary": "Python/Airflow DAGs for analytics, microservices and API integrations, Next.js component library (−20% initial load, −25% production errors)."
         },
         {
           "company": "Nanti System",
           "role": "Full Stack AI Engineer",
           "period": "Feb 2023 - Sep 2024",
           "location": "Mexico City, Mexico · Remote",
-          "summary": "Automated 40% of operational support with a conversational system (OpenAI + Nest.js + Angular), improved frontend efficiency by 20%, and increased backend resilience through robust error handling and type-safe patterns."
+          "summary": "Full stack AI module with Nest.js, Angular and the OpenAI API: 40% of support automated through WhatsApp and tawk.io."
         },
         {
           "company": "M&T Studio / Zona Sana",
           "role": "Full Stack Web Developer · Freelance",
           "period": "Apr 2023 - Aug 2023",
-          "location": "Tuxtla Gutierrez, Chiapas, Mexico · Hybrid",
-          "summary": "Reduced complex form abandonment by 12% with optimized Next.js modules, implemented a scalable Node.js API handling 1000+ daily requests, and documented technical processes to improve maintainability and scalability."
+          "location": "Tuxtla Gutierrez, Mexico · Hybrid",
+          "summary": "Freelance project with defined scope and delivery: pharmacy web platform in Next.js, with −12% drop-off in complex forms."
+        }
+      ]
+    },
+    "lab": {
+      "eyebrow": "Off the clock",
+      "title": "The lab: where I test architecture, ML and tooling.",
+      "description": "Personal projects with public, documented code on GitHub. Each one exists because I wanted to solve something specific.",
+      "items": [
+        {
+          "title": "CNN Identificator + Android app",
+          "description": "End-to-end image identification: a CNN trained with TensorFlow/Keras, served by a Flask API and consumed from a native Android app in Kotlin + Jetpack Compose.",
+          "stack": ["TensorFlow", "Flask", "Kotlin / Compose"],
+          "links": [
+            { "label": "Model + API", "href": "https://github.com/Eliseo10208/CNN_IDENTIFICATOR" },
+            { "label": "Android app", "href": "https://github.com/Eliseo10208/MY-CNN-APP" }
+          ]
+        },
+        {
+          "title": "api-Hexagonal",
+          "description": "TypeScript/Express API with full hexagonal architecture: use cases, repositories, MySQL persistence and RabbitMQ messaging.",
+          "stack": ["TypeScript", "Express", "RabbitMQ"],
+          "links": [
+            { "label": "Repository", "href": "https://github.com/Eliseo10208/api-Hexagonal" }
+          ]
+        },
+        {
+          "title": "SecurityHub-Hexagonal",
+          "description": "Modular backend for a sensors and security domain: Express, JWT, Sequelize on MySQL, upload handling and hexagonal boundaries between modules.",
+          "stack": ["TypeScript", "JWT", "Sequelize"],
+          "links": [
+            { "label": "Repository", "href": "https://github.com/Eliseo10208/SecurityHub-Hexagonal" }
+          ]
+        },
+        {
+          "title": "ARNvalidator",
+          "description": "Python tool that validates AWS ARNs inside txt, html, csv, xlsx and docx files using an explicit ~200-state deterministic finite automaton.",
+          "stack": ["Python", "Automata", "AWS"],
+          "links": [
+            { "label": "Repository", "href": "https://github.com/Eliseo10208/ARNvalidator" }
+          ]
+        },
+        {
+          "title": "Winterra — merged external PR",
+          "description": "Contribution to another developer's Flutter app, accepted and merged: 42 files touching BLoC/Cubit, GetIt, Firebase and domain/data/presentation layers.",
+          "stack": ["Flutter", "BLoC / Cubit", "Firebase"],
+          "links": [
+            { "label": "View PR", "href": "https://github.com/EddieToledoE/winterra/pull/1" }
+          ]
         }
       ]
     },
     "process": {
       "eyebrow": "How I work",
-      "title": "From the real operational bottleneck to a system that can hold in production.",
-      "description": "Identify the operational bottleneck, design a resilient system, and ship with measurable outcomes.",
+      "title": "The process I used at Handbook, at Agora and with every client.",
+      "description": "What I do every week so an operational process ends up running on its own.",
       "items": [
         {
           "step": "01",
-          "title": "Find the real bottleneck",
-          "description": "I start by isolating what is actually slowing the operation down, whether it lives in support, analytics, backend, UI or the handoff between teams and systems."
+          "title": "Understand the process with its operators",
+          "description": "Before writing code I talk to the customer: what gets done, who does it, where it gets stuck and what evidence is needed. That produces prioritized requirements."
         },
         {
           "step": "02",
-          "title": "Design the system, not just the surface",
-          "description": "The best solutions combine type-safe architecture, thoughtful product flows and integrations that can actually support real usage."
+          "title": "Model the full workflow",
+          "description": "Stages, rules, handoffs, SLAs and human intervention points. The LLM goes where it adds value, with structured outputs and traceability."
         },
         {
           "step": "03",
-          "title": "Ship with measurable impact",
-          "description": "The goal is not only to release, but to leave behind a system that automates, reduces errors, improves performance and can be operated with confidence."
+          "title": "Ship with tests and metrics",
+          "description": "CI on GitHub Actions, tests with Playwright, Pytest and Jest, and impact metrics: percentage automated, production errors, load times."
         }
       ]
     },
     "outcomes": {
       "eyebrow": "Outcomes",
-      "title": "Proven impact in support, stability, performance and conversion.",
-      "description": "Measured impact in automation, reliability, performance and product growth."
+      "title": "Measurable results per project.",
+      "description": "Every metric comes from a specific project, with its context."
     },
     "metrics": {
       "items": [
         {
-          "label": "Automation",
-          "title": "40% support automation",
-          "description": "LLM-assisted workflows deployed in production through WhatsApp and tawk.io."
+          "label": "Nanti · 2024",
+          "title": "40% of support automated",
+          "description": "OpenAI-powered flows connected to WhatsApp and tawk.io, running in production."
         },
         {
-          "label": "Reliability",
+          "label": "Agora · 2024-2026",
           "title": "25% fewer production errors",
-          "description": "Driven by type-safe systems, cleaner interfaces and more resilient architecture."
+          "description": "TypeScript, Redux and type-safe architecture across the product layer."
         },
         {
-          "label": "Performance",
+          "label": "Agora · 2024-2026",
           "title": "20% faster initial load",
-          "description": "Improved frontend delivery through scalable components and stronger UI architecture."
+          "description": "Scalable component library with Next.js and Tailwind CSS."
         },
         {
-          "label": "Growth",
-          "title": "15% more organic traffic",
-          "description": "Driven by technical SEO improvements, stronger frontend structure and better product quality."
+          "label": "Zona Sana · 2023",
+          "title": "12% less form drop-off",
+          "description": "Complex pharmacy forms redesigned in Next.js, measured across the full flow."
         }
       ]
     },
     "stack": {
-      "eyebrow": "Execution stack",
-      "title": "Technologies used, grouped like a technical CV.",
-      "description": "Stack organized by key capability areas for AI Full Stack Engineer roles.",
-      "groupLabel": "Capability",
+      "eyebrow": "Stack",
+      "title": "What I work with.",
+      "description": "Six areas: what I use in production and what I have operated before.",
+      "groupLabel": "Area",
       "items": [
         {
-          "title": "Programming languages",
-          "items": ["TypeScript", "JavaScript", "Python", "Kotlin"]
-        },
-        {
-          "title": "Frontend",
-          "items": ["React", "Next.js", "Angular", "Vite", "HTML5", "CSS3", "Tailwind CSS", "Redux"]
-        },
-        {
-          "title": "Backend and APIs",
-          "items": ["Node.js", "APIs REST", "API design", "Hexagonal architecture", "Domain-Driven Design (DDD)"]
-        },
-        {
-          "title": "Databases",
-          "items": ["MongoDB", "MySQL", "PostgreSQL", "MariaDB"]
-        },
-        {
-          "title": "Artificial Intelligence / ML",
+          "title": "AI & automation",
           "items": [
             "OpenAI API",
-            "Claude API",
-            "Convolutional neural networks (CNN)",
-            "Image processing",
-            "Machine learning model API integration"
+            "OpenAI Agents",
+            "Function calling",
+            "Structured outputs",
+            "Human-in-the-loop",
+            "TensorFlow / Keras"
           ]
         },
         {
-          "title": "Mobile",
-          "items": ["Flutter", "Kotlin (Android)"]
+          "title": "Backend",
+          "items": [
+            "Python",
+            "FastAPI",
+            "Pydantic",
+            "SQLAlchemy",
+            "Alembic",
+            "Node.js",
+            "Nest.js",
+            "Express.js",
+            "Hexagonal architecture"
+          ]
         },
         {
-          "title": "Tools and DevOps",
+          "title": "Frontend",
           "items": [
-            "Git",
-            "GitHub",
-            "GitLab",
-            "AWS",
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "React Flow",
+            "shadcn/ui",
+            "React Query",
+            "React Hook Form",
+            "Zod",
+            "Redux",
+            "Angular"
+          ]
+        },
+        {
+          "title": "Data & databases",
+          "items": ["PostgreSQL", "MySQL", "Redis", "Apache Airflow", "ETL", "pandas"]
+        },
+        {
+          "title": "Testing & quality",
+          "items": [
+            "Playwright",
+            "Pytest",
+            "Jest",
+            "React Testing Library",
+            "MSW",
+            "Pyright",
+            "Ruff"
+          ]
+        },
+        {
+          "title": "DevOps, real-time & integrations",
+          "items": [
             "Docker",
+            "GitHub Actions",
+            "AWS",
             "Vercel",
-            "CI/CD",
-            "Linux",
-            "npm / package json",
-            "Basic CLI",
-            "Layered separation (controllers, services, domain)"
+            "WebSockets",
+            "Server-Sent Events",
+            "Gmail / Outlook / Zoho",
+            "WhatsApp"
           ]
         }
       ]
     },
     "credentials": {
       "eyebrow": "Credentials",
-      "title": "Education, certifications and languages behind the execution.",
-      "description": "Relevant education and certifications for product, backend and AI systems roles.",
+      "title": "Education, certifications and languages.",
+      "description": "The formal base behind the practice: software engineering, cloud and UX.",
       "items": [
         {
           "title": "Education",
-          "description": "Formal software and programming foundations for designing and maintaining production systems.",
+          "description": "Formal foundation in software and applied programming to design and maintain production systems.",
           "entries": [
             "Software Engineering — Universidad Politecnica de Chiapas",
             "Programming Technician — CETIS 138 (2020)"
@@ -449,29 +539,28 @@
         },
         {
           "title": "Certifications",
-          "description": "The current profile combines UX, cloud and systems/network fundamentals to complement day-to-day full-stack practice.",
+          "description": "Cloud, UX and networking fundamentals that complement full stack practice.",
           "entries": [
+            "AWS Academy: Cloud Architecting, Cloud Foundations, Cloud Security Foundations and Introduction to Cloud",
             "Google UX Design Specialization (2024)",
-            "AWS Academy Cloud Architecting (2024) and Introduction to Cloud (2024)",
-            "AWS Academy Cloud Foundations (2022)",
-            "Cisco: Network Support and Security, Operating Systems Basics and Networking Basics (2024)"
+            "Cisco: Cybersecurity, Networking and Operating Systems (fundamentals series)"
           ]
         },
         {
-          "title": "Languages and market",
-          "description": "Prepared for product teams, startups and remote environments with international expectations.",
+          "title": "Languages & availability",
+          "description": "I worked daily in English, written and spoken, with a San Francisco team.",
           "entries": [
             "Native Spanish",
-            "Intermediate English B1, close to B2",
-            "Open to remote roles and international teams"
+            "Professional English: daily use on a US team through 2026",
+            "Available immediately for remote and international roles"
           ]
         }
       ]
     },
     "certifications": {
       "eyebrow": "Verified badges",
-      "title": "Verified Credly badges",
-      "description": "Official badges verifiable on Credly.",
+      "title": "Verified badges on Credly",
+      "description": "The most relevant ones for cloud and systems roles; the rest live on my Credly profile.",
       "items": [
         {
           "badgeId": "3431ddd3-2f89-4c29-8da1-b87aecab4f91",
@@ -492,30 +581,14 @@
         {
           "badgeId": "0483b6e5-29bc-4a0e-92bd-fff253a84905",
           "title": "Introduction to Cybersecurity"
-        },
-        {
-          "badgeId": "15430e0f-ff7c-46db-b5fa-a83a6ad64bbc",
-          "title": "Network Addressing and Basic Troubleshooting"
-        },
-        {
-          "badgeId": "e0cda529-3cf2-45dc-8dc7-abfbff22181e",
-          "title": "Networking Basics"
-        },
-        {
-          "badgeId": "60aa6119-38a9-44c7-b697-5163e53055aa",
-          "title": "Network Support and Security"
-        },
-        {
-          "badgeId": "1bb59de2-0511-44c4-9928-7bccadec909c",
-          "title": "Operating Systems Basics"
         }
       ]
     },
     "contact": {
-      "eyebrow": "Final CTA",
-      "title": "I am looking for roles where AI, backend and frontend are not treated as separate tracks.",
-      "description": "I am looking for roles where I can contribute to product architecture, backend, data and AI integration with measurable impact.",
-      "primaryCta": "Email me",
+      "eyebrow": "Contact",
+      "title": "Looking for my next team.",
+      "description": "Available immediately. I can walk you through the cases and how I built them. Remote AI Full Stack, AI Systems or Product Engineer roles, in English or Spanish.",
+      "primaryCta": "Send email",
       "secondaryCta": "View LinkedIn",
       "primaryHref": "mailto:Eliseo10208@gmail.com",
       "secondaryHref": "https://www.linkedin.com/in/rodrigo-eliseo-garcia/",
@@ -536,20 +609,15 @@
           "href": "https://www.linkedin.com/in/rodrigo-eliseo-garcia/"
         },
         {
-          "label": "Phone",
-          "value": "+52 961 123 9207",
-          "href": "tel:+529611239207"
-        },
-        {
           "label": "Location",
-          "value": "Greater Mexico City Metropolitan Area, Mexico",
-          "href": "https://www.google.com/maps/search/Greater+Mexico+City+Metropolitan+Area"
+          "value": "Mexico City, Mexico",
+          "href": "https://www.google.com/maps/search/Area+metropolitana+de+Ciudad+de+Mexico"
         }
       ]
     },
     "footer": {
-      "availability": "Open to remote roles as an AI Full Stack Engineer, AI Systems Engineer or Data + AI Engineer.",
-      "note": "Focused on building product systems with AI, robust backend foundations and clear impact metrics."
+      "availability": "Available immediately for remote roles: AI Full Stack Engineer, AI Systems Engineer or Product Engineer.",
+      "note": "Designed and built by me with Next.js and next-intl, from Mexico City, under feline supervision."
     }
   }
 }

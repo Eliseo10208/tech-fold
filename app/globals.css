@@ -70,51 +70,6 @@ button {
   min-height: 100vh;
 }
 
-.oceanDecor {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.oceanDecorItem {
-  position: absolute;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 0.14;
-}
-
-.oceanDecorJellyfish {
-  top: 7rem;
-  right: 3rem;
-  width: 9.5rem;
-  aspect-ratio: 1 / 1;
-  background-image: url("/decor/jellyfish.png");
-  opacity: 0.18;
-}
-
-.oceanDecorWhale {
-  top: 27rem;
-  left: -2.5rem;
-  width: 11rem;
-  aspect-ratio: 1 / 1;
-  background-image: url("/decor/whale-shark.png");
-  opacity: 0.16;
-}
-
-.oceanDecorShark {
-  bottom: 20rem;
-  right: -2.2rem;
-  width: 9rem;
-  aspect-ratio: 1 / 1;
-  background-image: url("/decor/whale-shark.png");
-  opacity: 0.1;
-  transform: scaleX(-1) rotate(14deg);
-}
-
 .site-shell {
   position: relative;
   z-index: 1;
@@ -491,6 +446,17 @@ button {
   gap: 0.85rem;
 }
 
+.hero-availability {
+  margin: 0;
+  color: rgba(246, 250, 253, 0.62);
+  font-family: var(--font-mono-base), monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
 .hero-badgeRow {
   display: flex;
   flex-wrap: wrap;
@@ -572,31 +538,6 @@ button {
 .heroStatCard:first-child,
 .heroStatCard:nth-child(4) {
   background: var(--color-accent);
-}
-
-.impactStrip {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.8rem;
-  padding-top: 0.35rem;
-}
-
-.impactStripItem {
-  display: grid;
-  gap: 0.55rem;
-  padding: 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
-  background: var(--color-surface);
-}
-
-.impactStripTitle {
-  margin: 0;
-  color: var(--color-text);
-  font-family: var(--font-display-base), sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
 }
 
 .heroStatCard .metric-label {
@@ -1167,24 +1108,51 @@ button {
   border-radius: 0.85rem;
 }
 
-.experienceList {
+.timelineList {
   display: grid;
-  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.experienceItemCard {
+.timelineItem {
   display: grid;
-  gap: 0.8rem;
-  padding: 1.35rem 1.5rem;
-  background: var(--color-surface);
+  grid-template-columns: minmax(11rem, 15rem) minmax(0, 1fr);
+  gap: 0.75rem 2.5rem;
+  padding: 1.5rem 0.35rem;
+  border-top: 1px solid var(--color-border);
 }
 
-.experience-head {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
+.timelineItem:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.timelineWhen {
+  display: grid;
+  gap: 0.4rem;
+  align-content: start;
+}
+
+.timelineLocation {
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.timelineBody {
+  display: grid;
+  gap: 0.45rem;
+  justify-items: start;
+}
+
+.timelineCompany {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display-base), sans-serif;
+  font-size: 1.45rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
 }
 
 .experience-role {
@@ -1195,10 +1163,35 @@ button {
   text-transform: uppercase;
 }
 
-.experience-meta {
-  color: var(--color-text-soft);
-  font-size: 0.95rem;
-  line-height: 1.6;
+.labGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.labCard {
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.labLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+  margin-top: 0.15rem;
+}
+
+.labLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid var(--color-accent-soft);
+  color: var(--color-accent);
+  font-family: var(--font-mono-base), monospace;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .processGrid {
@@ -1226,13 +1219,13 @@ button {
 }
 
 .outcomesGrid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .outcomeCard {
   display: grid;
   gap: 0.8rem;
-  min-height: 13.5rem;
+  min-height: 11.5rem;
   padding: 1.25rem;
   background: var(--color-surface);
 }
@@ -1243,7 +1236,7 @@ button {
 }
 
 .stack-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem 1.5rem;
 }
 
@@ -1317,9 +1310,30 @@ button {
 .techBubbleCloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9rem 1rem;
+  gap: 1rem 0.55rem;
   align-content: flex-start;
   padding-top: 0.1rem;
+}
+
+.techBubbleItem {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.45rem;
+  width: 5.1rem;
+}
+
+.techBubbleLabel {
+  color: var(--color-text-soft);
+  font-family: var(--font-mono-base), monospace;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .techBubble {
@@ -1338,16 +1352,6 @@ button {
   animation-delay: calc(var(--bubble-index) * -0.45s);
 }
 
-.techBubble:nth-child(3n) {
-  --bubble-size: 4.85rem;
-  background: rgba(255, 255, 255, 0.92);
-}
-
-.techBubble:nth-child(4n) {
-  --bubble-size: 3.85rem;
-  background: rgba(219, 232, 242, 0.9);
-}
-
 .techBubbleIcon {
   width: 1.95rem;
   height: 1.95rem;
@@ -1360,11 +1364,6 @@ button {
 
 .techBubbleIconImage img {
   object-fit: contain;
-}
-
-.techBubble:nth-child(3n) .techBubbleIcon {
-  width: 2.15rem;
-  height: 2.15rem;
 }
 
 .techBubbleIconGeneric {
@@ -1402,6 +1401,7 @@ button {
 }
 
 .contactPanel {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(19rem, 0.9fr);
   gap: 1rem;
@@ -1411,6 +1411,14 @@ button {
   color: var(--color-text-inverse);
   background: var(--color-stage);
   box-shadow: var(--shadow-stage);
+}
+
+.contactCatPeek {
+  position: absolute;
+  top: -2.4rem;
+  right: 3.2rem;
+  width: 3.45rem;
+  height: auto;
 }
 
 .contactPanel .eyebrow,
@@ -1581,7 +1589,6 @@ button {
 
   .projectMetaGrid,
   .projectDetailGrid,
-  .impactStrip,
   .outcomesGrid,
   .stack-grid,
   .credentialsGrid {
@@ -1592,12 +1599,17 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .timelineItem {
+    grid-template-columns: minmax(9rem, 11rem) minmax(0, 1fr);
+    gap: 0.75rem 1.5rem;
+  }
+
   .heroStatsGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .site-header {
     grid-template-columns: auto 1fr;
     gap: 0.75rem;
@@ -1728,10 +1740,6 @@ button {
 }
 
 @media (max-width: 760px) {
-  .oceanDecor {
-    display: none;
-  }
-
   .site-shell {
     width: min(calc(100% - 1.25rem), var(--container-width));
   }
@@ -1780,12 +1788,19 @@ button {
   .projectMetaGrid,
   .projectDetailGrid,
   .projectMediaRail,
-  .impactStrip,
   .outcomesGrid,
   .stack-grid,
   .processGrid,
-  .credentialsGrid {
+  .credentialsGrid,
+  .labGrid,
+  .timelineItem {
     grid-template-columns: 1fr;
+  }
+
+  .contactCatPeek {
+    right: 1.6rem;
+    width: 2.9rem;
+    top: -2rem;
   }
 
   .projectFooterNav,
@@ -1835,18 +1850,13 @@ button {
     --bubble-size: 3.65rem;
   }
 
-  .techBubble:nth-child(3n) {
-    --bubble-size: 4.2rem;
+  .techBubbleItem {
+    width: 4.35rem;
   }
 
   .techBubbleIcon {
     width: 1.7rem;
     height: 1.7rem;
-  }
-
-  .techBubble:nth-child(3n) .techBubbleIcon {
-    width: 1.9rem;
-    height: 1.9rem;
   }
 }
 

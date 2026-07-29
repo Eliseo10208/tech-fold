@@ -61,6 +61,36 @@ const techIconMap: Record<string, TechIconConfig> = {
   Docker: { kind: "remote", src: buildTechIconUrl("Docker") },
   ETL: { kind: "generic", glyph: "data" },
   "Express.js": { kind: "remote", src: buildTechIconUrl("Express") },
+  FastAPI: { kind: "remote", src: buildTechIconUrl("FastAPI") },
+  Pydantic: { kind: "remote", src: "https://cdn.simpleicons.org/pydantic" },
+  SQLAlchemy: { kind: "remote", src: "https://cdn.simpleicons.org/sqlalchemy" },
+  Alembic: { kind: "generic", glyph: "data" },
+  "Function calling": { kind: "generic", glyph: "api" },
+  "React Flow": { kind: "generic", glyph: "services" },
+  "shadcn/ui": { kind: "remote", src: "https://cdn.simpleicons.org/shadcnui" },
+  pandas: { kind: "remote", src: "https://cdn.simpleicons.org/pandas" },
+  "Server-Sent Events": { kind: "generic", glyph: "realtime" },
+  "Gmail / Outlook / Zoho": { kind: "remote", src: "https://cdn.simpleicons.org/gmail" },
+  "OpenAI Agents": { kind: "remote", src: "https://cdn.simpleicons.org/openai" },
+  "Structured outputs": { kind: "generic", glyph: "layers" },
+  "Human-in-the-loop": { kind: "generic", glyph: "chat" },
+  "TensorFlow / Keras": { kind: "remote", src: buildTechIconUrl("TensorFlow") },
+  Redis: { kind: "remote", src: buildTechIconUrl("Redis") },
+  "React Query": { kind: "remote", src: "https://cdn.simpleicons.org/reactquery" },
+  "React Hook Form": { kind: "remote", src: "https://cdn.simpleicons.org/reacthookform" },
+  Zod: { kind: "remote", src: "https://cdn.simpleicons.org/zod" },
+  Playwright: { kind: "generic", glyph: "browser" },
+  Pytest: { kind: "remote", src: "https://cdn.simpleicons.org/pytest" },
+  Jest: { kind: "remote", src: buildTechIconUrl("Jest") },
+  "React Testing Library": { kind: "remote", src: "https://cdn.simpleicons.org/testinglibrary" },
+  MSW: { kind: "generic", glyph: "api" },
+  Pyright: { kind: "generic", glyph: "delivery" },
+  Ruff: { kind: "remote", src: "https://cdn.simpleicons.org/ruff" },
+  "GitHub Actions": { kind: "remote", src: "https://cdn.simpleicons.org/githubactions" },
+  "Azure / Bicep": { kind: "remote", src: buildTechIconUrl("Azure") },
+  "Microsoft Teams Bots": { kind: "generic", glyph: "chat" },
+  Slack: { kind: "generic", glyph: "chat" },
+  WhatsApp: { kind: "remote", src: "https://cdn.simpleicons.org/whatsapp" },
   Flutter: { kind: "remote", src: buildTechIconUrl("Flutter") },
   Git: { kind: "remote", src: buildTechIconUrl("Git") },
   GitHub: { kind: "remote", src: buildTechIconUrl("GitHub") },
@@ -320,16 +350,16 @@ export function TechBubbleCloud({ items, className, itemClassName }: TechBubbleC
         } as CSSProperties;
 
         return (
-          <span
-            aria-label={item}
-            className={joinClassNames("techBubble", itemClassName)}
-            key={item}
-            role="listitem"
-            style={bubbleStyle}
-            title={item}
-          >
-            <TechIcon item={item} />
-            <span className="srOnly">{item}</span>
+          <span className="techBubbleItem" key={item} role="listitem">
+            <span
+              aria-hidden="true"
+              className={joinClassNames("techBubble", itemClassName)}
+              style={bubbleStyle}
+              title={item}
+            >
+              <TechIcon item={item} />
+            </span>
+            <span className="techBubbleLabel">{item}</span>
           </span>
         );
       })}
