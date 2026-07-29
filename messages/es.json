@@ -34,7 +34,7 @@
       ],
       "availability": "Disponible de inmediato · CDMX · Remoto (CST) · AI Full Stack / AI Systems / Product Engineer",
       "badges": [
-        "OpenAI Agents · Structured outputs · HITL",
+        "OpenAI Agents · Function calling · Structured outputs",
         "FastAPI · Next.js · PostgreSQL",
         "Pytest · Jest · Playwright"
       ],
@@ -42,17 +42,17 @@
         {
           "label": "Último rol",
           "title": "AI Full-Stack Engineer en Handbook",
-          "description": "Feb–jul 2026 · San Francisco (híbrido) · Product Architecture & LLM Systems."
+          "description": "Feb–jul 2026 · San Francisco, híbrido."
         },
         {
-          "label": "Ramp-up",
-          "title": "51 PRs · 53 commits a main",
-          "description": "Backend, frontend, IA, integraciones y pruebas en cinco meses."
+          "label": "Stack principal",
+          "title": "Python y TypeScript",
+          "description": "FastAPI y PostgreSQL en el backend; Next.js y React en el frontend."
         },
         {
           "label": "Experiencia",
-          "title": "3+ años end-to-end",
-          "description": "Del levantamiento con el cliente al deploy: producto, datos e IA."
+          "title": "3+ años",
+          "description": "Del requerimiento con el cliente a producción: producto, datos e IA."
         }
       ]
     },
@@ -79,7 +79,7 @@
     },
     "about": {
       "eyebrow": "Quién soy",
-      "title": "Ingeniero end-to-end: del requerimiento a producción.",
+      "title": "Del requerimiento a producción.",
       "description": "Llevo tres años construyendo software que opera negocios: soporte automatizado con LLMs, pipelines de datos, plataformas de workflows y una elección digital. Antes de escribir código, hablo con quien opera el proceso.",
       "highlight": {
         "eyebrow": "En corto",
@@ -94,7 +94,7 @@
       "items": [
         {
           "title": "Levanto requerimientos con el cliente",
-          "description": "Hablo directamente con clientes y operadores: qué hacen, dónde se atora, qué evidencia necesitan. Eso se convierte en backlog técnico y workflows automatizables."
+          "description": "Hablo directamente con clientes y operadores: qué hacen, dónde se atora, qué evidencia necesitan. De ahí salen las tareas técnicas y los workflows a automatizar."
         },
         {
           "title": "LLMs en producción",
@@ -152,10 +152,12 @@
             }
           ],
           "highlights": [
-            "51 PRs y 53 commits a main en cinco meses, entre backend, frontend, IA, integraciones y pruebas.",
             "Ejecución de workflows con ciclos: guardas de iteración, recuperación, snapshots versionados e historial.",
             "Intake conversacional con LLM e ingesta/transcripción de audio para convertir fuentes no estructuradas en workflows ejecutables.",
-            "Editor visual de grafos (React Flow + ELK.js) con colaboración en tiempo real, autosave y optimizaciones de drag/serialización."
+            "Editor visual de grafos (React Flow + ELK.js) con colaboración en tiempo real, autosave y optimizaciones de drag/serialización.",
+            "Formularios dinámicos sobre case schemas e integraciones HTTP configurables con mapeos de request/response.",
+            "Pruebas en backend y frontend con Pytest, Jest, React Testing Library, MSW y Playwright.",
+            "51 PRs y 53 commits integrados a main en cinco meses."
           ],
           "media": [
             {
@@ -315,7 +317,7 @@
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Jul 2026",
           "location": "San Francisco, EE. UU. · Híbrido",
-          "summary": "Desarrollé features de la plataforma de AI workflow automation (workflows cíclicos, intake con LLM, formularios dinámicos, integraciones) y coordiné entregas con clientes. 51 PRs a main."
+          "summary": "Desarrollé features de la plataforma de AI workflow automation: workflows cíclicos, intake con LLM, formularios dinámicos e integraciones. También coordiné entregas con clientes."
         },
         {
           "company": "Black Horse Technologies",

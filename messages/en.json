@@ -34,7 +34,7 @@
       ],
       "availability": "Available immediately · Mexico City · Remote (CST) · AI Full Stack / AI Systems / Product Engineer",
       "badges": [
-        "OpenAI Agents · Structured outputs · HITL",
+        "OpenAI Agents · Function calling · Structured outputs",
         "FastAPI · Next.js · PostgreSQL",
         "Pytest · Jest · Playwright"
       ],
@@ -42,17 +42,17 @@
         {
           "label": "Latest role",
           "title": "AI Full-Stack Engineer at Handbook",
-          "description": "Feb–Jul 2026 · San Francisco (hybrid) · Product Architecture & LLM Systems."
+          "description": "Feb–Jul 2026 · San Francisco, hybrid."
         },
         {
-          "label": "Ramp-up",
-          "title": "51 PRs · 53 commits to main",
-          "description": "Backend, frontend, AI, integrations and tests over five months."
+          "label": "Main stack",
+          "title": "Python and TypeScript",
+          "description": "FastAPI and PostgreSQL on the backend; Next.js and React on the frontend."
         },
         {
           "label": "Experience",
-          "title": "3+ years end-to-end",
-          "description": "From customer discovery to deploy: product, data and AI."
+          "title": "3+ years",
+          "description": "From customer requirements to production: product, data and AI."
         }
       ]
     },
@@ -79,7 +79,7 @@
     },
     "about": {
       "eyebrow": "Who I am",
-      "title": "End-to-end engineer: from requirements to production.",
+      "title": "From requirements to production.",
       "description": "I have spent three years building software that runs businesses: LLM-automated support, data pipelines, workflow platforms and a digital election. Before writing code, I talk to the people who operate the process.",
       "highlight": {
         "eyebrow": "In short",
@@ -94,7 +94,7 @@
       "items": [
         {
           "title": "I gather requirements with the customer",
-          "description": "I talk directly with customers and operators: what they do, where it gets stuck, what evidence they need. That becomes a technical backlog and automatable workflows."
+          "description": "I talk directly with customers and operators: what they do, where it gets stuck, what evidence they need. That turns into technical tasks and workflows to automate."
         },
         {
           "title": "LLMs in production",
@@ -152,10 +152,12 @@
             }
           ],
           "highlights": [
-            "51 PRs and 53 commits to main in five months, across backend, frontend, AI, integrations and tests.",
             "Workflow execution with cycles: iteration guards, recovery, versioned snapshots and execution history.",
             "Conversational LLM intake plus audio ingestion/transcription to turn unstructured sources into executable workflows.",
-            "Visual graph editor (React Flow + ELK.js) with real-time collaboration, autosave and drag/serialization performance work."
+            "Visual graph editor (React Flow + ELK.js) with real-time collaboration, autosave and drag/serialization performance work.",
+            "Dynamic forms on case schemas and configurable HTTP integrations with request/response mappings.",
+            "Backend and frontend tests with Pytest, Jest, React Testing Library, MSW and Playwright.",
+            "51 PRs and 53 commits merged into main over five months."
           ],
           "media": [
             {
@@ -315,7 +317,7 @@
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Jul 2026",
           "location": "San Francisco, USA · Hybrid",
-          "summary": "Developed features for the AI workflow automation platform (cyclic workflows, LLM intake, dynamic forms, integrations) and coordinated delivery with customers. 51 PRs to main."
+          "summary": "Developed features for the AI workflow automation platform: cyclic workflows, LLM intake, dynamic forms and integrations. I also coordinated delivery with customers."
         },
         {
           "company": "Black Horse Technologies",
