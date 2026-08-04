@@ -361,6 +361,44 @@
               "ctaLabel": "Ver código en GitHub"
             }
           ]
+        },
+        {
+          "slug": "nom-rag",
+          "navLabel": "NOM RAG",
+          "navHint": "RAG evaluado / citas normativas",
+          "title": "RAG auditable para Normas Oficiales Mexicanas",
+          "company": "Demo web",
+          "role": "RAG con evaluación",
+          "period": "Publicado",
+          "summary": "Asistente sobre cuatro NOM de seguridad y salud laboral. Recupera evidencia normativa, responde con numerales exactos y conserva trazas para auditar cada respuesta.",
+          "tags": ["Python", "FastAPI", "ChromaDB", "E5", "Gemini", "Pytest", "Docker"],
+          "detailItems": [],
+          "highlights": [
+            "Un parser basado en máquina de estados convierte documentos del DOF con formatos inconsistentes en 248 fragmentos citables con metadatos normativos.",
+            "La recuperación usa embeddings multilingual-e5-small y ChromaDB; las respuestas aplican un contrato de citas, abstención y reformulación de seguimientos.",
+            "Un harness evalúa recuperación, exactitud de citas, abstención, respuestas multi-turno y groundedness; cada consulta conserva evidencia, puntuaciones y una traza de auditoría."
+          ],
+          "media": [
+            {
+              "kind": "website",
+              "label": "Demo en producción",
+              "title": "nom-rag.rodrigo-e-g.lat",
+              "note": "Consulta NOM-035, NOM-019, NOM-017 y NOM-030 con citas y fuentes recuperadas.",
+              "src": "https://nom-rag.rodrigo-e-g.lat/",
+              "embed": true,
+              "embedWidth": 1280,
+              "embedHeight": 800,
+              "ctaLabel": "Abrir asistente NOM"
+            },
+            {
+              "kind": "website",
+              "label": "Código fuente",
+              "title": "Eliseo10208/nom-rag",
+              "note": "Repositorio con el pipeline RAG, evaluaciones, trazas y despliegue en Docker.",
+              "src": "https://github.com/Eliseo10208/nom-rag",
+              "ctaLabel": "Ver código en GitHub"
+            }
+          ]
         }
       ]
     },

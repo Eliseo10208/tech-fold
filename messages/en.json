@@ -361,6 +361,44 @@
               "ctaLabel": "View code on GitHub"
             }
           ]
+        },
+        {
+          "slug": "nom-rag",
+          "navLabel": "NOM RAG",
+          "navHint": "evaluated RAG / regulatory citations",
+          "title": "Auditable RAG for Mexican workplace regulations",
+          "company": "Web demo",
+          "role": "Evaluation-driven RAG",
+          "period": "Published",
+          "summary": "An assistant covering four Mexican workplace health and safety standards. It retrieves regulatory evidence, answers with exact clauses and stores traces so every response can be audited.",
+          "tags": ["Python", "FastAPI", "ChromaDB", "E5", "Gemini", "Pytest", "Docker"],
+          "detailItems": [],
+          "highlights": [
+            "A state-machine parser turns inconsistent DOF document formats into 248 citable chunks with regulatory metadata.",
+            "Retrieval uses multilingual-e5-small embeddings and ChromaDB; answers enforce citation, abstention and follow-up rewriting contracts.",
+            "An evaluation harness checks retrieval, citation accuracy, abstention, multi-turn answers and groundedness; every query stores evidence, scores and an audit trace."
+          ],
+          "media": [
+            {
+              "kind": "website",
+              "label": "Production demo",
+              "title": "nom-rag.rodrigo-e-g.lat",
+              "note": "Query NOM-035, NOM-019, NOM-017 and NOM-030 with citations and retrieved sources.",
+              "src": "https://nom-rag.rodrigo-e-g.lat/",
+              "embed": true,
+              "embedWidth": 1280,
+              "embedHeight": 800,
+              "ctaLabel": "Open NOM assistant"
+            },
+            {
+              "kind": "website",
+              "label": "Source code",
+              "title": "Eliseo10208/nom-rag",
+              "note": "Repository containing the RAG pipeline, evaluations, traces and Docker deployment.",
+              "src": "https://github.com/Eliseo10208/nom-rag",
+              "ctaLabel": "View code on GitHub"
+            }
+          ]
         }
       ]
     },
