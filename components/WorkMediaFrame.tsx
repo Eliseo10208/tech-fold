@@ -1,9 +1,13 @@
 import Image from "next/image";
 import type { ProjectMediaKind } from "@/types/portfolio";
+import { EmbeddedWebsiteFrame } from "./EmbeddedWebsiteFrame";
 
 type WorkMediaFrameProps = {
   mediaAlt?: string;
   mediaBackground?: string;
+  mediaEmbed?: boolean;
+  mediaEmbedHeight?: number;
+  mediaEmbedWidth?: number;
   mediaKind: ProjectMediaKind;
   mediaLabel: string;
   mediaPoster?: string;
@@ -11,11 +15,15 @@ type WorkMediaFrameProps = {
   mediaTitle: string;
   mediaNote: string;
   priority?: boolean;
+  showCaption?: boolean;
 };
 
 export function WorkMediaFrame({
   mediaAlt,
   mediaBackground,
+  mediaEmbed = false,
+  mediaEmbedHeight = 768,
+  mediaEmbedWidth = 1184,
   mediaKind,
   mediaLabel,
   mediaPoster,
@@ -23,6 +31,7 @@ export function WorkMediaFrame({
   mediaTitle,
   mediaNote,
   priority = false,
+  showCaption = true,
 }: WorkMediaFrameProps) {
   let mediaHostname = "";
 
@@ -68,7 +77,15 @@ export function WorkMediaFrame({
       </div>
 
       <div className="showcase-screen">
-        <div className={isLogoMedia ? "showcase-mediaAssetWrap showcase-mediaAssetWrapLogo" : "showcase-mediaAssetWrap"}>
+        <div
+          className={
+            mediaEmbed
+              ? "showcase-mediaAssetWrap showcase-mediaAssetWrapEmbed"
+              : isLogoMedia
+                ? "showcase-mediaAssetWrap showcase-mediaAssetWrapLogo"
+                : "showcase-mediaAssetWrap"
+          }
+        >
           {mediaSrc ? (
             mediaKind === "image" ? (
               <Image
@@ -89,6 +106,13 @@ export function WorkMediaFrame({
               >
                 <source src={mediaSrc} />
               </video>
+            ) : mediaEmbed ? (
+              <EmbeddedWebsiteFrame
+                height={mediaEmbedHeight}
+                src={mediaSrc}
+                title={`${mediaTitle} - ${mediaLabel}`}
+                width={mediaEmbedWidth}
+              />
             ) : (
               <div className="showcase-sitePreview">
                 {mediaBackground ? (
@@ -133,11 +157,13 @@ export function WorkMediaFrame({
           )}
         </div>
 
-        <div className="showcase-mediaCaption">
-          <span className="showcase-mediaBadge">{mediaLabel}</span>
-          <h3 className="showcase-mediaTitle">{mediaTitle}</h3>
-          <p className="showcase-mediaNote">{mediaNote}</p>
-        </div>
+        {showCaption ? (
+          <div className="showcase-mediaCaption">
+            <span className="showcase-mediaBadge">{mediaLabel}</span>
+            <h3 className="showcase-mediaTitle">{mediaTitle}</h3>
+            <p className="showcase-mediaNote">{mediaNote}</p>
+          </div>
+        ) : null}
       </div>
     </div>
   );

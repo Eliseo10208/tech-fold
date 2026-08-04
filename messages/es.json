@@ -12,17 +12,16 @@
     "navigation": {
       "ariaLabel": "Navegación principal",
       "about": "Perfil",
-      "work": "Casos",
-      "experience": "Trayectoria",
-      "lab": "Lab",
+      "work": "Experiencia real",
+      "experience": "Demos",
       "outcomes": "Resultados",
       "contact": "Contacto",
       "cta": "Hablemos"
     },
     "hero": {
       "title": "Del proceso manual al sistema que lo ejecuta.",
-      "description": "Vengo de Handbook (San Francisco), donde desarrollé features de una plataforma de AI workflow automation y trabajé directamente con clientes: levantar requerimientos, convertirlos en tareas y llevarlas a producción con FastAPI, PostgreSQL, Next.js, TypeScript y OpenAI Agents.",
-      "primaryCta": "Ver casos reales",
+      "description": "Trabajé remotamente desde México para Handbook, una empresa de Estados Unidos, donde desarrollé features de una plataforma de AI workflow automation y trabajé directamente con clientes: levantar requerimientos, convertirlos en tareas y llevarlas a producción con FastAPI, PostgreSQL, Next.js, TypeScript y OpenAI Agents.",
+      "primaryCta": "Ver experiencia real",
       "contactCta": "Escríbeme",
       "sideEyebrow": "Lo último que construí",
       "sideTitle": "Handbook, feb–jul 2026.",
@@ -42,7 +41,7 @@
         {
           "label": "Último rol",
           "title": "AI Full-Stack Engineer en Handbook",
-          "description": "Feb–jul 2026 · San Francisco, híbrido."
+          "description": "Feb–jul 2026 · Remoto desde México."
         },
         {
           "label": "Stack principal",
@@ -156,8 +155,7 @@
             "Intake conversacional con LLM e ingesta/transcripción de audio para convertir fuentes no estructuradas en workflows ejecutables.",
             "Editor visual de grafos (React Flow + ELK.js) con colaboración en tiempo real, autosave y optimizaciones de drag/serialización.",
             "Formularios dinámicos sobre case schemas e integraciones HTTP configurables con mapeos de request/response.",
-            "Pruebas en backend y frontend con Pytest, Jest, React Testing Library, MSW y Playwright.",
-            "51 PRs y 53 commits integrados a main en cinco meses."
+            "Pruebas en backend y frontend con Pytest, Jest, React Testing Library, MSW y Playwright."
           ],
           "media": [
             {
@@ -307,6 +305,65 @@
         }
       ]
     },
+    "demos": {
+      "eyebrow": "Proyectos personales",
+      "title": "Demos técnicas que puedes probar.",
+      "description": "Experimentos construidos para practicar conceptos concretos. Cada proyecto incluye una demo funcional y el código fuente.",
+      "navigatorLabel": "Selector de proyectos personales",
+      "projectLabel": "Proyecto activo",
+      "mediaRailLabel": "Demo y código",
+      "highlightsLabel": "Cómo está implementado",
+      "openExternal": "Abrir enlace",
+      "websiteFallbackLabel": "Demo disponible",
+      "websiteFallbackNote": "Abre la demo para probar el proyecto.",
+      "previousProject": "Proyecto anterior",
+      "nextProject": "Siguiente proyecto",
+      "meta": {
+        "role": "Enfoque técnico",
+        "company": "Tipo",
+        "period": "Estado"
+      },
+      "items": [
+        {
+          "slug": "pou-v2",
+          "navLabel": "PouV2",
+          "navHint": "concurrencia / Web Workers",
+          "title": "Concurrencia aplicada a un juego web",
+          "company": "Demo interactiva",
+          "role": "Concurrencia en el navegador",
+          "period": "Publicado",
+          "summary": "Juego web con PvP local y modo Zombie. La lógica de movimiento, persecución y tiempo se reparte entre Web Workers para mantener el ciclo principal de Phaser enfocado en renderizado y colisiones.",
+          "tags": ["JavaScript", "Phaser 3", "React", "Web Workers", "Vite"],
+          "detailItems": [],
+          "highlights": [
+            "Workers independientes procesan los controles de ambos jugadores, la persecución del zombie y el temporizador.",
+            "El estado viaja con postMessage; Phaser conserva el renderizado y las colisiones en el hilo principal.",
+            "Incluye PvP con WASD y flechas, además de supervivencia Zombie durante 60 segundos."
+          ],
+          "media": [
+            {
+              "kind": "website",
+              "label": "Demo jugable",
+              "title": "pouv2.netlify.app",
+              "note": "Prueba los modos PvP local y Zombie directamente en el navegador.",
+              "src": "https://pouv2.netlify.app/",
+              "embed": true,
+              "embedWidth": 1184,
+              "embedHeight": 768,
+              "ctaLabel": "Abrir juego en pantalla completa"
+            },
+            {
+              "kind": "website",
+              "label": "Código fuente",
+              "title": "Eliseo10208/pouV2",
+              "note": "Repositorio con las escenas de Phaser y los Web Workers del juego.",
+              "src": "https://github.com/Eliseo10208/pouV2",
+              "ctaLabel": "Ver código en GitHub"
+            }
+          ]
+        }
+      ]
+    },
     "experience": {
       "eyebrow": "Trayectoria",
       "title": "Tres años de trabajo, rol por rol.",
@@ -316,7 +373,7 @@
           "company": "Handbook / AIPlaybookHQ",
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Jul 2026",
-          "location": "San Francisco, EE. UU. · Híbrido",
+          "location": "Ciudad de México, México · Remoto",
           "summary": "Desarrollé features de la plataforma de AI workflow automation: workflows cíclicos, intake con LLM, formularios dinámicos e integraciones. También coordiné entregas con clientes."
         },
         {
@@ -385,14 +442,6 @@
           "stack": ["Python", "Autómatas", "AWS"],
           "links": [
             { "label": "Repositorio", "href": "https://github.com/Eliseo10208/ARNvalidator" }
-          ]
-        },
-        {
-          "title": "Winterra — PR externo fusionado",
-          "description": "Contribución a la app Flutter de otro desarrollador, aceptada y fusionada: 42 archivos con BLoC/Cubit, GetIt, Firebase y separación dominio/datos/presentación.",
-          "stack": ["Flutter", "BLoC / Cubit", "Firebase"],
-          "links": [
-            { "label": "Ver PR", "href": "https://github.com/EddieToledoE/winterra/pull/1" }
           ]
         }
       ]
@@ -550,7 +599,7 @@
         },
         {
           "title": "Idiomas y disponibilidad",
-          "description": "Trabajé a diario en inglés, por escrito y hablado, con un equipo de San Francisco.",
+          "description": "Trabajé a diario en inglés, por escrito y hablado, con un equipo de Estados Unidos.",
           "entries": [
             "Español nativo",
             "Inglés profesional: uso diario en un equipo de EE. UU. durante 2026",

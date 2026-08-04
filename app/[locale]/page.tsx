@@ -43,26 +43,6 @@ type ProcessItem = {
   description: string;
 };
 
-type ExperienceItem = {
-  company: string;
-  role: string;
-  period: string;
-  location: string;
-  summary: string;
-};
-
-type LabLink = {
-  label: string;
-  href: string;
-};
-
-type LabItem = {
-  title: string;
-  description: string;
-  stack: string[];
-  links: LabLink[];
-};
-
 type StackItem = {
   title: string;
   items: string[];
@@ -109,8 +89,7 @@ export default async function HomePage({ params }: HomePageProps) {
   const aboutHighlight = t.raw("about.highlight") as AboutHighlight;
   const credentialItems = t.raw("credentials.items") as CredentialItem[];
   const workItems = t.raw("work.items") as ProjectItem[];
-  const experienceItems = t.raw("experience.items") as ExperienceItem[];
-  const labItems = t.raw("lab.items") as LabItem[];
+  const demoItems = t.raw("demos.items") as ProjectItem[];
   const processItems = t.raw("process.items") as ProcessItem[];
   const stackItems = t.raw("stack.items") as StackItem[];
   const contactLinks = t.raw("contact.links") as ContactLink[];
@@ -122,7 +101,7 @@ export default async function HomePage({ params }: HomePageProps) {
   );
 
   return (
-    <main className="site-page">
+    <main className="site-page" id="top">
       <header className="site-headerShell">
         <div className="site-shell">
           <div className="site-header">
@@ -144,11 +123,8 @@ export default async function HomePage({ params }: HomePageProps) {
               <a className="header-link" href="#selected-work">
                 {t("navigation.work")}
               </a>
-              <a className="header-link" href="#experience">
+              <a className="header-link" href="#demos">
                 {t("navigation.experience")}
-              </a>
-              <a className="header-link" href="#lab">
-                {t("navigation.lab")}
               </a>
               <a className="header-link" href="#outcomes">
                 {t("navigation.outcomes")}
@@ -165,8 +141,7 @@ export default async function HomePage({ params }: HomePageProps) {
                 links={[
                   { href: "#about", label: t("navigation.about") },
                   { href: "#selected-work", label: t("navigation.work") },
-                  { href: "#experience", label: t("navigation.experience") },
-                  { href: "#lab", label: t("navigation.lab") },
+                  { href: "#demos", label: t("navigation.experience") },
                   { href: "#outcomes", label: t("navigation.outcomes") },
                   { href: "#contact", label: t("navigation.contact") },
                 ]}
@@ -283,77 +258,26 @@ export default async function HomePage({ params }: HomePageProps) {
             <p className="section-copy">{t("work.description")}</p>
           </div>
 
-          <ProjectExplorer projectItems={workItems} />
+          <ProjectExplorer
+            projectItems={workItems}
+            translationSection="work"
+          />
         </section>
 
-        <section className="section-block" id="experience">
+        <section className="section-block" id="demos">
           <div className="section-intro">
             <div>
-              <span className="eyebrow">{t("experience.eyebrow")}</span>
-              <h2 className="section-title">{t("experience.title")}</h2>
+              <span className="eyebrow">{t("demos.eyebrow")}</span>
+              <h2 className="section-title">{t("demos.title")}</h2>
             </div>
 
-            <p className="section-copy">{t("experience.description")}</p>
+            <p className="section-copy">{t("demos.description")}</p>
           </div>
 
-          <ol className="timelineList">
-            {experienceItems.map((item) => (
-              <li className="timelineItem" key={`${item.company}-${item.period}`}>
-                <div className="timelineWhen">
-                  <span className="metric-label">{item.period}</span>
-                  <p className="timelineLocation">{item.location}</p>
-                </div>
-
-                <div className="timelineBody">
-                  <h3 className="timelineCompany">{item.company}</h3>
-                  <span className="experience-role">{item.role}</span>
-                  <p className="experience-summary">{item.summary}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </section>
-
-        <section className="section-block" id="lab">
-          <div className="section-intro">
-            <div>
-              <span className="eyebrow">{t("lab.eyebrow")}</span>
-              <h2 className="section-title">{t("lab.title")}</h2>
-            </div>
-
-            <p className="section-copy">{t("lab.description")}</p>
-          </div>
-
-          <div className="labGrid">
-            {labItems.map((item) => (
-              <article className="infoCard labCard" key={item.title}>
-                <h3 className="pillar-title">{item.title}</h3>
-                <p className="pillar-copy">{item.description}</p>
-
-                <div className="tag-row">
-                  {item.stack.map((stackItem) => (
-                    <span className="tag" key={`${item.title}-${stackItem}`}>
-                      {stackItem}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="labLinks">
-                  {item.links.map((linkItem) => (
-                    <a
-                      className="labLink"
-                      href={linkItem.href}
-                      key={linkItem.href}
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      {linkItem.label} ↗
-                    </a>
-                  ))}
-                </div>
-              </article>
-            ))}
-          </div>
+          <ProjectExplorer
+            projectItems={demoItems}
+            translationSection="demos"
+          />
         </section>
 
         <section className="section-block" id="process">

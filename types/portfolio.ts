@@ -4,6 +4,9 @@ export type ProjectMediaItem = {
   alt?: string;
   background?: string;
   ctaLabel?: string;
+  embed?: boolean;
+  embedHeight?: number;
+  embedWidth?: number;
   kind: ProjectMediaKind;
   label: string;
   note: string;

@@ -12,17 +12,16 @@
     "navigation": {
       "ariaLabel": "Main navigation",
       "about": "Profile",
-      "work": "Case studies",
-      "experience": "Track record",
-      "lab": "Lab",
+      "work": "Real-world experience",
+      "experience": "Demos",
       "outcomes": "Outcomes",
       "contact": "Contact",
       "cta": "Let's talk"
     },
     "hero": {
       "title": "From manual process to the system that runs it.",
-      "description": "I come from Handbook (San Francisco), where I developed features for an AI workflow automation platform and worked directly with customers: gathering requirements, turning them into tasks and shipping them with FastAPI, PostgreSQL, Next.js, TypeScript and OpenAI Agents.",
-      "primaryCta": "See real cases",
+      "description": "I worked remotely from Mexico for Handbook, a US company, where I developed features for an AI workflow automation platform and worked directly with customers: gathering requirements, turning them into tasks and shipping them with FastAPI, PostgreSQL, Next.js, TypeScript and OpenAI Agents.",
+      "primaryCta": "See real-world experience",
       "contactCta": "Get in touch",
       "sideEyebrow": "Latest work",
       "sideTitle": "Handbook, Feb–Jul 2026.",
@@ -42,7 +41,7 @@
         {
           "label": "Latest role",
           "title": "AI Full-Stack Engineer at Handbook",
-          "description": "Feb–Jul 2026 · San Francisco, hybrid."
+          "description": "Feb–Jul 2026 · Remote from Mexico."
         },
         {
           "label": "Main stack",
@@ -156,8 +155,7 @@
             "Conversational LLM intake plus audio ingestion/transcription to turn unstructured sources into executable workflows.",
             "Visual graph editor (React Flow + ELK.js) with real-time collaboration, autosave and drag/serialization performance work.",
             "Dynamic forms on case schemas and configurable HTTP integrations with request/response mappings.",
-            "Backend and frontend tests with Pytest, Jest, React Testing Library, MSW and Playwright.",
-            "51 PRs and 53 commits merged into main over five months."
+            "Backend and frontend tests with Pytest, Jest, React Testing Library, MSW and Playwright."
           ],
           "media": [
             {
@@ -307,6 +305,65 @@
         }
       ]
     },
+    "demos": {
+      "eyebrow": "Personal projects",
+      "title": "Technical demos you can try.",
+      "description": "Experiments built to practice specific concepts. Every project includes a working demo and its source code.",
+      "navigatorLabel": "Personal project selector",
+      "projectLabel": "Active project",
+      "mediaRailLabel": "Demo and source",
+      "highlightsLabel": "How it is implemented",
+      "openExternal": "Open link",
+      "websiteFallbackLabel": "Live demo",
+      "websiteFallbackNote": "Open the demo to try the project.",
+      "previousProject": "Previous project",
+      "nextProject": "Next project",
+      "meta": {
+        "role": "Technical focus",
+        "company": "Type",
+        "period": "Status"
+      },
+      "items": [
+        {
+          "slug": "pou-v2",
+          "navLabel": "PouV2",
+          "navHint": "concurrency / Web Workers",
+          "title": "Concurrency applied to a web game",
+          "company": "Interactive demo",
+          "role": "Browser concurrency",
+          "period": "Published",
+          "summary": "A web game with local PvP and Zombie modes. Movement, pursuit and timing are distributed across Web Workers so Phaser's main loop stays focused on rendering and collisions.",
+          "tags": ["JavaScript", "Phaser 3", "React", "Web Workers", "Vite"],
+          "detailItems": [],
+          "highlights": [
+            "Independent workers process both players' controls, zombie pursuit and the timer.",
+            "State travels through postMessage while Phaser keeps rendering and collisions on the main thread.",
+            "Includes PvP with WASD and arrow keys plus a 60-second Zombie survival mode."
+          ],
+          "media": [
+            {
+              "kind": "website",
+              "label": "Playable demo",
+              "title": "pouv2.netlify.app",
+              "note": "Try the local PvP and Zombie modes directly in the browser.",
+              "src": "https://pouv2.netlify.app/",
+              "embed": true,
+              "embedWidth": 1184,
+              "embedHeight": 768,
+              "ctaLabel": "Open game fullscreen"
+            },
+            {
+              "kind": "website",
+              "label": "Source code",
+              "title": "Eliseo10208/pouV2",
+              "note": "Repository containing the Phaser scenes and the game's Web Workers.",
+              "src": "https://github.com/Eliseo10208/pouV2",
+              "ctaLabel": "View code on GitHub"
+            }
+          ]
+        }
+      ]
+    },
     "experience": {
       "eyebrow": "Track record",
       "title": "Three years of work, role by role.",
@@ -316,7 +373,7 @@
           "company": "Handbook / AIPlaybookHQ",
           "role": "AI Full-Stack Engineer",
           "period": "Feb 2026 - Jul 2026",
-          "location": "San Francisco, USA · Hybrid",
+          "location": "Mexico City, Mexico · Remote",
           "summary": "Developed features for the AI workflow automation platform: cyclic workflows, LLM intake, dynamic forms and integrations. I also coordinated delivery with customers."
         },
         {
@@ -385,14 +442,6 @@
           "stack": ["Python", "Automata", "AWS"],
           "links": [
             { "label": "Repository", "href": "https://github.com/Eliseo10208/ARNvalidator" }
-          ]
-        },
-        {
-          "title": "Winterra — merged external PR",
-          "description": "Contribution to another developer's Flutter app, accepted and merged: 42 files touching BLoC/Cubit, GetIt, Firebase and domain/data/presentation layers.",
-          "stack": ["Flutter", "BLoC / Cubit", "Firebase"],
-          "links": [
-            { "label": "View PR", "href": "https://github.com/EddieToledoE/winterra/pull/1" }
           ]
         }
       ]
@@ -550,7 +599,7 @@
         },
         {
           "title": "Languages & availability",
-          "description": "I worked daily in English, written and spoken, with a San Francisco team.",
+          "description": "I worked daily in English, written and spoken, with a US team.",
           "entries": [
             "Native Spanish",
             "Professional English: daily use on a US team through 2026",

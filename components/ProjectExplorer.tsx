@@ -8,10 +8,14 @@ import { WorkMediaFrame } from "./WorkMediaFrame";
 
 type ProjectExplorerProps = {
   projectItems: ProjectItem[];
+  translationSection: "work" | "demos";
 };
 
-export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
-  const t = useTranslations("HomePage.work");
+export function ProjectExplorer({
+  projectItems,
+  translationSection,
+}: ProjectExplorerProps) {
+  const t = useTranslations(`HomePage.${translationSection}`);
   const [activeProjectIndex, setActiveProjectIndex] = useState(0);
   const [activeMediaIndex, setActiveMediaIndex] = useState(0);
 
@@ -45,6 +49,9 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
             label: t("projectLabel"),
             note: activeProject.summary,
             title: activeProject.title,
+            embed: false,
+            embedHeight: undefined,
+            embedWidth: undefined,
           },
         ];
   const activeMedia = activeProjectMedia[activeMediaIndex] ?? activeProjectMedia[0];
@@ -158,6 +165,82 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
   const projectHighlightItems = projectHighlights.map((highlightItem) => (
     <li key={highlightItem}>{highlightItem}</li>
   ));
+
+  if (translationSection === "demos") {
+    return (
+      <section className="projectExplorer projectExplorerDemo">
+        {projectItems.length > 1 ? (
+          <div
+            aria-label={t("navigatorLabel")}
+            className="projectTabRail projectTabRailDemo"
+            role="tablist"
+          >
+            {projectTabs}
+          </div>
+        ) : null}
+
+        <article
+          aria-labelledby={`demo-project-title-${activeProject.slug}`}
+          className="projectStage projectStageDemo"
+          id={`project-panel-${activeProject.slug}`}
+        >
+          <header className="projectBoardCard demoProjectHeader">
+            <div className="projectStageHeader">
+              <span className="project-index">{activeProject.navHint}</span>
+              <h3
+                className="projectStageTitle"
+                id={`demo-project-title-${activeProject.slug}`}
+              >
+                {activeProject.title}
+              </h3>
+              <p className="projectStageSummary">{activeProject.summary}</p>
+              <div className="tag-row">{projectTagItems}</div>
+            </div>
+          </header>
+
+          <div className="projectBoardCard projectBoardMediaCard demoProjectMediaCard">
+            <WorkMediaFrame
+              mediaAlt={activeMedia.alt}
+              mediaBackground={activeMedia.background}
+              mediaEmbed={activeMedia.embed}
+              mediaEmbedHeight={activeMedia.embedHeight}
+              mediaEmbedWidth={activeMedia.embedWidth}
+              mediaKind={activeMedia.kind}
+              mediaLabel={activeMedia.label}
+              mediaNote={activeMedia.note}
+              mediaPoster={activeMedia.poster}
+              mediaSrc={activeMedia.src}
+              mediaTitle={activeMedia.title}
+              priority
+              showCaption={false}
+            />
+          </div>
+
+          <section className="projectBoardCard demoProjectSummaryCard">
+            <div className="demoProjectActions">
+              {projectMedia.map((mediaItem) => (
+                <a
+                  className="demoProjectAction"
+                  href={mediaItem.src}
+                  key={`${activeProject.slug}-${mediaItem.title}`}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {mediaItem.ctaLabel ?? mediaItem.label}
+                </a>
+              ))}
+            </div>
+
+            <div className="demoProjectHighlights">
+              <span className="metric-label">{t("highlightsLabel")}</span>
+              <ul className="projectHighlightList">{projectHighlightItems}</ul>
+            </div>
+          </section>
+        </article>
+      </section>
+    );
+  }
+
   return (
     <section className="projectExplorer">
       <div
@@ -178,6 +261,9 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
           <WorkMediaFrame
             mediaAlt={activeMedia.alt}
             mediaBackground={activeMedia.background}
+            mediaEmbed={activeMedia.embed}
+            mediaEmbedHeight={activeMedia.embedHeight}
+            mediaEmbedWidth={activeMedia.embedWidth}
             mediaKind={activeMedia.kind}
             mediaLabel={activeMedia.label}
             mediaNote={activeMedia.note}
@@ -211,24 +297,26 @@ export function ProjectExplorer({ projectItems }: ProjectExplorerProps) {
           <ul className="projectHighlightList">{projectHighlightItems}</ul>
         </section>
 
-        <nav className="projectBoardCard projectBoardFooterCard">
-          <div className="projectFooterNav">
-            <button
-              className="projectFooterButton"
-              onClick={() => goToAdjacentProject("previous")}
-              type="button"
-            >
-              {t("previousProject")}
-            </button>
-            <button
-              className="projectFooterButton projectFooterButtonPrimary"
-              onClick={() => goToAdjacentProject("next")}
-              type="button"
-            >
-              {t("nextProject")}
-            </button>
-          </div>
-        </nav>
+        {projectItems.length > 1 ? (
+          <nav className="projectBoardCard projectBoardFooterCard">
+            <div className="projectFooterNav">
+              <button
+                className="projectFooterButton"
+                onClick={() => goToAdjacentProject("previous")}
+                type="button"
+              >
+                {t("previousProject")}
+              </button>
+              <button
+                className="projectFooterButton projectFooterButtonPrimary"
+                onClick={() => goToAdjacentProject("next")}
+                type="button"
+              >
+                {t("nextProject")}
+              </button>
+            </div>
+          </nav>
+        ) : null}
       </article>
     </section>
   );
