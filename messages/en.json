@@ -159,19 +159,12 @@
           ],
           "media": [
             {
-              "kind": "video",
-              "label": "Video",
-              "title": "Product demo",
-              "note": "Functional demo of the main flow.",
-              "src": "https://pub-f16c4383be88435db8879fe20136da99.r2.dev/Video-Lanzamiento-Final.mp4",
-              "poster": "/projects/handbook-poster.jpg"
-            },
-            {
               "kind": "website",
               "label": "Website",
               "title": "handbookai.io",
               "note": "Guided execution platform for complex processes with handoffs, evidence, SLAs and traceability.",
               "src": "https://www.handbookai.io/en",
+              "background": "/projects/handbook-landing.png",
               "ctaLabel": "Open landing"
             }
           ]
@@ -265,7 +258,7 @@
         },
         {
           "slug": "voting",
-          "navLabel": "Voting",
+          "navLabel": "Black Horse Technologies",
           "navHint": "security / identity",
           "title": "Secure digital voting system",
           "company": "Black Horse Technologies",
@@ -310,11 +303,6 @@
       "title": "Technical demos you can try.",
       "description": "Experiments built to practice specific concepts. Every project includes a working demo and its source code.",
       "navigatorLabel": "Personal project selector",
-      "selectorLabel": "Choose a demo",
-      "selectorDescription": "Each card opens a different project inside this section.",
-      "projectNumber": "Demo {number}",
-      "viewProject": "View project",
-      "selectedProject": "Project shown",
       "projectLabel": "Active project",
       "mediaRailLabel": "Demo and source",
       "highlightsLabel": "How it is implemented",
@@ -551,6 +539,7 @@
           "items": [
             "OpenAI API",
             "OpenAI Agents",
+            "Claude",
             "Function calling",
             "Structured outputs",
             "Human-in-the-loop",

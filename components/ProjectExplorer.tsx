@@ -85,15 +85,14 @@ export function ProjectExplorer({
   const projectTabs = projectItems.map((projectItem, projectIndex) => {
     const isActive = projectIndex === activeProjectIndex;
     const icon = projectIconBySlug[projectItem.slug];
-    const isDemoTab = translationSection === "demos";
 
     return (
       <button
         aria-controls={`project-panel-${projectItem.slug}`}
         aria-selected={isActive}
-        className={`${
+        className={
           isActive ? "projectTabButton projectTabButtonActive" : "projectTabButton"
-        }${isDemoTab ? " projectTabButtonDemo" : ""}`}
+        }
         id={`project-tab-${projectItem.slug}`}
         key={projectItem.slug}
         onClick={() => selectProject(projectIndex)}
@@ -101,11 +100,6 @@ export function ProjectExplorer({
         tabIndex={isActive ? 0 : -1}
         type="button"
       >
-        {isDemoTab ? (
-          <span className="projectTabDemoIndex">
-            {t("projectNumber", { number: projectIndex + 1 })}
-          </span>
-        ) : null}
         <span className="projectTabHeader">
           {icon ? (
             <span className="projectTabIconWrap" aria-hidden="true">
@@ -121,12 +115,6 @@ export function ProjectExplorer({
           <span className="projectTabLabel">{projectItem.navLabel}</span>
         </span>
         <span className="projectTabHint">{projectItem.navHint}</span>
-        {isDemoTab ? (
-          <span className="projectTabDemoCta">
-            {isActive ? t("selectedProject") : t("viewProject")}
-            <span aria-hidden="true">→</span>
-          </span>
-        ) : null}
       </button>
     );
   });
@@ -181,22 +169,6 @@ export function ProjectExplorer({
   if (translationSection === "demos") {
     return (
       <section className="projectExplorer projectExplorerDemo">
-        {projectItems.length > 1 ? (
-          <div className="demoProjectSelector">
-            <div className="demoProjectSelectorIntro">
-              <span className="eyebrow">{t("selectorLabel")}</span>
-              <p>{t("selectorDescription")}</p>
-            </div>
-            <div
-              aria-label={t("navigatorLabel")}
-              className="projectTabRail projectTabRailDemo"
-              role="tablist"
-            >
-              {projectTabs}
-            </div>
-          </div>
-        ) : null}
-
         <article
           aria-labelledby={`demo-project-title-${activeProject.slug}`}
           className="projectStage projectStageDemo"
@@ -254,6 +226,27 @@ export function ProjectExplorer({
               <ul className="projectHighlightList">{projectHighlightItems}</ul>
             </div>
           </section>
+
+          {projectItems.length > 1 ? (
+            <nav className="projectBoardCard projectBoardFooterCard">
+              <div className="projectFooterNav">
+                <button
+                  className="projectFooterButton"
+                  onClick={() => goToAdjacentProject("previous")}
+                  type="button"
+                >
+                  {t("previousProject")}
+                </button>
+                <button
+                  className="projectFooterButton projectFooterButtonPrimary"
+                  onClick={() => goToAdjacentProject("next")}
+                  type="button"
+                >
+                  {t("nextProject")}
+                </button>
+              </div>
+            </nav>
+          ) : null}
         </article>
       </section>
     );

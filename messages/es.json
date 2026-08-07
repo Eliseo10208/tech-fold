@@ -159,19 +159,12 @@
           ],
           "media": [
             {
-              "kind": "video",
-              "label": "Video",
-              "title": "Demo del producto",
-              "note": "Demo funcional del flujo principal.",
-              "src": "https://pub-f16c4383be88435db8879fe20136da99.r2.dev/Video-Lanzamiento-Final.mp4",
-              "poster": "/projects/handbook-poster.jpg"
-            },
-            {
               "kind": "website",
               "label": "Sitio web",
               "title": "handbookai.io",
               "note": "Plataforma de ejecución guiada para procesos complejos con handoffs, evidencia, SLAs y trazabilidad.",
               "src": "https://www.handbookai.io/en",
+              "background": "/projects/handbook-landing.png",
               "ctaLabel": "Abrir landing"
             }
           ]
@@ -265,7 +258,7 @@
         },
         {
           "slug": "voting",
-          "navLabel": "Voting",
+          "navLabel": "Black Horse Technologies",
           "navHint": "seguridad / identidad",
           "title": "Sistema seguro de votación digital",
           "company": "Black Horse Technologies",
@@ -310,11 +303,6 @@
       "title": "Demos técnicas que puedes probar.",
       "description": "Experimentos construidos para practicar conceptos concretos. Cada proyecto incluye una demo funcional y el código fuente.",
       "navigatorLabel": "Selector de proyectos personales",
-      "selectorLabel": "Elige una demo",
-      "selectorDescription": "Cada tarjeta abre un proyecto distinto dentro de esta misma sección.",
-      "projectNumber": "Demo {number}",
-      "viewProject": "Ver proyecto",
-      "selectedProject": "Proyecto visible",
       "projectLabel": "Proyecto activo",
       "mediaRailLabel": "Demo y código",
       "highlightsLabel": "Cómo está implementado",
@@ -551,6 +539,7 @@
           "items": [
             "OpenAI API",
             "OpenAI Agents",
+            "Claude",
             "Function calling",
             "Structured outputs",
             "Human-in-the-loop",
