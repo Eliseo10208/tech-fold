@@ -301,7 +301,7 @@
     "demos": {
       "eyebrow": "Personal projects",
       "title": "Technical demos you can try.",
-      "description": "Experiments built to practice specific concepts. Every project includes a working demo and its source code.",
+      "description": "Personal projects in AI, offline applications and concurrency. Explore each demo and the technical decisions behind its code.",
       "navigatorLabel": "Personal project selector",
       "projectLabel": "Active project",
       "mediaRailLabel": "Demo and source",
@@ -389,6 +389,50 @@
               "title": "Eliseo10208/nom-rag",
               "note": "Repository containing the RAG pipeline, evaluations, traces and Docker deployment.",
               "src": "https://github.com/Eliseo10208/nom-rag",
+              "ctaLabel": "View code on GitHub"
+            }
+          ]
+        },
+        {
+          "slug": "aula-qr",
+          "navLabel": "AulaQR",
+          "navHint": "offline PWA / QR attendance",
+          "title": "AulaQR: classroom attendance, even offline",
+          "company": "Local-first PWA",
+          "role": "Frontend and data consistency",
+          "period": "Live on Vercel",
+          "summary": "A PWA for managing class groups, issuing QR credentials and taking attendance with the camera. After the first load, it works offline and keeps data in the browser, with a history, backups and exportable reports.",
+          "tags": [
+            "React",
+            "TypeScript",
+            "Vite",
+            "PWA",
+            "Dexie / IndexedDB",
+            "Playwright"
+          ],
+          "detailItems": [],
+          "highlights": [
+            "Workbox service worker and IndexedDB persistence; migrations, unique indexes and transactions prevent duplicate records and cross-tab conflicts.",
+            "QR decoding with jsQR and camera lifecycle management with getUserMedia. New credentials contain an ID and token, without names inside the code.",
+            "Correction history, excused absences and recoverable record removal; validated JSON backups plus CSV, PDF and Excel reports for manual iDoceo import, without automatic synchronization.",
+            "Vitest and Playwright tests cover concurrency, restoration and offline reloads. Open the app in its own tab to use the camera or install it."
+          ],
+          "media": [
+            {
+              "kind": "website",
+              "label": "PWA on Vercel",
+              "title": "aula-qr.vercel.app",
+              "note": "Open AulaQR in its own tab to use the camera and install the PWA. Data stays local to that browser. The app interface is in Spanish.",
+              "src": "https://aula-qr.vercel.app/",
+              "background": "/projects/aula-qr.png",
+              "ctaLabel": "Open AulaQR"
+            },
+            {
+              "kind": "website",
+              "label": "Source code",
+              "title": "Eliseo10208/aula-qr",
+              "note": "Repository with the PWA, data model, tests and backup and export documentation.",
+              "src": "https://github.com/Eliseo10208/aula-qr",
               "ctaLabel": "View code on GitHub"
             }
           ]

@@ -169,6 +169,22 @@ export function ProjectExplorer({
   if (translationSection === "demos") {
     return (
       <section className="projectExplorer projectExplorerDemo">
+        <nav aria-label={t("navigatorLabel")} className="demoProjectNav">
+          {projectItems.map((projectItem, projectIndex) => (
+            <button
+              aria-controls={`project-panel-${activeProject.slug}`}
+              aria-pressed={projectIndex === activeProjectIndex}
+              className="demoProjectNavButton"
+              key={projectItem.slug}
+              onClick={() => selectProject(projectIndex)}
+              type="button"
+            >
+              <span className="projectTabLabel">{projectItem.navLabel}</span>
+              <span className="projectTabHint">{projectItem.navHint}</span>
+            </button>
+          ))}
+        </nav>
+
         <article
           aria-labelledby={`demo-project-title-${activeProject.slug}`}
           className="projectStage projectStageDemo"
