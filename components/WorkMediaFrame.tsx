@@ -7,6 +7,7 @@ type WorkMediaFrameProps = {
   mediaBackground?: string;
   mediaEmbed?: boolean;
   mediaEmbedHeight?: number;
+  mediaEmbedResponsive?: boolean;
   mediaEmbedWidth?: number;
   mediaKind: ProjectMediaKind;
   mediaLabel: string;
@@ -23,6 +24,7 @@ export function WorkMediaFrame({
   mediaBackground,
   mediaEmbed = false,
   mediaEmbedHeight = 768,
+  mediaEmbedResponsive = false,
   mediaEmbedWidth = 1184,
   mediaKind,
   mediaLabel,
@@ -109,6 +111,7 @@ export function WorkMediaFrame({
             ) : mediaEmbed ? (
               <EmbeddedWebsiteFrame
                 height={mediaEmbedHeight}
+                responsive={mediaEmbedResponsive}
                 src={mediaSrc}
                 title={`${mediaTitle} - ${mediaLabel}`}
                 width={mediaEmbedWidth}

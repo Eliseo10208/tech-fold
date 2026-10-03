@@ -422,8 +422,11 @@
               "kind": "website",
               "label": "PWA on Vercel",
               "title": "aula-qr.vercel.app",
-              "note": "Open AulaQR in its own tab to use the camera and install the PWA. Data stays local to that browser. The app interface is in Spanish.",
+              "note": "Explore the app here. To use the camera or install it, open it in its own tab. Data in this embedded view may be separate from the standalone app. The app interface is in Spanish.",
               "src": "https://aula-qr.vercel.app/",
+              "embed": true,
+              "embedHeight": 800,
+              "embedResponsive": true,
               "background": "/projects/aula-qr.png",
               "ctaLabel": "Open AulaQR"
             },

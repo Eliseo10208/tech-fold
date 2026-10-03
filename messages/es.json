@@ -422,8 +422,11 @@
               "kind": "website",
               "label": "PWA en Vercel",
               "title": "aula-qr.vercel.app",
-              "note": "Abre AulaQR en una pestaña propia para usar la cámara e instalar la PWA. Los datos se guardan localmente en ese navegador.",
+              "note": "Explora la app aquí. Para usar la cámara o instalarla, ábrela en una pestaña propia. Los datos de esta vista pueden estar separados de los de la app abierta.",
               "src": "https://aula-qr.vercel.app/",
+              "embed": true,
+              "embedHeight": 800,
+              "embedResponsive": true,
               "background": "/projects/aula-qr.png",
               "ctaLabel": "Abrir AulaQR"
             },

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 type EmbeddedWebsiteFrameProps = {
   height: number;
+  responsive?: boolean;
   src: string;
   title: string;
   width: number;
@@ -11,6 +12,7 @@ type EmbeddedWebsiteFrameProps = {
 
 export function EmbeddedWebsiteFrame({
   height,
+  responsive = false,
   src,
   title,
   width,
@@ -21,7 +23,7 @@ export function EmbeddedWebsiteFrame({
   useEffect(() => {
     const viewport = viewportRef.current;
 
-    if (!viewport) {
+    if (!viewport || responsive) {
       return;
     }
 
@@ -40,7 +42,24 @@ export function EmbeddedWebsiteFrame({
     resizeObserver.observe(viewport);
 
     return () => resizeObserver.disconnect();
-  }, [width]);
+  }, [width, responsive]);
+
+  if (responsive) {
+    return (
+      <div
+        className="showcase-siteEmbedViewport"
+        style={{ height: `min(${height}px, 85svh)`, minHeight: "32rem" }}
+      >
+        <iframe
+          allow="fullscreen"
+          className="showcase-siteEmbed"
+          loading="eager"
+          src={src}
+          title={title}
+        />
+      </div>
+    );
+  }
 
   return (
     <div

@@ -51,6 +51,7 @@ export function ProjectExplorer({
             title: activeProject.title,
             embed: false,
             embedHeight: undefined,
+            embedResponsive: undefined,
             embedWidth: undefined,
           },
         ];
@@ -210,6 +211,7 @@ export function ProjectExplorer({
               mediaBackground={activeMedia.background}
               mediaEmbed={activeMedia.embed}
               mediaEmbedHeight={activeMedia.embedHeight}
+              mediaEmbedResponsive={activeMedia.embedResponsive}
               mediaEmbedWidth={activeMedia.embedWidth}
               mediaKind={activeMedia.kind}
               mediaLabel={activeMedia.label}
@@ -235,6 +237,9 @@ export function ProjectExplorer({
                   {mediaItem.ctaLabel ?? mediaItem.label}
                 </a>
               ))}
+              {activeMedia.embedResponsive ? (
+                <p className="section-copy">{activeMedia.note}</p>
+              ) : null}
             </div>
 
             <div className="demoProjectHighlights">
@@ -290,6 +295,7 @@ export function ProjectExplorer({
             mediaBackground={activeMedia.background}
             mediaEmbed={activeMedia.embed}
             mediaEmbedHeight={activeMedia.embedHeight}
+            mediaEmbedResponsive={activeMedia.embedResponsive}
             mediaEmbedWidth={activeMedia.embedWidth}
             mediaKind={activeMedia.kind}
             mediaLabel={activeMedia.label}
