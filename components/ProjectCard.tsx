@@ -25,7 +25,8 @@ export function ProjectCard({ project, locale, copy, featured = false }: { proje
   const demo = project.kind === "demo";
   return (
     <article className={`project-card ${featured ? "project-featured" : ""}`}>
-      <a href={href} className="preview-link" aria-label={`${copy.project.case}: ${project.name}`}>
+      <a href={href} className="preview-link">
+        <span className="sr-only">{copy.project.case}: {project.name}. </span>
         <ProjectPreview project={project} locale={locale} sizes={demo ? undefined : "(min-width: 1000px) 360px, (min-width: 700px) 35vw, 100vw"} />
       </a>
       <div className="project-card-body">

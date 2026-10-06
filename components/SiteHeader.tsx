@@ -13,7 +13,7 @@ export function SiteHeader({ locale, copy, path = "" }: { locale: string; copy: 
   return (
     <header className="site-headerShell">
       <div className="site-shell site-header">
-        <a className="brand-mark" href={`/${locale}`} aria-label={copy.name}>
+        <a className="brand-mark" href={`/${locale}`}>
           <Image src="/icons/cat-peek.png" width={32} height={24} alt="" />
           <span>{copy.shortName}<small>Full Stack Engineer</small></span>
         </a>

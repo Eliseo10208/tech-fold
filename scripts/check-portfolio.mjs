@@ -41,11 +41,19 @@ try {
       assert.equal(await page.locator('link[rel="icon"]').getAttribute("href"), "/favicon.png");
       assert.equal(await page.locator('link[rel="icon"]').getAttribute("sizes"), "96x96");
       assert.equal(await page.locator("iframe").count(), 0);
+      // Let visible content remain part of link names for voice control.
+      assert.equal(await page.locator(".brand-mark").getAttribute("aria-label"), null);
+      assert.match(await page.locator(".brand-mark").ariaSnapshot(), /Rodrigo García.*Full Stack Engineer/);
       if (!path) {
         const profile = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
         assert.equal(profile["@type"], "ProfilePage");
         assert.equal(profile.mainEntity["@type"], "Person");
         assert.equal(await page.locator(".project-card").count(), 6);
+        for (const preview of await page.locator(".preview-link").all()) {
+          assert.equal(await preview.getAttribute("aria-label"), null);
+          assert.ok((await preview.locator(".sr-only").textContent()).trim().length > 0);
+        }
+        assert.match(await page.locator('.preview-link[href$="/nom-rag"]').ariaSnapshot(), /NOM RAG.*Query.*Retrieval.*Citations/);
       }
       const downloads = await page.locator('a[download]').evaluateAll(links => links.map(a => a.getAttribute("href")));
       assert.ok(downloads.length >= 2 && downloads.every(url => url === "/Rodrigo_CV.pdf"));
