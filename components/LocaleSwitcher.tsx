@@ -1,32 +1,10 @@
-import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-
-type LocaleSwitcherProps = {
-  currentLocale: string;
-};
-
-const localeLabels: Record<(typeof routing.locales)[number], string> = {
-  en: "EN",
-  es: "ES",
-};
-
-export function LocaleSwitcher({ currentLocale }: LocaleSwitcherProps) {
+export function LocaleSwitcher({ currentLocale, path = "" }: { currentLocale: string; path?: string }) {
   return (
-    <div className="locale-switcher" aria-label="Locale switcher">
-      {routing.locales.map((locale) => {
-        const isActive = locale === currentLocale;
-
-        return (
-          <Link
-            className={isActive ? "locale-pill locale-pill-active" : "locale-pill"}
-            href="/"
-            key={locale}
-            locale={locale}
-          >
-            {localeLabels[locale]}
-          </Link>
-        );
-      })}
-    </div>
+    <nav className="locale-switcher" aria-label={currentLocale === "es" ? "Idioma" : "Language"}>
+      {routing.locales.map(locale => (
+        <a href={`/${locale}${path}`} hrefLang={locale} lang={locale} className="locale-pill" aria-current={locale === currentLocale ? "page" : undefined} key={locale}>{locale.toUpperCase()}</a>
+      ))}
+    </nav>
   );
 }

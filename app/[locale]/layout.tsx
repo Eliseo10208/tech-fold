@@ -1,85 +1,29 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Manrope, Syne } from "next/font/google";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
-import {
-  getMessages,
-  getTranslations,
-  setRequestLocale,
-} from "next-intl/server";
+import { Newsreader, Source_Sans_3 } from "next/font/google";
+import { hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { routing } from "../../i18n/routing";
+import { routing } from "@/i18n/routing";
+import { SITE_URL } from "@/lib/portfolio";
 import "../globals.css";
 
-const manrope = Manrope({
-  variable: "--font-sans-base",
-  subsets: ["latin"],
-});
-
-const syne = Syne({
-  variable: "--font-display-base",
-  subsets: ["latin"],
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-mono-base",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-});
-
-type LocaleLayoutProps = {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+const sourceSans = Source_Sans_3({ variable: "--font-sans-base", subsets: ["latin"], display: "swap" });
+const newsreader = Newsreader({ variable: "--font-display-base", subsets: ["latin"], display: "swap" });
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: { url: "/favicon.png", type: "image/png", sizes: "96x96" },
+    apple: "/icons/cat-peek.png",
+  },
 };
-
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
+  return routing.locales.map(locale => ({ locale }));
 }
-
-export async function generateMetadata({
-  params,
-}: Omit<LocaleLayoutProps, "children">): Promise<Metadata> {
+export default async function LocaleLayout({ children, params }: {
+  children: React.ReactNode; params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
-
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
-
-  const t = await getTranslations({ locale, namespace: "Metadata" });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-    icons: {
-      icon: "/icons/cat-peek.png",
-      shortcut: "/icons/cat-peek.png",
-      apple: "/icons/cat-peek.png",
-    },
-  };
-}
-
-export default async function LocaleLayout({
-  children,
-  params,
-}: LocaleLayoutProps) {
-  const { locale } = await params;
-
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
-
+  if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
-  const messages = await getMessages();
-
-  return (
-    <html
-      lang={locale}
-      className={`${manrope.variable} ${syne.variable} ${ibmPlexMono.variable} antialiased`}
-    >
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+  return <html lang={locale} className={`${sourceSans.variable} ${newsreader.variable}`}><body>{children}</body></html>;
 }

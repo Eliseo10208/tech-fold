@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --test tests/content.test.mjs",
+    "test:smoke": "node scripts/check-portfolio.mjs"
   },
   "dependencies": {
     "next": "16.2.1",

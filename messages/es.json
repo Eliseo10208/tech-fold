@@ -1,753 +1,319 @@
 {
   "Metadata": {
-    "title": "Rodrigo Eliseo García | AI Full Stack Engineer",
-    "description": "AI Full Stack Engineer. Convierto procesos operativos en workflows con IA: Python, FastAPI, TypeScript, Next.js, React, PostgreSQL y OpenAI Agents."
+    "title": "Rodrigo Eliseo García | Desarrollador Full Stack",
+    "description": "Desarrollador Full Stack en México: React, Next.js, Node.js y Python. Aplicaciones web, APIs e integración de IA. Explora proyectos y descarga mi CV."
   },
-  "HomePage": {
-    "identity": {
-      "name": "Rodrigo Eliseo García",
-      "role": "AI Full Stack Engineer",
-      "eyebrow": "AI Full Stack Engineer | Python · FastAPI · Next.js · OpenAI"
-    },
-    "navigation": {
-      "ariaLabel": "Navegación principal",
-      "about": "Perfil",
-      "work": "Experiencia real",
-      "experience": "Demos",
-      "outcomes": "Resultados",
-      "contact": "Contacto",
-      "cta": "Hablemos"
+  "Site": {
+    "name": "Rodrigo Eliseo García",
+    "shortName": "Rodrigo García",
+    "role": "Full Stack Engineer",
+    "skip": "Saltar al contenido",
+    "navLabel": "Navegación principal",
+    "nav": {
+      "work": "Experiencia",
+      "demos": "Proyectos",
+      "about": "Sobre mí",
+      "contact": "Contacto"
     },
     "hero": {
-      "title": "Del proceso manual al sistema que lo ejecuta.",
-      "description": "Trabajé remotamente desde México para Handbook, una empresa de Estados Unidos, donde desarrollé features de una plataforma de AI workflow automation y trabajé directamente con clientes: levantar requerimientos, convertirlos en tareas y llevarlas a producción con FastAPI, PostgreSQL, Next.js, TypeScript y OpenAI Agents.",
-      "primaryCta": "Ver experiencia real",
-      "contactCta": "Escríbeme",
-      "sideEyebrow": "Lo último que construí",
-      "sideTitle": "Handbook, feb–jul 2026.",
-      "sideDescription": "Plataforma de AI workflow automation para operaciones con handoffs, evidencia y SLAs. Lo que desarrollé:",
-      "sidePoints": [
-        "Workflows cíclicos: guardas de iteración, recuperación, snapshots versionados e historial de ejecución",
-        "Intake conversacional con LLM y transcripción de audio para generar workflows",
-        "Editor visual de grafos (React Flow + ELK.js) con colaboración en tiempo real y autosave"
-      ],
-      "availability": "Disponible de inmediato · CDMX · Remoto (CST) · AI Full Stack / AI Systems / Product Engineer",
-      "badges": [
-        "OpenAI Agents · Function calling · Structured outputs",
-        "FastAPI · Next.js · PostgreSQL",
-        "Pytest · Jest · Playwright"
-      ],
-      "facts": [
-        {
-          "label": "Último rol",
-          "title": "AI Full-Stack Engineer en Handbook",
-          "description": "Feb–jul 2026 · Remoto desde México."
-        },
-        {
-          "label": "Stack principal",
-          "title": "Python y TypeScript",
-          "description": "FastAPI y PostgreSQL en el backend; Next.js y React en el frontend."
-        },
-        {
-          "label": "Experiencia",
-          "title": "3+ años",
-          "description": "Del requerimiento con el cliente a producción: producto, datos e IA."
-        }
-      ]
-    },
-    "credibility": {
-      "ariaLabel": "Datos de perfil",
-      "items": [
-        {
-          "label": "Último rol",
-          "value": "AI Full-Stack Engineer en Handbook (AIPlaybookHQ), feb–jul 2026"
-        },
-        {
-          "label": "Base",
-          "value": "Ciudad de México · remoto o híbrido"
-        },
-        {
-          "label": "Especialidad",
-          "value": "LLM workflows: agentes, function calling, structured outputs y human-in-the-loop"
-        },
-        {
-          "label": "Busco",
-          "value": "AI Full Stack, AI Systems o Product Engineer — disponible de inmediato"
-        }
-      ]
-    },
-    "about": {
-      "eyebrow": "Quién soy",
-      "title": "Del requerimiento a producción.",
-      "description": "Llevo tres años construyendo software que opera negocios: soporte automatizado con LLMs, pipelines de datos, plataformas de workflows y una elección digital. Antes de escribir código, hablo con quien opera el proceso.",
-      "highlight": {
-        "eyebrow": "En corto",
-        "title": "Hablo con el cliente, modelo el proceso, construyo el sistema.",
-        "description": "Producto con Next.js y TypeScript; backend con FastAPI o Nest.js sobre PostgreSQL; orquestación de datos con Airflow; y LLMs con agentes, structured outputs y human-in-the-loop.",
-        "points": [
-          "FastAPI + Pydantic + SQLAlchemy y Nest.js, sobre PostgreSQL",
-          "OpenAI Agents con structured outputs y human-in-the-loop",
-          "Pruebas y CI como base: Playwright, Pytest, Jest, GitHub Actions"
-        ]
-      },
-      "items": [
-        {
-          "title": "Levanto requerimientos con el cliente",
-          "description": "Hablo directamente con clientes y operadores: qué hacen, dónde se atora, qué evidencia necesitan. De ahí salen las tareas técnicas y los workflows a automatizar."
-        },
-        {
-          "title": "LLMs en producción",
-          "description": "Integro LLMs al flujo operativo con function calling, structured outputs, trazabilidad y puntos de intervención humana."
-        },
-        {
-          "title": "Datos y calidad de base",
-          "description": "DAGs en Airflow para analytics, ETL confiable y cultura de pruebas: Playwright, Pytest, Jest, React Testing Library, MSW, Pyright y Ruff."
-        }
-      ]
+      "status": "Buscando mi próximo equipo",
+      "title": "Rodrigo",
+      "accent": "Eliseo García.",
+      "description": "Trabajo con React, Node.js y Python. Aquí puedes conocer mi experiencia y probar los proyectos que he construido por mi cuenta.",
+      "location": "Tuxtla Gutiérrez, México · Trabajo remoto",
+      "projects": "Ver proyectos",
+      "cv": "Descargar CV",
+      "cvLanguage": "CV en español · PDF",
+      "proof": "Mi trabajo más reciente",
+      "proofTitle": "Handbook / AIPlaybookHQ",
+      "proofText": "Frontend, backend y agentes de IA en una plataforma de automatización de procesos.",
+      "proofPeriod": "Feb – ago 2026",
+      "proofLink": "Qué hice ahí",
+      "greeting": "Hola, soy",
+      "role": "Desarrollador Full Stack · más de 3 años",
+      "sketchLabel": "Bitácora de un desarrollador",
+      "sketchCaption": "Tuxtla Gutiérrez, México"
     },
     "work": {
-      "eyebrow": "Casos reales",
-      "title": "Cuatro sistemas en producción, en industrias distintas.",
-      "description": "Workflows con LLMs, soporte automatizado, pipelines de analytics y una elección digital: cada caso con contexto, mi rol exacto y lo que quedó funcionando.",
-      "navigatorLabel": "Selector de proyectos",
-      "projectLabel": "Caso activo",
-      "mediaRailLabel": "Selector de medios",
-      "highlightsLabel": "Lo que quedó funcionando",
-      "openExternal": "Visitar sitio",
-      "websiteFallbackLabel": "Sitio disponible",
-      "websiteFallbackNote": "Este caso todavía no tiene video o imágenes públicas, así que aquí mostramos el sitio real del proyecto.",
-      "previousProject": "Caso anterior",
-      "nextProject": "Siguiente caso",
-      "meta": {
-        "role": "Rol",
-        "company": "Empresa / contexto",
-        "period": "Periodo"
-      },
-      "items": [
-        {
-          "slug": "handbook",
-          "navLabel": "Handbook",
-          "navHint": "AI workflow automation",
-          "title": "Workflow automation con LLMs en Handbook",
-          "company": "Handbook / AIPlaybookHQ",
-          "role": "AI Full-Stack Engineer · Product Architecture & LLM Systems",
-          "period": "Feb 2026 - Jul 2026",
-          "externalLabel": "Ver handbookai.io",
-          "externalUrl": "https://www.handbookai.io/en",
-          "summary": "Plataforma que convierte procesos con handoffs, evidencia y SLAs en ejecución guiada. Desarrollé features del workflow builder y coordiné entregas con clientes — FastAPI, PostgreSQL, Next.js, React y OpenAI Agents.",
-          "tags": ["FastAPI", "OpenAI Agents", "Next.js", "PostgreSQL"],
-          "detailItems": [
-            {
-              "label": "Problema",
-              "value": "Operaciones de manufactura, banca y seguros viven en correos y hojas de cálculo: pasos que se pierden, SLAs sin seguimiento y cero trazabilidad de quién hizo qué."
-            },
-            {
-              "label": "Mi rol",
-              "value": "Desarrollo full stack y coordinación con clientes: levantaba y clarificaba requerimientos, los convertía en tareas priorizadas y coordinaba la entrega."
-            },
-            {
-              "label": "Lo que construí",
-              "value": "Workflows cíclicos con guardas y snapshots, intake con LLM y transcripción de audio, formularios dinámicos sobre case schemas, integraciones HTTP configurables, plantillas de correo (Gmail, Outlook, Zoho) y colaboración en tiempo real."
-            }
-          ],
-          "highlights": [
-            "Ejecución de workflows con ciclos: guardas de iteración, recuperación, snapshots versionados e historial.",
-            "Intake conversacional con LLM e ingesta/transcripción de audio para convertir fuentes no estructuradas en workflows ejecutables.",
-            "Editor visual de grafos (React Flow + ELK.js) con colaboración en tiempo real, autosave y optimizaciones de drag/serialización.",
-            "Formularios dinámicos sobre case schemas e integraciones HTTP configurables con mapeos de request/response.",
-            "Pruebas en backend y frontend con Pytest, Jest, React Testing Library, MSW y Playwright."
-          ],
-          "media": [
-            {
-              "kind": "website",
-              "label": "Sitio web",
-              "title": "handbookai.io",
-              "note": "Plataforma de ejecución guiada para procesos complejos con handoffs, evidencia, SLAs y trazabilidad.",
-              "src": "https://www.handbookai.io/en",
-              "background": "/projects/handbook-landing.png",
-              "ctaLabel": "Abrir landing"
-            }
-          ]
-        },
-        {
-          "slug": "nanti",
-          "navLabel": "Nanti",
-          "navHint": "automatización de soporte / LLM",
-          "title": "Automatización de soporte con LLM en Nanti",
-          "company": "Nanti System",
-          "role": "Full Stack AI Engineer",
-          "period": "Feb 2023 - Sep 2024",
-          "externalLabel": "Ver nanti system",
-          "externalUrl": "https://nantisystem.com/quienes-somos/",
-          "summary": "Módulo conversacional full stack con Nest.js, Angular y OpenAI API que atiende soporte real por WhatsApp y tawk.io para una empresa de telemática de transporte.",
-          "tags": ["Nest.js", "Angular", "OpenAI API"],
-          "detailItems": [
-            {
-              "label": "Problema",
-              "value": "El soporte operativo necesitaba responder más rápido y automatizar acciones sin perder control ni claridad sobre lo que el sistema hacía en nombre del equipo."
-            },
-            {
-              "label": "Mi rol",
-              "value": "Diseñé, orquesté y desplegué la integración completa: backend en Nest.js, frontend en Angular y flujos con OpenAI API conectados a los canales reales de atención."
-            },
-            {
-              "label": "Impacto",
-              "value": "Automaticé el 40% de las acciones de soporte, mejoré 20% la eficiencia del frontend y reforcé la resiliencia del backend con manejo robusto de errores."
-            }
-          ],
-          "highlights": [
-            "40% de las acciones de soporte automatizadas con flujos conectados a WhatsApp y tawk.io.",
-            "20% más eficiencia en frontend optimizando consumo de APIs y gestión de estado en Angular.",
-            "Backend más resiliente con manejo robusto de errores y patrones type-safe en Nest.js."
-          ],
-          "media": [
-            {
-              "kind": "website",
-              "label": "Sitio web",
-              "title": "nantisystem.com",
-              "note": "Telemática para transporte: gestión de flotas, sensores, GPS, SIM M2M y soporte técnico.",
-              "src": "https://nantisystem.com/quienes-somos/",
-              "background": "/projects/nanti-Landing.png",
-              "ctaLabel": "Abrir landing"
-            }
-          ]
-        },
-        {
-          "slug": "agora",
-          "navLabel": "Agora",
-          "navHint": "data pipelines / analytics",
-          "title": "Data pipelines y frontend en Agora Partnerships",
-          "company": "Agora Partnerships",
-          "role": "Full Stack & Data Engineer",
-          "period": "Sep 2024 - Ene 2026",
-          "externalLabel": "Ver agora2030.org",
-          "externalUrl": "https://agora2030.org/about-us",
-          "summary": "DAGs en Python/Airflow para pipelines de analytics, arquitectura backend con microservicios y una librería de componentes en Next.js — con resultados medidos en velocidad, estabilidad y tráfico.",
-          "tags": ["Python", "Airflow", "Next.js"],
-          "detailItems": [
-            {
-              "label": "Problema",
-              "value": "Los equipos dependían de analytics para decidir, pero los pipelines y servicios que los alimentaban no podían ser frágiles ni quedar sin mantenimiento."
-            },
-            {
-              "label": "Mi rol",
-              "value": "Desarrollé y mantuve DAGs en Python/Airflow para flujos críticos de datos, colaboré en el diseño de microservicios e integraciones API, y lideré la librería de componentes en Next.js + Tailwind."
-            },
-            {
-              "label": "Resultados",
-              "value": "20% menos tiempo de carga inicial, 25% menos errores en producción con TypeScript + Redux, 15% más tráfico orgánico y disponibilidad continua de los flujos de analytics."
-            }
-          ],
-          "highlights": [
-            "DAGs en Python/Airflow que mejoraron la consistencia y disponibilidad de flujos críticos de datos.",
-            "Librería de componentes escalable en Next.js + Tailwind que redujo 20% la carga inicial.",
-            "25% menos errores en producción con patrones type-safe en TypeScript y Redux.",
-            "15% más tráfico orgánico en un trimestre con optimizaciones de SEO técnico."
-          ],
-          "media": [
-            {
-              "kind": "website",
-              "label": "Sitio web",
-              "title": "agora2030.org",
-              "note": "Organización enfocada en impacto social y escalamiento de soluciones con base en datos y producto digital.",
-              "src": "https://agora2030.org/about-us",
-              "background": "/projects/agoraLanding.png",
-              "ctaLabel": "Abrir landing"
-            }
-          ]
-        },
-        {
-          "slug": "voting",
-          "navLabel": "Black Horse Technologies",
-          "navHint": "seguridad / identidad",
-          "title": "Sistema seguro de votación digital",
-          "company": "Black Horse Technologies",
-          "role": "Software Engineer · Freelance",
-          "period": "Sep 2025 - Dic 2025",
-          "summary": "Elección digital para la Asociación Mexicana de Genética Humana: 2FA, matching de identidad contra INE y controles anti-duplicado. El stack (PHP/cPanel) lo fijó el cliente; el reto fue el diseño de seguridad.",
-          "tags": ["Seguridad", "Identidad", "2FA"],
-          "detailItems": [
-            {
-              "label": "Problema",
-              "value": "Una elección real requería participación digital confiable: autenticación sólida, identidad verificada y cero votos duplicados."
-            },
-            {
-              "label": "Mi rol",
-              "value": "Construí el flujo completo: 2FA, validación por cámara, matching de foto contra INE y la lógica antifraude que protege la integridad del proceso."
-            },
-            {
-              "label": "Contexto",
-              "value": "El cliente fijó el stack (PHP y cPanel). El reto real fue el diseño de seguridad: identidad, prevención de duplicados y trazabilidad en una elección real."
-            }
-          ],
-          "highlights": [
-            "Autenticación multifactor y validación de identidad para proteger cada voto.",
-            "Controles antifraude que previenen duplicados y refuerzan la integridad del proceso.",
-            "Flujo trazable y seguro para una elección digital con alta sensibilidad."
-          ],
-          "media": [
-            {
-              "kind": "image",
-              "label": "Captura",
-              "title": "Flujo de autenticación y validación",
-              "note": "2FA, verificación con cámara y matching contra INE antes de emitir el voto.",
-              "src": "/projects/votingLanding.png",
-              "alt": "Captura del flujo de autenticación y validación del sistema de votación"
-            }
-          ]
-        }
-      ]
+      "eyebrow": "01 — Donde he trabajado",
+      "title": "Experiencia",
+      "description": "Estos son los equipos de los que he formado parte y lo que hice en cada uno.",
+      "other": "También en mi trayectoria",
+      "voting": "Black Horse · Votación digital",
+      "votingNote": "Sep – dic 2025 · Proyecto Universidad–Empresa, PHP y autenticación multifactor.",
+      "freelance": "M&T Studio / Zona Sana",
+      "freelanceNote": "Abr – ago 2023 · Freelance: módulos y formularios en Next.js y API CRUD con Express."
     },
     "demos": {
-      "eyebrow": "Proyectos personales",
-      "title": "Demos técnicas que puedes probar.",
-      "description": "Proyectos propios de IA, aplicaciones offline y concurrencia. Explora cada demo y las decisiones técnicas detrás de su código.",
-      "navigatorLabel": "Selector de proyectos personales",
-      "projectLabel": "Proyecto activo",
-      "mediaRailLabel": "Demo y código",
-      "highlightsLabel": "Cómo está implementado",
-      "openExternal": "Abrir enlace",
-      "websiteFallbackLabel": "Demo disponible",
-      "websiteFallbackNote": "Abre la demo para probar el proyecto.",
-      "previousProject": "Proyecto anterior",
-      "nextProject": "Siguiente proyecto",
-      "meta": {
-        "role": "Enfoque técnico",
-        "company": "Tipo",
-        "period": "Estado"
-      },
-      "items": [
-        {
-          "slug": "pou-v2",
-          "navLabel": "PouV2",
-          "navHint": "concurrencia / Web Workers",
-          "title": "Concurrencia aplicada a un juego web",
-          "company": "Demo interactiva",
-          "role": "Concurrencia en el navegador",
-          "period": "Publicado",
-          "summary": "Juego web con PvP local y modo Zombie. La lógica de movimiento, persecución y tiempo se reparte entre Web Workers para mantener el ciclo principal de Phaser enfocado en renderizado y colisiones.",
-          "tags": ["JavaScript", "Phaser 3", "React", "Web Workers", "Vite"],
-          "detailItems": [],
-          "highlights": [
-            "Workers independientes procesan los controles de ambos jugadores, la persecución del zombie y el temporizador.",
-            "El estado viaja con postMessage; Phaser conserva el renderizado y las colisiones en el hilo principal.",
-            "Incluye PvP con WASD y flechas, además de supervivencia Zombie durante 60 segundos."
-          ],
-          "media": [
-            {
-              "kind": "website",
-              "label": "Demo jugable",
-              "title": "pouv2.netlify.app",
-              "note": "Prueba los modos PvP local y Zombie directamente en el navegador.",
-              "src": "https://pouv2.netlify.app/",
-              "embed": true,
-              "embedWidth": 1184,
-              "embedHeight": 768,
-              "ctaLabel": "Abrir juego en pantalla completa"
-            },
-            {
-              "kind": "website",
-              "label": "Código fuente",
-              "title": "Eliseo10208/pouV2",
-              "note": "Repositorio con las escenas de Phaser y los Web Workers del juego.",
-              "src": "https://github.com/Eliseo10208/pouV2",
-              "ctaLabel": "Ver código en GitHub"
-            }
-          ]
-        },
-        {
-          "slug": "nom-rag",
-          "navLabel": "NOM RAG",
-          "navHint": "RAG evaluado / citas normativas",
-          "title": "RAG auditable para Normas Oficiales Mexicanas",
-          "company": "Demo web",
-          "role": "RAG con evaluación",
-          "period": "Publicado",
-          "summary": "Asistente sobre cuatro NOM de seguridad y salud laboral. Recupera evidencia normativa, responde con numerales exactos y conserva trazas para auditar cada respuesta.",
-          "tags": ["Python", "FastAPI", "ChromaDB", "E5", "Gemini", "Pytest", "Docker"],
-          "detailItems": [],
-          "highlights": [
-            "Un parser basado en máquina de estados convierte documentos del DOF con formatos inconsistentes en 248 fragmentos citables con metadatos normativos.",
-            "La recuperación usa embeddings multilingual-e5-small y ChromaDB; las respuestas aplican un contrato de citas, abstención y reformulación de seguimientos.",
-            "Un harness evalúa recuperación, exactitud de citas, abstención, respuestas multi-turno y groundedness; cada consulta conserva evidencia, puntuaciones y una traza de auditoría."
-          ],
-          "media": [
-            {
-              "kind": "website",
-              "label": "Demo en producción",
-              "title": "nom-rag.rodrigo-e-g.lat",
-              "note": "Consulta NOM-035, NOM-019, NOM-017 y NOM-030 con citas y fuentes recuperadas.",
-              "src": "https://nom-rag.rodrigo-e-g.lat/",
-              "embed": true,
-              "embedWidth": 1280,
-              "embedHeight": 800,
-              "ctaLabel": "Abrir asistente NOM"
-            },
-            {
-              "kind": "website",
-              "label": "Código fuente",
-              "title": "Eliseo10208/nom-rag",
-              "note": "Repositorio con el pipeline RAG, evaluaciones, trazas y despliegue en Docker.",
-              "src": "https://github.com/Eliseo10208/nom-rag",
-              "ctaLabel": "Ver código en GitHub"
-            }
-          ]
-        },
-        {
-          "slug": "aula-qr",
-          "navLabel": "AulaQR",
-          "navHint": "PWA offline / asistencia con QR",
-          "title": "AulaQR: asistencia escolar, incluso sin conexión",
-          "company": "PWA local-first",
-          "role": "Frontend y consistencia de datos",
-          "period": "Publicado en Vercel",
-          "summary": "PWA para gestionar grupos, emitir credenciales QR y registrar asistencias desde la cámara. Tras la primera carga funciona sin conexión y conserva los datos en el navegador, con historial, respaldos y reportes exportables.",
-          "tags": [
-            "React",
-            "TypeScript",
-            "Vite",
-            "PWA",
-            "Dexie / IndexedDB",
-            "Playwright"
-          ],
-          "detailItems": [],
-          "highlights": [
-            "Service worker con Workbox y persistencia en IndexedDB; migraciones, índices únicos y transacciones previenen registros duplicados y conflictos entre pestañas.",
-            "Lectura de QR con jsQR y gestión de la cámara con getUserMedia. Las credenciales nuevas contienen ID y token, sin incluir nombres dentro del código.",
-            "Historial de correcciones, permisos y eliminación recuperable; respaldo JSON validado y reportes CSV, PDF y Excel para importación manual en iDoceo, sin sincronización automática.",
-            "Pruebas con Vitest y Playwright cubren concurrencia, restauración y recarga offline. Abre la app en su propia pestaña para usar la cámara o instalarla."
-          ],
-          "media": [
-            {
-              "kind": "website",
-              "label": "PWA en Vercel",
-              "title": "aula-qr.vercel.app",
-              "note": "Explora la app aquí. Para usar la cámara o instalarla, ábrela en una pestaña propia. Los datos de esta vista pueden estar separados de los de la app abierta.",
-              "src": "https://aula-qr.vercel.app/",
-              "embed": true,
-              "embedHeight": 800,
-              "embedResponsive": true,
-              "background": "/projects/aula-qr.png",
-              "ctaLabel": "Abrir AulaQR"
-            },
-            {
-              "kind": "website",
-              "label": "Código fuente",
-              "title": "Eliseo10208/aula-qr",
-              "note": "Repositorio con la PWA, modelo de datos, pruebas y documentación de respaldo y exportación.",
-              "src": "https://github.com/Eliseo10208/aula-qr",
-              "ctaLabel": "Ver código en GitHub"
-            }
-          ]
-        }
-      ]
-    },
-    "experience": {
-      "eyebrow": "Trayectoria",
-      "title": "Tres años de trabajo, rol por rol.",
-      "description": "Cada rol con su periodo, contexto y lo que quedó entregado. Disponible de inmediato.",
-      "items": [
-        {
-          "company": "Handbook / AIPlaybookHQ",
-          "role": "AI Full-Stack Engineer",
-          "period": "Feb 2026 - Jul 2026",
-          "location": "Ciudad de México, México · Remoto",
-          "summary": "Desarrollé features de la plataforma de AI workflow automation: workflows cíclicos, intake con LLM, formularios dinámicos e integraciones. También coordiné entregas con clientes."
-        },
-        {
-          "company": "Black Horse Technologies",
-          "role": "Software Engineer · Freelance",
-          "period": "Sep 2025 - Dic 2025",
-          "location": "Tuxtla Gutiérrez, México · Presencial",
-          "summary": "Contrato por proyecto, entregado y cerrado: sistema de votación digital para la Asociación Mexicana de Genética Humana con 2FA, validación de identidad con cámara + INE y controles antifraude."
-        },
-        {
-          "company": "Agora Partnerships",
-          "role": "Full Stack & Data Engineer",
-          "period": "Sep 2024 - Ene 2026",
-          "location": "Nueva York, EE. UU. · Remoto",
-          "summary": "DAGs en Python/Airflow para analytics, microservicios e integraciones API, librería de componentes Next.js (−20% carga inicial, −25% errores en producción)."
-        },
-        {
-          "company": "Nanti System",
-          "role": "Full Stack AI Engineer",
-          "period": "Feb 2023 - Sep 2024",
-          "location": "Ciudad de México, México · Remoto",
-          "summary": "Módulo de IA full stack con Nest.js, Angular y OpenAI API: 40% del soporte automatizado vía WhatsApp y tawk.io."
-        },
-        {
-          "company": "M&T Studio / Zona Sana",
-          "role": "Full Stack Web Developer · Freelance",
-          "period": "Abr 2023 - Ago 2023",
-          "location": "Tuxtla Gutiérrez, México · Híbrido",
-          "summary": "Proyecto freelance con alcance y entrega definidos: plataforma web para farmacias en Next.js, con −12% de abandono en formularios complejos."
-        }
-      ]
-    },
-    "lab": {
-      "eyebrow": "Fuera de la nómina",
-      "title": "El lab: donde pruebo arquitectura, ML y tooling.",
-      "description": "Proyectos personales con código público y documentado en GitHub. Cada uno existe porque quería resolver algo concreto.",
-      "items": [
-        {
-          "title": "CNN Identificator + app Android",
-          "description": "Identificación de imágenes de punta a punta: CNN entrenada con TensorFlow/Keras, servida por una API en Flask y consumida desde una app Android nativa en Kotlin + Jetpack Compose.",
-          "stack": ["TensorFlow", "Flask", "Kotlin / Compose"],
-          "links": [
-            { "label": "Modelo + API", "href": "https://github.com/Eliseo10208/CNN_IDENTIFICATOR" },
-            { "label": "App Android", "href": "https://github.com/Eliseo10208/MY-CNN-APP" }
-          ]
-        },
-        {
-          "title": "api-Hexagonal",
-          "description": "API en TypeScript/Express con arquitectura hexagonal completa: casos de uso, repositorios, persistencia en MySQL y mensajería con RabbitMQ.",
-          "stack": ["TypeScript", "Express", "RabbitMQ"],
-          "links": [
-            { "label": "Repositorio", "href": "https://github.com/Eliseo10208/api-Hexagonal" }
-          ]
-        },
-        {
-          "title": "SecurityHub-Hexagonal",
-          "description": "Backend modular para un dominio de sensores y seguridad: Express, JWT, Sequelize sobre MySQL, manejo de uploads y límites hexagonales entre módulos.",
-          "stack": ["TypeScript", "JWT", "Sequelize"],
-          "links": [
-            { "label": "Repositorio", "href": "https://github.com/Eliseo10208/SecurityHub-Hexagonal" }
-          ]
-        },
-        {
-          "title": "ARNvalidator",
-          "description": "Herramienta en Python que valida AWS ARNs dentro de archivos txt, html, csv, xlsx y docx usando un autómata finito determinista explícito de ~200 estados.",
-          "stack": ["Python", "Autómatas", "AWS"],
-          "links": [
-            { "label": "Repositorio", "href": "https://github.com/Eliseo10208/ARNvalidator" }
-          ]
-        }
-      ]
-    },
-    "process": {
-      "eyebrow": "Cómo trabajo",
-      "title": "El proceso que usé en Handbook, en Agora y con cada cliente.",
-      "description": "Lo que hago todas las semanas para que un proceso operativo termine corriendo solo.",
-      "items": [
-        {
-          "step": "01",
-          "title": "Entiendo el proceso con quien lo opera",
-          "description": "Antes de escribir código hablo con el cliente: qué se hace, quién lo hace, dónde se atora y qué evidencia se necesita. De ahí salen requerimientos priorizados."
-        },
-        {
-          "step": "02",
-          "title": "Modelo el workflow completo",
-          "description": "Etapas, reglas, handoffs, SLAs y puntos de intervención humana. El LLM entra donde aporta, con structured outputs y trazabilidad."
-        },
-        {
-          "step": "03",
-          "title": "Entrego con pruebas y métricas",
-          "description": "CI en GitHub Actions, pruebas con Playwright, Pytest y Jest, y métricas de impacto: porcentaje automatizado, errores en producción, tiempos de carga."
-        }
-      ]
-    },
-    "outcomes": {
-      "eyebrow": "Resultados",
-      "title": "Resultados medibles por proyecto.",
-      "description": "Cada métrica viene de un proyecto específico, con su contexto."
-    },
-    "metrics": {
-      "items": [
-        {
-          "label": "Nanti · 2024",
-          "title": "40% del soporte automatizado",
-          "description": "Flujos con OpenAI conectados a WhatsApp y tawk.io, operando en producción."
-        },
-        {
-          "label": "Agora · 2024-2026",
-          "title": "25% menos errores en producción",
-          "description": "TypeScript, Redux y arquitectura type-safe en toda la capa de producto."
-        },
-        {
-          "label": "Agora · 2024-2026",
-          "title": "20% menos tiempo de carga",
-          "description": "Librería de componentes escalable con Next.js y Tailwind CSS."
-        },
-        {
-          "label": "Zona Sana · 2023",
-          "title": "12% menos abandono",
-          "description": "Formularios complejos de farmacia rediseñados en Next.js, medidos sobre el flujo completo."
-        }
-      ]
+      "eyebrow": "02 — Fuera del trabajo",
+      "title": "Mis proyectos",
+      "description": "Una app para pasar lista, un buscador de normas y un juego. Puedes abrirlos, revisar el código o leer cómo los construí."
     },
     "stack": {
-      "eyebrow": "Stack",
-      "title": "Con qué trabajo.",
-      "description": "Seis áreas: lo que uso en producción y lo que he operado antes.",
-      "groupLabel": "Área",
-      "items": [
-        {
-          "title": "IA y automatización",
-          "items": [
-            "OpenAI API",
-            "OpenAI Agents",
-            "Claude",
-            "Function calling",
-            "Structured outputs",
-            "Human-in-the-loop",
-            "TensorFlow / Keras"
-          ]
-        },
-        {
-          "title": "Backend",
-          "items": [
-            "Python",
-            "FastAPI",
-            "Pydantic",
-            "SQLAlchemy",
-            "Alembic",
-            "Node.js",
-            "Nest.js",
-            "Express.js",
-            "Arquitectura hexagonal"
-          ]
-        },
-        {
-          "title": "Frontend",
-          "items": [
-            "Next.js",
-            "React",
-            "TypeScript",
-            "Tailwind CSS",
-            "React Flow",
-            "shadcn/ui",
-            "React Query",
-            "React Hook Form",
-            "Zod",
-            "Redux",
-            "Angular"
-          ]
-        },
-        {
-          "title": "Datos y bases de datos",
-          "items": ["PostgreSQL", "MySQL", "Redis", "Apache Airflow", "ETL", "pandas"]
-        },
-        {
-          "title": "Testing y calidad",
-          "items": [
-            "Playwright",
-            "Pytest",
-            "Jest",
-            "React Testing Library",
-            "MSW",
-            "Pyright",
-            "Ruff"
-          ]
-        },
-        {
-          "title": "DevOps, tiempo real e integraciones",
-          "items": [
-            "Docker",
-            "GitHub Actions",
-            "AWS",
-            "Vercel",
-            "WebSockets",
-            "Server-Sent Events",
-            "Gmail / Outlook / Zoho",
-            "WhatsApp"
-          ]
-        }
-      ]
+      "eyebrow": "03 — Herramientas",
+      "title": "Con qué trabajo",
+      "core": "En el día a día",
+      "extra": "Según el proyecto",
+      "coreItems": [
+        "TypeScript",
+        "React / Next.js",
+        "Node.js / NestJS",
+        "Python / FastAPI",
+        "PostgreSQL"
+      ],
+      "extraItems": [
+        "OpenAI / agentes",
+        "Docker",
+        "GitHub Actions",
+        "Playwright / Pytest",
+        "Airflow",
+        "IndexedDB"
+      ],
+      "note": "En cada proyecto cuento qué utilicé y para qué."
     },
-    "credentials": {
-      "eyebrow": "Credenciales",
-      "title": "Formación, certificaciones e idiomas.",
-      "description": "La base formal detrás de la práctica: ingeniería de software, cloud y UX.",
-      "items": [
-        {
-          "title": "Educación",
-          "description": "Base formal en software y programación aplicada para diseñar y mantener sistemas en producción.",
-          "entries": [
-            "Ingeniería de Software — Universidad Politécnica de Chiapas",
-            "Técnico en Programación — CETIS 138 (2020)"
-          ]
-        },
-        {
-          "title": "Certificaciones",
-          "description": "Cloud, UX y fundamentos de redes que complementan la práctica full stack.",
-          "entries": [
-            "AWS Academy: Cloud Architecting, Cloud Foundations, Cloud Security Foundations e Introduction to Cloud",
-            "Google UX Design Specialization (2024)",
-            "Cisco: Cybersecurity, Networking y Operating Systems (serie de fundamentos)"
-          ]
-        },
-        {
-          "title": "Idiomas y disponibilidad",
-          "description": "Trabajé a diario en inglés, por escrito y hablado, con un equipo de Estados Unidos.",
-          "entries": [
-            "Español nativo",
-            "Inglés profesional: uso diario en un equipo de EE. UU. durante 2026",
-            "Disponible de inmediato para roles remotos e internacionales"
-          ]
-        }
-      ]
-    },
-    "certifications": {
-      "eyebrow": "Badges verificados",
-      "title": "Insignias verificadas en Credly",
-      "description": "Las más relevantes para roles de cloud y sistemas; el resto está en mi perfil de Credly.",
-      "items": [
-        {
-          "badgeId": "3431ddd3-2f89-4c29-8da1-b87aecab4f91",
-          "title": "AWS Academy Graduate - Cloud Architecting"
-        },
-        {
-          "badgeId": "a7f0e3c4-0d4f-4de2-9086-051451770696",
-          "title": "AWS Academy Graduate - Cloud Foundations"
-        },
-        {
-          "badgeId": "1f15a48f-cfbd-4f4a-bdbf-568d23e5072a",
-          "title": "AWS Academy Graduate - Cloud Security Foundations"
-        },
-        {
-          "badgeId": "e5592310-e825-409c-9c68-8bec8a717acf",
-          "title": "AWS Academy Graduate - Introduction to Cloud Semester 1"
-        },
-        {
-          "badgeId": "0483b6e5-29bc-4a0e-92bd-fff253a84905",
-          "title": "Introduction to Cybersecurity"
-        }
-      ]
+    "about": {
+      "eyebrow": "04 — Un poco más de mí",
+      "title": "Desde Tuxtla.",
+      "description": "Soy egresado de Ingeniería de Software de la Politécnica de Chiapas. He trabajado en interfaces, APIs, flujos de datos y automatizaciones. Hoy busco un equipo donde seguir construyendo software, con IA cuando el problema lo necesita.",
+      "education": "Ingeniería de Software",
+      "school": "Universidad Politécnica de Chiapas · 2022–2025",
+      "degree": "Egresado · Título en proceso",
+      "languages": "Idiomas",
+      "languageText": "Español nativo · Inglés B1",
+      "languageNote": "Lectura de documentación técnica en inglés. Entrevistas y llamadas laborales en español.",
+      "training": "Formación complementaria",
+      "trainingText": "AWS Academy y fundamentos de redes y ciberseguridad de Cisco.",
+      "badges": "Ver insignias"
     },
     "contact": {
-      "eyebrow": "Contacto",
-      "title": "Busco mi siguiente equipo.",
-      "description": "Disponible de inmediato. Puedo mostrarte los casos y cómo los construí. Roles remotos de AI Full Stack, AI Systems o Product Engineer, en español o inglés.",
-      "primaryCta": "Enviar correo",
-      "secondaryCta": "Ver LinkedIn",
-      "primaryHref": "mailto:Eliseo10208@gmail.com",
-      "secondaryHref": "https://www.linkedin.com/in/rodrigo-eliseo-garcia/",
-      "links": [
-        {
-          "label": "Email",
-          "value": "Eliseo10208@gmail.com",
-          "href": "mailto:Eliseo10208@gmail.com"
-        },
-        {
-          "label": "GitHub",
-          "value": "github.com/Eliseo10208",
-          "href": "https://github.com/Eliseo10208"
-        },
-        {
-          "label": "LinkedIn",
-          "value": "linkedin.com/in/rodrigo-eliseo-garcia",
-          "href": "https://www.linkedin.com/in/rodrigo-eliseo-garcia/"
-        },
-        {
-          "label": "Ubicación",
-          "value": "Ciudad de México, México",
-          "href": "https://www.google.com/maps/search/Area+metropolitana+de+Ciudad+de+Mexico"
-        }
-      ]
+      "eyebrow": "Seguimos por aquí",
+      "title": "¿Platicamos?",
+      "description": "Si tienes una vacante o quieres saber más de algún proyecto, escríbeme. También puedes elegir un horario en mi calendario.",
+      "email": "Escríbeme",
+      "calendar": "Agendar una conversación",
+      "availability": "Disponibilidad inmediata · Remoto desde México",
+      "footer": "Tuxtla Gutiérrez, Chiapas · México",
+      "stickyLabel": "Acciones de contacto"
     },
-    "footer": {
-      "availability": "Disponible de inmediato para roles remotos: AI Full Stack Engineer, AI Systems Engineer o Product Engineer.",
-      "note": "Diseñado y construido por mí con Next.js y next-intl, desde CDMX y con supervisión felina."
+    "project": {
+      "back": "Volver al portafolio",
+      "case": "Ver caso",
+      "details": "Cómo lo construí",
+      "demo": "Abrir app",
+      "code": "Ver código",
+      "company": "Sitio de la empresa",
+      "problem": "El problema",
+      "contribution": "Mi contribución",
+      "implementation": "Decisiones técnicas",
+      "limits": "Alcance y límites",
+      "stack": "Tecnologías",
+      "note": "Proyecto personal",
+      "work": "Experiencia profesional",
+      "more": "Siguiente proyecto",
+      "preview": "Esquema técnico",
+      "keyboard": "Demo para computadora con teclado.",
+      "cv": "Descargar CV"
     }
-  }
+  },
+  "Projects": [
+    {
+      "slug": "handbook",
+      "kind": "work",
+      "name": "Handbook",
+      "title": "Workflows, formularios y agentes.",
+      "summary": "Formularios, integraciones y agentes conectados a una plataforma de automatización.",
+      "company": "Handbook / AIPlaybookHQ",
+      "role": "AI Full Stack Engineer",
+      "period": "Feb – ago 2026",
+      "image": "/projects/handbook-landing.png",
+      "imageAlt": "Sitio público de Handbook, plataforma de automatización de procesos",
+      "tags": [
+        "Next.js",
+        "FastAPI",
+        "PostgreSQL",
+        "OpenAI Agents"
+      ],
+      "url": "https://www.handbookai.io/en",
+      "code": "",
+      "problem": "Conectar los pasos de un proceso, sus datos y las intervenciones humanas dentro de una misma plataforma.",
+      "contribution": "Desarrollé funcionalidades de frontend y backend y colaboré con clientes para aclarar requerimientos, priorizar tareas y coordinar entregas.",
+      "implementation": [
+        "Workflows con ciclos limitados, recuperación, historial y snapshots de versiones publicadas.",
+        "Intake conversacional con agentes, herramientas, salidas estructuradas e ingesta de audio; formularios conectados a los campos de los casos.",
+        "Integraciones HTTP configurables, tareas de revisión humana y colaboración en un editor visual de grafos con React Flow.",
+        "Validación con Pytest, Jest, React Testing Library, MSW y Playwright."
+      ],
+      "limits": "Contribuciones realizadas como parte del equipo de ingeniería. El enlace muestra el sitio público de la empresa; el código de la plataforma es privado."
+    },
+    {
+      "slug": "agora",
+      "kind": "work",
+      "name": "Agora Partnerships",
+      "title": "Interfaces y pipelines de datos.",
+      "summary": "Pipelines con Python y Airflow, servicios e interfaces en React y Next.js.",
+      "company": "Agora Partnerships",
+      "role": "Full Stack & Data Engineer",
+      "period": "Sep 2024 – ene 2026",
+      "image": "/projects/agoraLanding.png",
+      "imageAlt": "Sitio público de Agora Partnerships",
+      "tags": [
+        "Python",
+        "Airflow",
+        "Next.js",
+        "TypeScript"
+      ],
+      "url": "https://agora2030.org/about-us",
+      "code": "",
+      "problem": "Mantener los flujos de datos para analytics y las interfaces que los equipos utilizan en su operación.",
+      "contribution": "Desarrollé servicios y pipelines ETL con Python y SQL, componentes frontend e integraciones de APIs.",
+      "implementation": [
+        "DAGs en Apache Airflow para organizar y mantener flujos de datos.",
+        "Componentes con Next.js, React, Redux y Tailwind; mejoras de rendimiento y SEO técnico.",
+        "Docker, GitHub Actions, revisión de logs, migraciones y apoyo a despliegues."
+      ],
+      "limits": "Trabajo en pipelines, servicios e interfaces dentro del equipo. El enlace muestra el sitio institucional; las implementaciones internas no son una demo pública."
+    },
+    {
+      "slug": "nanti",
+      "kind": "work",
+      "name": "Nanti System",
+      "title": "Un sistema de soporte conversacional.",
+      "summary": "Un sistema conversacional con NestJS, Angular y OpenAI, integrado con WhatsApp y tawk.io.",
+      "company": "Nanti System",
+      "role": "Full Stack AI Engineer",
+      "period": "Feb 2023 – sep 2024",
+      "image": "/projects/nanti-Landing.png",
+      "imageAlt": "Sitio público de Nanti System",
+      "tags": [
+        "NestJS",
+        "Angular",
+        "TypeScript",
+        "OpenAI"
+      ],
+      "url": "https://nantisystem.com/quienes-somos/",
+      "code": "",
+      "problem": "Incorporar automatización a los canales de soporte y conectar las respuestas con la aplicación.",
+      "contribution": "Desarrollé el sistema conversacional e integraciones de soporte, trabajando en la API y en la interfaz.",
+      "implementation": [
+        "Integración de OpenAI API en un backend con NestJS.",
+        "Conexión de flujos de soporte con WhatsApp y tawk.io.",
+        "Mejoras de consumo de APIs, estado frontend, manejo de errores y tipado."
+      ],
+      "limits": "La contribución se centra en el sistema conversacional y sus integraciones. El enlace corresponde al sitio de la empresa, no a una demo del sistema de soporte."
+    },
+    {
+      "slug": "voting",
+      "kind": "work",
+      "name": "Black Horse Technologies",
+      "title": "Integridad en una votación digital.",
+      "summary": "Autenticación multifactor y controles contra votos duplicados en un proyecto Universidad–Empresa.",
+      "company": "Black Horse Technologies",
+      "role": "Software Engineer · Proyecto Universidad–Empresa",
+      "period": "Sep – dic 2025",
+      "image": "/projects/votingLanding.png",
+      "imageAlt": "Interfaz del proyecto de votación digital",
+      "tags": [
+        "PHP",
+        "cPanel",
+        "MFA",
+        "Validación"
+      ],
+      "url": "",
+      "code": "",
+      "problem": "Permitir una votación digital para la Asociación Mexicana de Genética Humana con controles de identidad y acceso.",
+      "contribution": "Participé en el desarrollo del sistema con PHP y cPanel en colaboración con la Universidad Politécnica de Chiapas.",
+      "implementation": [
+        "Autenticación multifactor y validación de identidad.",
+        "Control de sesiones, usuarios únicos y restricciones de acceso para prevenir votos duplicados.",
+        "Validaciones de frontend y backend para conservar la consistencia del proceso."
+      ],
+      "limits": "Colaboración Universidad–Empresa de septiembre a diciembre de 2025. Los controles descritos corresponden a la implementación del proyecto, no a una auditoría independiente de seguridad."
+    },
+    {
+      "slug": "aula-qr",
+      "kind": "demo",
+      "name": "AulaQR",
+      "title": "Asistencia escolar, incluso sin conexión.",
+      "summary": "PWA con lectura de QR, datos locales, respaldos y reportes exportables.",
+      "company": "Proyecto propio · PWA local-first",
+      "role": "Frontend y consistencia de datos",
+      "period": "Demo en Vercel",
+      "image": "/projects/aula-qr.png",
+      "imageAlt": "Interfaz de AulaQR para gestionar grupos y asistencia",
+      "tags": [
+        "React",
+        "TypeScript",
+        "IndexedDB",
+        "Playwright"
+      ],
+      "url": "https://aula-qr.vercel.app/",
+      "code": "https://github.com/Eliseo10208/aula-qr",
+      "problem": "Registrar asistencia y gestionar grupos sin depender de una conexión permanente.",
+      "contribution": "Desarrollé una PWA con apoyo de IA, revisando la lógica, la persistencia y las pruebas. La aplicación se abre en su propia pestaña para acceder a la cámara.",
+      "implementation": [
+        "Service worker con Workbox y persistencia Dexie/IndexedDB para uso offline tras la primera carga.",
+        "Migraciones, índices únicos, transacciones y revisiones para controlar conflictos entre pestañas.",
+        "Lectura de QR, ciclo de vida de la cámara, historial y eliminación recuperable.",
+        "Respaldo/restauración, exportación CSV, XLSX y PDF; pruebas con Vitest y Playwright."
+      ],
+      "limits": "Los datos se guardan en el navegador; no es un SaaS multiusuario ni sincroniza automáticamente con iDoceo. Las pruebas de cámara física e importación real requieren validación en dispositivo."
+    },
+    {
+      "slug": "nom-rag",
+      "kind": "demo",
+      "name": "NOM RAG",
+      "title": "Respuestas con evidencia, no solo texto.",
+      "summary": "Búsqueda semántica sobre normas mexicanas, con citas, evaluación y trazas por consulta.",
+      "company": "Proyecto propio · IA aplicada",
+      "role": "Backend, recuperación y evaluación",
+      "period": "Demo web",
+      "image": "",
+      "imageAlt": "",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "ChromaDB",
+        "Pytest"
+      ],
+      "url": "https://nom-rag.rodrigo-e-g.lat/",
+      "code": "https://github.com/Eliseo10208/nom-rag",
+      "problem": "Recuperar fragmentos normativos y generar respuestas que permitan volver a la fuente.",
+      "contribution": "Desarrollé el pipeline RAG, la API y una suite de evaluación de recuperación y respuestas.",
+      "implementation": [
+        "Parsing por numerales, embeddings multilingües E5 y búsqueda vectorial persistente en ChromaDB.",
+        "Reformulación de preguntas de seguimiento, citas y controles para consultas fuera del corpus.",
+        "Evaluación con Pytest y veredictos JSON validados; trazas de recuperación, tokens y latencia.",
+        "Docker Compose y GitHub Actions para ejecución y evaluaciones."
+      ],
+      "limits": "Proyecto personal sobre un corpus acotado. Las respuestas deben verificarse en sus fuentes y no sustituyen asesoría legal; las evaluaciones se limitan a los casos de prueba incluidos."
+    },
+    {
+      "slug": "pou-v2",
+      "kind": "demo",
+      "name": "PouV2",
+      "title": "Concurrencia en un juego web.",
+      "summary": "Movimiento, persecución y tiempo en Web Workers; renderizado y colisiones en Phaser.",
+      "company": "Proyecto propio · Experimento técnico",
+      "role": "Concurrencia en JavaScript",
+      "period": "Demo con teclado",
+      "image": "",
+      "imageAlt": "",
+      "tags": [
+        "JavaScript",
+        "Web Workers",
+        "Phaser",
+        "React"
+      ],
+      "url": "https://pouv2.netlify.app/",
+      "code": "https://github.com/Eliseo10208/pouV2",
+      "problem": "Separar tareas del juego del hilo que dibuja la interfaz.",
+      "contribution": "Partí de una plantilla Phaser/React e implementé lógica de juego y comunicación con Web Workers. No desarrollé el motor ni toda la base de la plantilla.",
+      "implementation": [
+        "Workers para movimiento, persecución y temporizador.",
+        "Intercambio de estado con postMessage; Phaser conserva renderizado y colisiones.",
+        "Modos PvP local y Zombie. La demo usa WASD y flechas: es preferible probarla con teclado."
+      ],
+      "limits": "Experimento de concurrencia construido sobre una plantilla Phaser/React. La interacción está pensada para computadora con teclado; no incluye controles táctiles."
+    }
+  ]
 }
