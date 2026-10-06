@@ -41,6 +41,14 @@ try {
       assert.equal(await page.locator('link[rel="icon"]').getAttribute("href"), "/favicon.png");
       assert.equal(await page.locator('link[rel="icon"]').getAttribute("sizes"), "96x96");
       assert.equal(await page.locator("iframe").count(), 0);
+      assert.doesNotMatch(await page.locator("body").textContent(), /[↗↘↙↖→←↓↑]/, `${route}: no font/emoji arrows`);
+      const arrows = page.locator("svg.arrow-icon");
+      assert.ok(await arrows.count() > 0, `${route}: SVG arrows exist`);
+      for (const arrow of await arrows.all()) {
+        assert.equal(await arrow.getAttribute("aria-hidden"), "true");
+        assert.equal(await arrow.getAttribute("focusable"), "false");
+        assert.equal(await arrow.getAttribute("stroke"), "currentColor");
+      }
       // Let visible content remain part of link names for voice control.
       assert.equal(await page.locator(".brand-mark").getAttribute("aria-label"), null);
       assert.match(await page.locator(".brand-mark").ariaSnapshot(), /Rodrigo García.*Full Stack Engineer/);

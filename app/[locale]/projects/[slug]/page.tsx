@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ProjectPreview } from "@/components/ProjectCard";
+import { ArrowIcon } from "@/components/ArrowIcon";
 import { CV_URL, EMAIL, getContent, pageMetadata } from "@/lib/portfolio";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -26,14 +27,14 @@ export default async function ProjectPage({ params }: Props) {
       <a className="skip-link" href="#content">{copy.skip}</a>
       <SiteHeader locale={locale} copy={copy} path={`/projects/${slug}`} />
       <main className="site-shell case-page" id="content" tabIndex={-1}>
-        <a className="text-link case-back" href={`/${locale}#${project.kind === "demo" ? "demos" : "selected-work"}`}>← {copy.project.back}</a>
+        <a className="text-link case-back" href={`/${locale}#${project.kind === "demo" ? "demos" : "selected-work"}`}><ArrowIcon direction="left" />{copy.project.back}</a>
         <header className="case-header">
           <p className="eyebrow">{project.company}</p><h1>{project.title}</h1><p className="case-summary">{project.summary}</p>
           <p className="case-role">{project.role} <span>· {project.period}</span></p>
           <ul className="tags tags-large">{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
           <div className="project-actions">
-            {project.url && <a className="button button-primary" href={project.url} target="_blank" rel="noopener noreferrer">{project.kind === "demo" ? copy.project.demo : copy.project.company} ↗</a>}
-            {project.code && <a className="button button-secondary" href={project.code} target="_blank" rel="noopener noreferrer">{copy.project.code} ↗</a>}
+            {project.url && <a className="button button-primary" href={project.url} target="_blank" rel="noopener noreferrer">{project.kind === "demo" ? copy.project.demo : copy.project.company}<ArrowIcon /></a>}
+            {project.code && <a className="button button-secondary" href={project.code} target="_blank" rel="noopener noreferrer">{copy.project.code}<ArrowIcon /></a>}
           </div>
           {slug === "pou-v2" && <p className="project-caveat">{copy.project.keyboard}</p>}
         </header>
@@ -44,10 +45,10 @@ export default async function ProjectPage({ params }: Props) {
           <section><span className="case-number" aria-hidden="true">03</span><div><h2>{copy.project.implementation}</h2><ul>{project.implementation.map(item => <li key={item}>{item}</li>)}</ul></div></section>
           <section className="case-limits"><span className="case-number" aria-hidden="true">04</span><div><h2>{copy.project.limits}</h2><p>{project.limits}</p></div></section>
         </div>
-        <div className="case-next"><span>{copy.project.more}</span><a href={`/${locale}/projects/${next.slug}`}>{next.name} →</a></div>
+        <div className="case-next"><span>{copy.project.more}</span><a href={`/${locale}/projects/${next.slug}`}>{next.name}<ArrowIcon direction="right" /></a></div>
       </main>
-      <footer className="site-shell site-footer"><a href={`/${locale}#contact`}>{copy.contact.email} →</a><span>{copy.name}</span></footer>
-      <nav className="mobile-contact-bar" aria-label={copy.contact.stickyLabel}><a href={CV_URL} download>{copy.hero.cv} ↓</a><a href={EMAIL}>{copy.contact.email} ↗</a></nav>
+      <footer className="site-shell site-footer"><a href={`/${locale}#contact`}>{copy.contact.email} <ArrowIcon direction="right" /></a><span>{copy.name}</span></footer>
+      <nav className="mobile-contact-bar" aria-label={copy.contact.stickyLabel}><a href={CV_URL} download>{copy.hero.cv}<ArrowIcon direction="down" /></a><a href={EMAIL}>{copy.contact.email}<ArrowIcon /></a></nav>
     </>
   );
 }

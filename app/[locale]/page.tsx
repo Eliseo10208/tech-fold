@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ProjectCard } from "@/components/ProjectCard";
+import { ArrowIcon } from "@/components/ArrowIcon";
 import { CALENDAR, CV_URL, EMAIL, getContent, pageMetadata, SITE_URL, SOCIAL } from "@/lib/portfolio";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -40,13 +41,13 @@ export default async function HomePage({ params }: Props) {
             <p className="hero-role">{copy.hero.role}</p>
             <p className="hero-description">{copy.hero.description}</p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#demos">{copy.hero.projects}<span aria-hidden="true">↓</span></a>
-              <a className="button button-secondary" href={CV_URL} download>{copy.hero.cv}<span aria-hidden="true">↓</span></a>
+              <a className="button button-primary" href="#demos">{copy.hero.projects}<ArrowIcon direction="down" /></a>
+              <a className="button button-secondary" href={CV_URL} download>{copy.hero.cv}<ArrowIcon direction="down" /></a>
             </div>
             <p className="hero-location">{copy.hero.location}</p>
             <div className="hero-social">
-              <a href={SOCIAL.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-              <a href={SOCIAL.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href={SOCIAL.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <ArrowIcon /></a>
+              <a href={SOCIAL.github} target="_blank" rel="noopener noreferrer">GitHub <ArrowIcon /></a>
               <span>{copy.hero.cvLanguage}</span>
             </div>
           </div>
@@ -58,7 +59,7 @@ export default async function HomePage({ params }: Props) {
           <aside className="recent-work" aria-label={copy.hero.proof}>
             <div><span className="eyebrow">{copy.hero.proof}</span><p>{copy.hero.proofTitle}</p></div>
             <span className="recent-period">{copy.hero.proofPeriod}</span>
-            <a className="text-link" href={`/${locale}/projects/handbook`}>{copy.hero.proofLink} ↗</a>
+            <a className="text-link" href={`/${locale}/projects/handbook`}>{copy.hero.proofLink}<ArrowIcon /></a>
           </aside>
         </section>
 
@@ -68,7 +69,7 @@ export default async function HomePage({ params }: Props) {
           <details className="more-experience">
             <summary>{copy.work.other}<span aria-hidden="true">+</span></summary>
             <div className="other-grid">
-              <article><h3><a href={`/${locale}/projects/voting`}>{copy.work.voting} →</a></h3><p>{copy.work.votingNote}</p></article>
+              <article><h3><a href={`/${locale}/projects/voting`}>{copy.work.voting} <ArrowIcon direction="right" /></a></h3><p>{copy.work.votingNote}</p></article>
               <article><h3>{copy.work.freelance}</h3><p>{copy.work.freelanceNote}</p></article>
             </div>
           </details>
@@ -93,19 +94,19 @@ export default async function HomePage({ params }: Props) {
           <div className="about-facts">
             <article><h3>{copy.about.education}</h3><p>{copy.about.school}</p><span>{copy.about.degree}</span></article>
             <article><h3>{copy.about.languages}</h3><p>{copy.about.languageText}</p><span>{copy.about.languageNote}</span></article>
-            <article><h3>{copy.about.training}</h3><p>{copy.about.trainingText}</p><a className="text-link" href="https://www.credly.com/badges/3431ddd3-2f89-4c29-8da1-b87aecab4f91" target="_blank" rel="noopener noreferrer">{copy.about.badges} ↗</a></article>
+            <article><h3>{copy.about.training}</h3><p>{copy.about.trainingText}</p><a className="text-link" href="https://www.credly.com/badges/3431ddd3-2f89-4c29-8da1-b87aecab4f91" target="_blank" rel="noopener noreferrer">{copy.about.badges}<ArrowIcon /></a></article>
           </div>
         </section>
 
         <section id="contact" className="contact-section" aria-labelledby="contact-title">
           <Image src="/icons/cat-peek.png" alt="" aria-hidden="true" width={58} height={43} className="contact-cat" />
           <span className="eyebrow">{copy.contact.eyebrow}</span><h2 id="contact-title">{copy.contact.title}</h2><p>{copy.contact.description}</p>
-          <div className="contact-actions"><a className="button button-light" href={EMAIL}>{copy.contact.email} ↗</a><a className="button button-outline-light" href={CALENDAR} target="_blank" rel="noopener noreferrer">{copy.contact.calendar} ↗</a></div>
+          <div className="contact-actions"><a className="button button-light" href={EMAIL}>{copy.contact.email}<ArrowIcon /></a><a className="button button-outline-light" href={CALENDAR} target="_blank" rel="noopener noreferrer">{copy.contact.calendar}<ArrowIcon /></a></div>
           <p className="contact-availability">{copy.contact.availability}</p>
         </section>
       </main>
       <footer className="site-shell site-footer"><p>{copy.name}</p><span>{copy.contact.footer}</span></footer>
-      <nav className="mobile-contact-bar" aria-label={copy.contact.stickyLabel}><a href={CV_URL} download>{copy.hero.cv} ↓</a><a href={EMAIL}>{copy.contact.email} ↗</a></nav>
+      <nav className="mobile-contact-bar" aria-label={copy.contact.stickyLabel}><a href={CV_URL} download>{copy.hero.cv}<ArrowIcon direction="down" /></a><a href={EMAIL}>{copy.contact.email}<ArrowIcon /></a></nav>
     </>
   );
 }

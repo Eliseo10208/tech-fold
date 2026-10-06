@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ArrowIcon } from "./ArrowIcon";
 import { type PortfolioProject, type SiteCopy } from "@/lib/portfolio";
 
 export function ProjectPreview({ project, locale, sizes = "(min-width: 1144px) 340px, (min-width: 1000px) 30vw, (min-width: 700px) 48vw, 100vw" }: { project: PortfolioProject; locale: string; sizes?: string }) {
@@ -36,9 +37,9 @@ export function ProjectCard({ project, locale, copy, featured = false }: { proje
         <ul className="tags" aria-label={copy.project.stack}>{project.tags.slice(0, 4).map(tag => <li key={tag}>{tag}</li>)}</ul>
         {project.slug === "pou-v2" && <p className="project-caveat">{copy.project.keyboard}</p>}
         <div className="project-actions">
-          {demo && <a className="button button-primary button-small" href={project.url} target="_blank" rel="noopener noreferrer">{copy.project.demo}<span aria-hidden="true">↗</span></a>}
-          <a className="text-link" href={href}>{demo ? copy.project.details : copy.project.case}<span aria-hidden="true">→</span></a>
-          {demo && <a className="text-link code-link" href={project.code} target="_blank" rel="noopener noreferrer">{copy.project.code}<span aria-hidden="true">↗</span></a>}
+          {demo && <a className="button button-primary button-small" href={project.url} target="_blank" rel="noopener noreferrer">{copy.project.demo}<ArrowIcon /></a>}
+          <a className="text-link" href={href}>{demo ? copy.project.details : copy.project.case}<ArrowIcon direction="right" /></a>
+          {demo && <a className="text-link code-link" href={project.code} target="_blank" rel="noopener noreferrer">{copy.project.code}<ArrowIcon /></a>}
         </div>
       </div>
     </article>
