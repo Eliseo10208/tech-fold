@@ -18,13 +18,13 @@ Abrir `http://localhost:3000/es`. Consultar `AGENTS.md` y la documentación loca
 ## Estructura
 
 - `messages/es.json` y `messages/en.json`: textos y datos de proyectos. Mantener la misma estructura, slugs y orden.
-- `app/[locale]/page.tsx`: portada renderizada en servidor; tres experiencias principales y tres demos visibles sin pestañas.
-- `app/[locale]/projects/[slug]/page.tsx`: siete casos por idioma, con problema, contribución, implementación y límites.
+- `app/[locale]/page.tsx`: portada renderizada en servidor; tres experiencias principales y cuatro demos visibles sin pestañas.
+- `app/[locale]/projects/[slug]/page.tsx`: ocho casos por idioma, con problema, contribución, implementación y límites.
 - `components/ProjectCard.tsx`: tarjetas y capturas optimizadas. Los esquemas de NOM RAG y PouV2 se identifican como esquemas, no como capturas.
 - `components/MobileNav.tsx`: menú móvil con Escape, cierre exterior y gestión de foco; único componente cliente de la página.
 - `app/globals.css`: layout responsive, foco visible, movimiento reducido y barra de contacto móvil con safe-area.
 - `lib/portfolio.ts`: URLs de contacto, CV y generación de canonical, hreflang, Open Graph y Twitter.
-- `app/robots.ts`, `app/sitemap.ts`, `app/og.png/route.ts`: rastreo, mapa con 16 URLs e imagen social 1200×630.
+- `app/robots.ts`, `app/sitemap.ts`, `app/og.png/route.ts`: rastreo, mapa con 18 URLs e imagen social 1200×630.
 - `app/favicon.png/route.ts`: favicon PNG cuadrado de 96×96, generado en el build a partir del gato original. El test limita su peso a menos de 10 KB; el original se conserva para la marca y el icono de inicio de iOS.
 
 Las páginas se generan estáticamente. No se cargan iframes, videos automáticos, scripts de Credly ni bibliotecas gráficas de las demos. Las apps se abren voluntariamente en otra pestaña. Las imágenes bajo el primer pliegue usan la carga diferida de Next Image.
@@ -58,7 +58,7 @@ npm run test:smoke
 
 El script acepta `BASE_URL` (solo localhost/127.0.0.1), `PLAYWRIGHT_MODULE` (ruta a un paquete Playwright ya instalado) y `BROWSER_EXECUTABLE` (Chrome/Chromium instalado). No instala dependencias ni abre sesiones personales. Sin esas variables usa el módulo `playwright` y su Chromium de la máquina.
 
-Comprueba las 16 páginas, h1, idiomas, canonical/hreflang, Open Graph/Twitter, JSON-LD, proyectos sin JavaScript, menú y teclado, overflow, imágenes, robots, sitemap, 404 y PDF. Prueba anchos de 320, 360, 390, 430, 768 y 1280 px. Guarda capturas en `.codex/qa/` (ignorado por Git). Revisar visualmente las capturas: el smoke test no sustituye una auditoría completa de accesibilidad o rendimiento.
+Comprueba las 18 páginas, h1, idiomas, canonical/hreflang, Open Graph/Twitter, JSON-LD, proyectos sin JavaScript, menú y teclado, overflow, imágenes, robots, sitemap, 404 y PDF. Prueba anchos de 320, 360, 390, 430, 768 y 1280 px. Guarda capturas en `.codex/qa/` (ignorado por Git). Revisar visualmente las capturas: el smoke test no sustituye una auditoría completa de accesibilidad o rendimiento.
 
 ## Publicación y pendientes externos
 

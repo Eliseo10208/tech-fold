@@ -56,7 +56,7 @@ try {
         const profile = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
         assert.equal(profile["@type"], "ProfilePage");
         assert.equal(profile.mainEntity["@type"], "Person");
-        assert.equal(await page.locator(".project-card").count(), 6);
+        assert.equal(await page.locator(".project-card").count(), 7);
         for (const preview of await page.locator(".preview-link").all()) {
           assert.equal(await preview.getAttribute("aria-label"), null);
           assert.ok((await preview.locator(".sr-only").textContent()).trim().length > 0);
@@ -120,7 +120,7 @@ try {
   const noJs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
   const staticPage = await noJs.newPage();
   await staticPage.goto(base + "/es");
-  assert.equal(await staticPage.locator(".project-card").count(), 6);
+  assert.equal(await staticPage.locator(".project-card").count(), 7);
   await staticPage.locator('.project-card h3 a[href="/es/projects/aula-qr"]').click();
   assert.ok((await staticPage.locator("h1").textContent()).includes("Asistencia"));
   await noJs.close();
@@ -132,7 +132,7 @@ try {
   assert.match(await robots.text(), /Sitemap: https:\/\/rodrigo-e-g.lat\/sitemap.xml/);
   const sitemap = await request.get(base + "/sitemap.xml");
   assert.equal(sitemap.status(), 200);
-  assert.equal(((await sitemap.text()).match(/<loc>/g) || []).length, 16);
+  assert.equal(((await sitemap.text()).match(/<loc>/g) || []).length, 18);
   const og = await request.get(base + "/og.png");
   assert.equal(og.status(), 200);
   assert.match(og.headers()["content-type"], /image\/png/);

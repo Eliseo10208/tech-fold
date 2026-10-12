@@ -13,7 +13,7 @@ function shape(value) {
 test("Spanish and English have matching content schemas and project routes", () => {
   assert.deepEqual(shape(es), shape(en));
   assert.deepEqual(es.Projects.map(p => p.slug), en.Projects.map(p => p.slug));
-  assert.equal(new Set(es.Projects.map(p => p.slug)).size, 7);
+  assert.equal(new Set(es.Projects.map(p => p.slug)).size, 8);
 });
 test("Every project has meaningful case content, local assets and valid external URLs", () => {
   for (const content of [es, en]) {

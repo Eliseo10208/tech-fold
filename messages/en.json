@@ -47,7 +47,7 @@
     "demos": {
       "eyebrow": "02 — Outside work",
       "title": "Personal projects",
-      "description": "An attendance app, a search tool for Mexican standards and a game. Try them, explore the code or read how I built them."
+      "description": "An attendance app, scheduled reminders, a search tool for Mexican standards and a game. Try them, explore the code or read how I built them."
     },
     "stack": {
       "eyebrow": "03 — Tools",
@@ -257,6 +257,35 @@
         "Backup/restore, CSV, XLSX and PDF export; Vitest and Playwright tests."
       ],
       "limits": "Data stays in the browser; this is not a multiuser SaaS and it does not automatically sync with iDoceo. Physical-camera and real import testing require device validation."
+    },
+    {
+      "slug": "recordatorios",
+      "kind": "demo",
+      "name": "Recordatorios",
+      "title": "Scheduled alerts on the web and WhatsApp.",
+      "summary": "A Full Stack app with accounts, reminders, an in-app inbox and optional WhatsApp alerts.",
+      "company": "Personal project · technical assessment",
+      "role": "Full Stack architecture and development",
+      "period": "Demo on Vercel",
+      "image": "/projects/recordatorios-login.png",
+      "imageAlt": "Sign-in page of the Recordatorios app",
+      "tags": [
+        "Next.js",
+        "FastAPI",
+        "PostgreSQL",
+        "TypeScript"
+      ],
+      "url": "https://recordatorios-web-one.vercel.app/login",
+      "code": "https://github.com/Eliseo10208/recordatorios-mvp",
+      "problem": "Schedule personal alerts with persistent state and keep an in-app notification when the external channel fails.",
+      "contribution": "I built the monorepo with AI assistance and reviewed its architecture, implementation and tests: frontend, API, worker and WhatsApp sender service.",
+      "implementation": [
+        "Next.js and TypeScript for the interface and BFF; FastAPI with JWT, account verification and password recovery.",
+        "PostgreSQL with SQLAlchemy and Alembic; a durable worker that claims due reminders and creates in-app notifications.",
+        "A WhatsApp destination per user, with consent, an encrypted phone number and a central sender built with Baileys.",
+        "CI and tests for the API, web app, worker and sender contract; deployment to Vercel, Render and Neon."
+      ],
+      "limits": "The public demo opens at sign-in and requires an account to view the dashboard. Real email and WhatsApp delivery have not been verified end to end in production; Web Push, recurring reminders and notes without a date are not implemented."
     },
     {
       "slug": "nom-rag",

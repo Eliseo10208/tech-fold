@@ -47,7 +47,7 @@
     "demos": {
       "eyebrow": "02 — Fuera del trabajo",
       "title": "Mis proyectos",
-      "description": "Una app para pasar lista, un buscador de normas y un juego. Puedes abrirlos, revisar el código o leer cómo los construí."
+      "description": "Una app de asistencia, recordatorios programados, un buscador de normas y un juego. Puedes abrirlos, revisar el código o leer cómo los construí."
     },
     "stack": {
       "eyebrow": "03 — Herramientas",
@@ -257,6 +257,35 @@
         "Respaldo/restauración, exportación CSV, XLSX y PDF; pruebas con Vitest y Playwright."
       ],
       "limits": "Los datos se guardan en el navegador; no es un SaaS multiusuario ni sincroniza automáticamente con iDoceo. Las pruebas de cámara física e importación real requieren validación en dispositivo."
+    },
+    {
+      "slug": "recordatorios",
+      "kind": "demo",
+      "name": "Recordatorios",
+      "title": "Avisos programados en web y WhatsApp.",
+      "summary": "Aplicación Full Stack con cuentas, recordatorios, bandeja interna y avisos opcionales por WhatsApp.",
+      "company": "Proyecto propio · prueba técnica",
+      "role": "Arquitectura y desarrollo Full Stack",
+      "period": "Demo en Vercel",
+      "image": "/projects/recordatorios-login.png",
+      "imageAlt": "Página de acceso de la aplicación Recordatorios",
+      "tags": [
+        "Next.js",
+        "FastAPI",
+        "PostgreSQL",
+        "TypeScript"
+      ],
+      "url": "https://recordatorios-web-one.vercel.app/login",
+      "code": "https://github.com/Eliseo10208/recordatorios-mvp",
+      "problem": "Programar avisos personales con estado persistente y conservar un aviso dentro de la aplicación aunque falle el canal externo.",
+      "contribution": "Construí el monorepo con apoyo de IA y revisé la arquitectura, la implementación y las pruebas: frontend, API, worker y servicio emisor de WhatsApp.",
+      "implementation": [
+        "Next.js y TypeScript para la interfaz y BFF; FastAPI con JWT, verificación y recuperación de cuenta.",
+        "PostgreSQL con SQLAlchemy y Alembic; worker durable que reclama vencimientos y crea avisos internos.",
+        "Destino de WhatsApp por usuario, con consentimiento, número cifrado y un emisor central implementado con Baileys.",
+        "CI y pruebas de API, web, worker y contrato del emisor; despliegue en Vercel, Render y Neon."
+      ],
+      "limits": "La demo pública abre en el acceso y requiere cuenta para ver el dashboard. El envío real de correo y WhatsApp no se verificó de extremo a extremo en producción; no hay Web Push, recordatorios recurrentes ni notas sin fecha."
     },
     {
       "slug": "nom-rag",
