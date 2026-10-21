@@ -50,3 +50,16 @@ test("The portfolio social cover is a valid, shareable landscape PNG", () => {
   assert.ok(Math.abs(png.readUInt32BE(16) / png.readUInt32BE(20) - 1.91) < 0.02);
   assert.ok(png.byteLength < 5 * 1024 * 1024, "Social cover must remain below 5 MB");
 });
+
+test("NOM RAG uses the dark cover and current app URL in both languages", () => {
+  for (const content of [es, en]) {
+    const project = content.Projects.find(item => item.slug === "nom-rag");
+    assert.equal(project.image, "/projects/nom-rag-social-dark-v2-2026-10-21.png");
+    assert.match(project.imageAlt, /NOM RAG/);
+    assert.equal(project.url, "https://nom-rag.vercel.app/");
+    const png = readFileSync(new URL(`../public${project.image}`, import.meta.url));
+    assert.equal(png.subarray(0, 8).toString("hex"), "89504e470d0a1a0a");
+    assert.equal(png.readUInt32BE(16), 1732);
+    assert.equal(png.readUInt32BE(20), 908);
+  }
+});

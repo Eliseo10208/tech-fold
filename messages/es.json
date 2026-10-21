@@ -296,15 +296,15 @@
       "company": "Proyecto propio · IA aplicada",
       "role": "Backend, recuperación y evaluación",
       "period": "Demo web",
-      "image": "",
-      "imageAlt": "",
+      "image": "/projects/nom-rag-social-dark-v2-2026-10-21.png",
+      "imageAlt": "Portada de NOM RAG: consulta NOMs con IA, respuestas con fuentes y numerales y gatito asistente sobre fondo oscuro.",
       "tags": [
         "Python",
         "FastAPI",
         "ChromaDB",
         "Pytest"
       ],
-      "url": "https://nom-rag.rodrigo-e-g.lat/",
+      "url": "https://nom-rag.vercel.app/",
       "code": "https://github.com/Eliseo10208/nom-rag",
       "problem": "Recuperar fragmentos normativos y generar respuestas que permitan volver a la fuente.",
       "contribution": "Desarrollé el pipeline RAG, la API y una suite de evaluación de recuperación y respuestas.",

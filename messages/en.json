@@ -296,15 +296,15 @@
       "company": "Personal project · Applied AI",
       "role": "Backend, retrieval and evaluation",
       "period": "Web demo",
-      "image": "",
-      "imageAlt": "",
+      "image": "/projects/nom-rag-social-dark-v2-2026-10-21.png",
+      "imageAlt": "NOM RAG cover: AI-powered NOM queries, answers with sources and clause numbers, and the assistant cat on a dark background.",
       "tags": [
         "Python",
         "FastAPI",
         "ChromaDB",
         "Pytest"
       ],
-      "url": "https://nom-rag.rodrigo-e-g.lat/",
+      "url": "https://nom-rag.vercel.app/",
       "code": "https://github.com/Eliseo10208/nom-rag",
       "problem": "Retrieve passages from standards and generate answers that can be traced back to the source.",
       "contribution": "I developed the RAG pipeline, API and a retrieval-and-answer evaluation suite.",

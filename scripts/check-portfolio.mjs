@@ -68,7 +68,15 @@ try {
           assert.equal(await preview.getAttribute("aria-label"), null);
           assert.ok((await preview.locator(".sr-only").textContent()).trim().length > 0);
         }
-        assert.match(await page.locator('.preview-link[href$="/nom-rag"]').ariaSnapshot(), /NOM RAG.*Query.*Retrieval.*Citations/);
+        assert.match(await page.locator('.preview-link[href$="/nom-rag"]').ariaSnapshot(), /NOM RAG/);
+        assert.equal(await page.locator('.preview-link[href$="/nom-rag"] .technical-preview').count(), 0);
+      }
+      if (!path || path === "/projects/nom-rag") {
+        const previewImage = page.locator('.preview-nom-rag img');
+        assert.equal(await previewImage.count(), 1);
+        assert.match(await previewImage.getAttribute("alt"), /NOM RAG/);
+        assert.equal(new URL(await previewImage.getAttribute("src"), base).searchParams.get("url"), "/projects/nom-rag-social-dark-v2-2026-10-21.png");
+        assert.equal(await page.locator('a.button-primary[href="https://nom-rag.vercel.app/"]').count(), 1);
       }
       const downloads = await page.locator('a[download]').evaluateAll(links => links.map(a => a.getAttribute("href")));
       assert.ok(downloads.length >= 2 && downloads.every(url => url === "/Rodrigo_CV.pdf"));

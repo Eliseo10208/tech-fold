@@ -20,7 +20,7 @@ Abrir `http://localhost:3000/es`. Consultar `AGENTS.md` y la documentación loca
 - `messages/es.json` y `messages/en.json`: textos y datos de proyectos. Mantener la misma estructura, slugs y orden.
 - `app/[locale]/page.tsx`: portada renderizada en servidor; tres experiencias principales y cuatro demos visibles sin pestañas.
 - `app/[locale]/projects/[slug]/page.tsx`: ocho casos por idioma, con problema, contribución, implementación y límites.
-- `components/ProjectCard.tsx`: tarjetas y capturas optimizadas. Los esquemas de NOM RAG y PouV2 se identifican como esquemas, no como capturas.
+- `components/ProjectCard.tsx`: tarjetas y capturas optimizadas. NOM RAG usa su portada oscura con el gatito, sin recortar texto, tanto en la tarjeta como en su caso; «Abrir app» apunta a `https://nom-rag.vercel.app/` en español e inglés. PouV2 conserva su esquema técnico, identificado como esquema y no como captura.
 - `components/MobileNav.tsx`: menú móvil con Escape, cierre exterior y gestión de foco; único componente cliente de la página.
 - `app/globals.css`: layout responsive, foco visible, movimiento reducido y barra de contacto móvil con safe-area.
 - `lib/portfolio.ts`: URLs de contacto, CV y generación de canonical, hreflang, Open Graph y Twitter.
