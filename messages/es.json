@@ -296,8 +296,8 @@
       "company": "Proyecto propio · IA aplicada",
       "role": "Backend, recuperación y evaluación",
       "period": "Demo web",
-      "image": "/projects/nom-rag-social-dark-v2-2026-10-21.png",
-      "imageAlt": "Portada de NOM RAG: consulta NOMs con IA, respuestas con fuentes y numerales y gatito asistente sobre fondo oscuro.",
+      "image": "/projects/nom-rag-preview-2026-10-21.png",
+      "imageAlt": "Interfaz de NOM RAG con asistente de consulta, preguntas sugeridas y panel de fuentes sobre fondo oscuro.",
       "tags": [
         "Python",
         "FastAPI",

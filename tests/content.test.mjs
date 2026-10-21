@@ -51,15 +51,21 @@ test("The portfolio social cover is a valid, shareable landscape PNG", () => {
   assert.ok(png.byteLength < 5 * 1024 * 1024, "Social cover must remain below 5 MB");
 });
 
-test("NOM RAG uses the dark cover and current app URL in both languages", () => {
+test("NOM RAG uses a local interface screenshot and its current app URL", () => {
+  const imagePath = "/projects/nom-rag-preview-2026-10-21.png";
+  const png = readFileSync(new URL(`../public${imagePath}`, import.meta.url));
+  assert.equal(png.subarray(0, 8).toString("hex"), "89504e470d0a1a0a");
+  assert.equal(png.subarray(12, 16).toString(), "IHDR");
+  assert.equal(png.readUInt32BE(16), 1280);
+  assert.equal(png.readUInt32BE(20), 720);
+  assert.ok(png.byteLength < 5 * 1024 * 1024, "Social preview must remain below 5 MB");
   for (const content of [es, en]) {
     const project = content.Projects.find(item => item.slug === "nom-rag");
-    assert.equal(project.image, "/projects/nom-rag-social-dark-v2-2026-10-21.png");
+    assert.equal(project.image, imagePath);
     assert.match(project.imageAlt, /NOM RAG/);
+    assert.ok(project.imageAlt.trim().length > 30, "Screenshot needs descriptive alternative text");
     assert.equal(project.url, "https://nom-rag.vercel.app/");
-    const png = readFileSync(new URL(`../public${project.image}`, import.meta.url));
-    assert.equal(png.subarray(0, 8).toString("hex"), "89504e470d0a1a0a");
-    assert.equal(png.readUInt32BE(16), 1732);
-    assert.equal(png.readUInt32BE(20), 908);
+    assert.deepEqual(content.Projects.filter(item => item.previewUrl).map(item => item.slug), [], "Projects must not auto-load embedded apps");
   }
+  assert.notEqual(es.Projects.find(item => item.slug === "nom-rag").imageAlt, en.Projects.find(item => item.slug === "nom-rag").imageAlt);
 });

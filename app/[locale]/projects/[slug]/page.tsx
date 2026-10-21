@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { ProjectPreview } from "@/components/ProjectCard";
 import { ArrowIcon } from "@/components/ArrowIcon";
 import { CV_URL, EMAIL, getContent, pageMetadata } from "@/lib/portfolio";
+import nomRagPreview from "@/public/projects/nom-rag-preview-2026-10-21.png";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 export function generateStaticParams() {
@@ -13,7 +14,13 @@ export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
   const project = getContent(locale).Projects.find(item => item.slug === slug);
   if (!project) notFound();
-  return pageMetadata(locale, `${project.name} | Rodrigo Eliseo García`, project.summary, `/projects/${slug}`);
+  return pageMetadata(locale, `${project.name} | Rodrigo Eliseo García`, project.summary, `/projects/${slug}`,
+    slug === "nom-rag" ? {
+      url: project.image,
+      width: nomRagPreview.width,
+      height: nomRagPreview.height,
+      alt: project.imageAlt,
+    } : undefined);
 }
 export default async function ProjectPage({ params }: Props) {
   const { locale, slug } = await params;

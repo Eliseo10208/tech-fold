@@ -17,9 +17,14 @@ export function getContent(locale: string) {
   if (locale !== "es" && locale !== "en") notFound();
   return locale === "en" ? en : es;
 }
-export function pageMetadata(locale: string, title: string, description: string, path = ""): Metadata {
+type SocialImage = { url: string; width: number; height: number; alt: string };
+export function pageMetadata(locale: string, title: string, description: string, path = "", image?: SocialImage): Metadata {
   const url = `${SITE_URL}/${locale}${path}`;
-  const socialImage = {
+  const socialImage = image ? {
+    ...image,
+    url: new URL(image.url, SITE_URL).href,
+    type: "image/png",
+  } : {
     url: `${SITE_URL}/og/portfolio-2026-10-21.png`,
     width: 1731,
     height: 909,

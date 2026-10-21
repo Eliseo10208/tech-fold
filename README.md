@@ -20,15 +20,16 @@ Abrir `http://localhost:3000/es`. Consultar `AGENTS.md` y la documentación loca
 - `messages/es.json` y `messages/en.json`: textos y datos de proyectos. Mantener la misma estructura, slugs y orden.
 - `app/[locale]/page.tsx`: portada renderizada en servidor; tres experiencias principales y cuatro demos visibles sin pestañas.
 - `app/[locale]/projects/[slug]/page.tsx`: ocho casos por idioma, con problema, contribución, implementación y límites.
-- `components/ProjectCard.tsx`: tarjetas y capturas optimizadas. NOM RAG usa su portada oscura con el gatito, sin recortar texto, tanto en la tarjeta como en su caso; «Abrir app» apunta a `https://nom-rag.vercel.app/` en español e inglés. PouV2 conserva su esquema técnico, identificado como esquema y no como captura.
+- `components/ProjectCard.tsx`: tarjetas y capturas reales optimizadas con Next Image. NOM RAG usa una captura de `https://nom-rag.vercel.app/` en formato 16:9, igual que las otras apps, tanto en la tarjeta como en su caso; «Abrir app» abre la aplicación completa. No usa un póster generado ni un iframe. PouV2 conserva su esquema técnico, identificado como esquema y no como captura.
 - `components/MobileNav.tsx`: menú móvil con Escape, cierre exterior y gestión de foco; único componente cliente de la página.
 - `app/globals.css`: layout responsive, foco visible, movimiento reducido y barra de contacto móvil con safe-area.
 - `lib/portfolio.ts`: URLs de contacto, CV y generación de canonical, hreflang, Open Graph y Twitter.
 - `app/robots.ts`, `app/sitemap.ts`: rastreo y mapa con 18 URLs.
-- `public/og/portfolio-2026-10-21.png`: portada social aprobada, sin URL visible, con el nombre y el tiburón ballena; PNG de 1731×909. Open Graph y Twitter la comparten en las 18 páginas, con texto alternativo localizado. La ruta versionada evita reutilizar la URL de la imagen anterior; `app/og.png/route.ts` se conserva para los enlaces existentes.
+- `public/og/portfolio-2026-10-21.png`: portada social aprobada, sin URL visible, con el nombre y el tiburón ballena; PNG de 1731×909. Es la imagen predeterminada de Open Graph y Twitter, con texto alternativo localizado. La ruta versionada evita reutilizar la URL de la imagen anterior; `app/og.png/route.ts` se conserva para los enlaces existentes.
+- `public/projects/nom-rag-preview-2026-10-21.png`: captura real de la interfaz pública (1280×720), sin consultas ni datos personales. Se usa en la tarjeta y como imagen Open Graph/Twitter de los dos casos NOM RAG (ES/EN); sus metadatos están en el HTML estático y mantienen canonical/hreflang. Las portadas anteriores se conservan para enlaces existentes.
 - `app/favicon.png/route.ts`: favicon PNG cuadrado de 96×96, generado en el build a partir del gato original. El test limita su peso a menos de 10 KB; el original se conserva para la marca y el icono de inicio de iOS.
 
-Las páginas se generan estáticamente. No se cargan iframes, videos automáticos, scripts de Credly ni bibliotecas gráficas de las demos. Las apps se abren voluntariamente en otra pestaña. Las imágenes bajo el primer pliegue usan la carga diferida de Next Image.
+Las páginas se generan estáticamente. No se cargan iframes, videos automáticos, scripts de Credly ni bibliotecas gráficas de las demos. Las apps se abren voluntariamente en otra pestaña. Las imágenes bajo el primer pliegue usan la carga diferida de Next Image, tamaños responsive y un contenedor de proporción fija para evitar saltos de diseño. Las capturas no se actualizan solas: renovar el archivo si cambia la interfaz de la app.
 
 ## Criterios de contenido
 

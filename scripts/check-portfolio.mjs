@@ -10,9 +10,15 @@ const base = process.env.BASE_URL || "http://127.0.0.1:3012";
 assert.ok(["127.0.0.1", "localhost"].includes(new URL(base).hostname), "Only local QA servers are allowed");
 const root = new URL("../", import.meta.url);
 const socialImagePath = "/og/portfolio-2026-10-21.png";
+const nomRagImagePath = "/projects/nom-rag-preview-2026-10-21.png";
+const nomRagImageBytes = readFileSync(new URL(`public${nomRagImagePath}`, root));
+assert.equal(nomRagImageBytes.subarray(0, 8).toString("hex"), "89504e470d0a1a0a", "NOM RAG screenshot must be a real PNG");
+assert.equal(nomRagImageBytes.subarray(12, 16).toString(), "IHDR");
+const nomRagImageSize = { width: nomRagImageBytes.readUInt32BE(16), height: nomRagImageBytes.readUInt32BE(20) };
 const qaDir = new URL(".codex/qa/", root);
 mkdirSync(qaDir, { recursive: true });
-const es = JSON.parse(readFileSync(new URL("messages/es.json", root), "utf8"));
+const content = Object.fromEntries(["es", "en"].map(locale => [locale, JSON.parse(readFileSync(new URL(`messages/${locale}.json`, root), "utf8"))]));
+const es = content.es;
 const paths = ["", ...es.Projects.map(p => `/projects/${p.slug}`)];
 const browser = await chromium.launch({
   headless: true,
@@ -25,8 +31,12 @@ try {
   const page = await context.newPage();
   page.on("pageerror", error => errors.push(error.message));
   for (const locale of ["es", "en"]) {
+    const nomRag = content[locale].Projects.find(project => project.slug === "nom-rag");
     for (const path of paths) {
       const route = `/${locale}${path}`;
+      const nomRagCase = path === "/projects/nom-rag";
+      const expectedSocialImagePath = nomRagCase ? nomRagImagePath : socialImagePath;
+      const expectedSocialImageSize = nomRagCase ? nomRagImageSize : { width: 1731, height: 909 };
       const response = await page.goto(base + route);
       assert.equal(response.status(), 200, route);
       await page.evaluate(() => document.fonts.ready);
@@ -37,17 +47,25 @@ try {
         const target = alt === "x-default" ? "es" : alt;
         assert.equal(await page.locator(`link[rel="alternate"][hreflang="${alt}"]`).getAttribute("href"), `https://rodrigo-e-g.lat/${target}${path}`);
       }
-      assert.equal(await page.locator('meta[property="og:image"]').getAttribute("content"), "https://rodrigo-e-g.lat" + socialImagePath);
-      assert.equal(await page.locator('meta[property="og:image:width"]').getAttribute("content"), "1731");
-      assert.equal(await page.locator('meta[property="og:image:height"]').getAttribute("content"), "909");
+      assert.equal(await page.locator('meta[property="og:image"]').getAttribute("content"), "https://rodrigo-e-g.lat" + expectedSocialImagePath);
+      assert.equal(await page.locator('meta[property="og:image:width"]').getAttribute("content"), String(expectedSocialImageSize.width));
+      assert.equal(await page.locator('meta[property="og:image:height"]').getAttribute("content"), String(expectedSocialImageSize.height));
       assert.equal(await page.locator('meta[property="og:image:type"]').getAttribute("content"), "image/png");
-      assert.match(await page.locator('meta[property="og:image:alt"]').getAttribute("content"), /Rodrigo Eliseo García/);
+      const socialImageAlt = await page.locator('meta[property="og:image:alt"]').getAttribute("content");
+      if (nomRagCase) {
+        assert.equal(socialImageAlt, nomRag.imageAlt);
+        assert.equal(await page.locator('meta[property="og:title"]').getAttribute("content"), `${nomRag.name} | Rodrigo Eliseo García`);
+        assert.equal(await page.locator('meta[property="og:description"]').getAttribute("content"), nomRag.summary);
+      } else {
+        assert.match(socialImageAlt, /Rodrigo Eliseo García/);
+      }
       assert.equal(await page.locator('meta[name="twitter:card"]').getAttribute("content"), "summary_large_image");
-      assert.equal(await page.locator('meta[name="twitter:image"]').getAttribute("content"), "https://rodrigo-e-g.lat" + socialImagePath);
-      assert.equal(await page.locator('meta[name="twitter:image:alt"]').getAttribute("content"), await page.locator('meta[property="og:image:alt"]').getAttribute("content"));
+      assert.equal(await page.locator('meta[name="twitter:image"]').getAttribute("content"), "https://rodrigo-e-g.lat" + expectedSocialImagePath);
+      assert.equal(await page.locator('meta[name="twitter:image:alt"]').getAttribute("content"), socialImageAlt);
       assert.equal(await page.locator('link[rel="icon"]').getAttribute("href"), "/favicon.png");
       assert.equal(await page.locator('link[rel="icon"]').getAttribute("sizes"), "96x96");
-      assert.equal(await page.locator("iframe").count(), 0);
+      assert.equal(await page.locator("iframe").count(), 0, `${route}: no embedded apps`);
+      assert.equal(await page.locator(".live-project-preview, .live-preview-overlay").count(), 0);
       assert.doesNotMatch(await page.locator("body").textContent(), /[↗↘↙↖→←↓↑]/, `${route}: no font/emoji arrows`);
       const arrows = page.locator("svg.arrow-icon");
       assert.ok(await arrows.count() > 0, `${route}: SVG arrows exist`);
@@ -68,15 +86,34 @@ try {
           assert.equal(await preview.getAttribute("aria-label"), null);
           assert.ok((await preview.locator(".sr-only").textContent()).trim().length > 0);
         }
-        assert.match(await page.locator('.preview-link[href$="/nom-rag"]').ariaSnapshot(), /NOM RAG/);
-        assert.equal(await page.locator('.preview-link[href$="/nom-rag"] .technical-preview').count(), 0);
+        const previewLink = page.locator(`.preview-link[href="/${locale}/projects/nom-rag"]`);
+        assert.equal(await previewLink.count(), 1);
+        assert.equal(await previewLink.isVisible(), true);
+        assert.match(await previewLink.ariaSnapshot(), /link ".*NOM RAG/);
+        assert.ok((await previewLink.locator(".sr-only").textContent()).trim().length > 0);
+        assert.equal(await previewLink.evaluate(link => link.tabIndex === 0), true);
+        assert.equal(await previewLink.locator(".technical-preview").count(), 0);
       }
-      if (!path || path === "/projects/nom-rag") {
-        const previewImage = page.locator('.preview-nom-rag img');
+      if (!path || nomRagCase) {
+        const previewImage = page.locator(".preview-nom-rag img");
         assert.equal(await previewImage.count(), 1);
-        assert.match(await previewImage.getAttribute("alt"), /NOM RAG/);
-        assert.equal(new URL(await previewImage.getAttribute("src"), base).searchParams.get("url"), "/projects/nom-rag-social-dark-v2-2026-10-21.png");
-        assert.equal(await page.locator('a.button-primary[href="https://nom-rag.vercel.app/"]').count(), 1);
+        assert.equal(await previewImage.getAttribute("alt"), nomRag.imageAlt);
+        assert.match(nomRag.imageAlt, /NOM RAG/);
+        assert.ok(nomRag.imageAlt.trim().length > 30);
+        const optimizedImageUrl = new URL(await previewImage.getAttribute("src"), base);
+        assert.equal(optimizedImageUrl.pathname, "/_next/image");
+        assert.equal(optimizedImageUrl.searchParams.get("url"), nomRagImagePath);
+        assert.ok(await previewImage.getAttribute("srcset"), "Screenshot must use responsive image sizes");
+        assert.ok(await previewImage.getAttribute("sizes"));
+        assert.equal(await previewImage.getAttribute("loading"), "lazy");
+        await previewImage.scrollIntoViewIfNeeded();
+        await previewImage.evaluate(image => image.decode());
+        assert.equal(await previewImage.evaluate(image => image.complete && image.naturalWidth > 0), true);
+        assert.equal(await page.locator("iframe").count(), 0, "Scrolling to NOM RAG must not load the app");
+        const appLink = page.locator('a.button-primary[href="https://nom-rag.vercel.app/"]');
+        assert.equal(await appLink.count(), 1);
+        assert.equal(await appLink.getAttribute("target"), "_blank");
+        assert.match(await appLink.getAttribute("rel"), /noopener/);
       }
       const downloads = await page.locator('a[download]').evaluateAll(links => links.map(a => a.getAttribute("href")));
       assert.ok(downloads.length >= 2 && downloads.every(url => url === "/Rodrigo_CV.pdf"));
@@ -136,6 +173,9 @@ try {
   const staticPage = await noJs.newPage();
   await staticPage.goto(base + "/es");
   assert.equal(await staticPage.locator(".project-card").count(), 7);
+  assert.equal(await staticPage.locator("iframe").count(), 0, "No embedded app is loaded without JavaScript");
+  assert.equal(await staticPage.locator('.preview-link[href="/es/projects/nom-rag"] img').count(), 1);
+  assert.equal(await staticPage.locator('a.button-primary[href="https://nom-rag.vercel.app/"]').count(), 1);
   await staticPage.locator('.project-card h3 a[href="/es/projects/aula-qr"]').click();
   assert.ok((await staticPage.locator("h1").textContent()).includes("Asistencia"));
   await noJs.close();
@@ -155,6 +195,10 @@ try {
   assert.equal(ogBytes.readUInt32BE(16), 1731);
   assert.equal(ogBytes.readUInt32BE(20), 909);
   assert.ok(ogBytes.equals(readFileSync(new URL(`public${socialImagePath}`, root))), "Served social cover must match the approved asset");
+  const nomRagScreenshot = await request.get(base + nomRagImagePath);
+  assert.equal(nomRagScreenshot.status(), 200);
+  assert.match(nomRagScreenshot.headers()["content-type"], /image\/png/);
+  assert.ok((await nomRagScreenshot.body()).equals(nomRagImageBytes), "Served NOM RAG screenshot must match the local asset");
   assert.equal((await request.get(base + "/og.png")).status(), 200, "Previous social image URL remains available");
   const pdf = await request.get(base + "/Rodrigo_CV.pdf");
   assert.equal(pdf.status(), 200);

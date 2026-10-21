@@ -296,8 +296,8 @@
       "company": "Personal project · Applied AI",
       "role": "Backend, retrieval and evaluation",
       "period": "Web demo",
-      "image": "/projects/nom-rag-social-dark-v2-2026-10-21.png",
-      "imageAlt": "NOM RAG cover: AI-powered NOM queries, answers with sources and clause numbers, and the assistant cat on a dark background.",
+      "image": "/projects/nom-rag-preview-2026-10-21.png",
+      "imageAlt": "NOM RAG interface with a consultation assistant, suggested questions and a sources panel on a dark background.",
       "tags": [
         "Python",
         "FastAPI",
