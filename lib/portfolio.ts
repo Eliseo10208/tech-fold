@@ -19,6 +19,15 @@ export function getContent(locale: string) {
 }
 export function pageMetadata(locale: string, title: string, description: string, path = ""): Metadata {
   const url = `${SITE_URL}/${locale}${path}`;
+  const socialImage = {
+    url: `${SITE_URL}/og/portfolio-2026-10-21.png`,
+    width: 1731,
+    height: 909,
+    type: "image/png",
+    alt: locale === "es"
+      ? "Rodrigo Eliseo García — Desarrollador Full Stack, React, Node.js, Python e IA aplicada"
+      : "Rodrigo Eliseo García — Full Stack Developer, React, Node.js, Python and applied AI",
+  };
   return {
     title, description,
     alternates: {
@@ -29,8 +38,8 @@ export function pageMetadata(locale: string, title: string, description: string,
       type: "website", url, title, description, siteName: "Rodrigo Eliseo García",
       locale: locale === "es" ? "es_MX" : "en_US",
       alternateLocale: locale === "es" ? "en_US" : "es_MX",
-      images: [{ url: `${SITE_URL}/og.png`, width: 1200, height: 630, alt: "Rodrigo Eliseo García — Full Stack Engineer" }],
+      images: [socialImage],
     },
-    twitter: { card: "summary_large_image", title, description, images: [`${SITE_URL}/og.png`] },
+    twitter: { card: "summary_large_image", title, description, images: [{ url: socialImage.url, alt: socialImage.alt }] },
   };
 }

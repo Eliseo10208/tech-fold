@@ -40,3 +40,13 @@ test("AulaQR leads demos and the approved Spanish CV is a real PDF", () => {
   assert.match(es.Site.about.languageText, /B1/);
   assert.match(es.Site.hero.location, /Tuxtla/);
 });
+
+test("The portfolio social cover is a valid, shareable landscape PNG", () => {
+  const png = readFileSync(new URL("../public/og/portfolio-2026-10-21.png", import.meta.url));
+  assert.equal(png.subarray(0, 8).toString("hex"), "89504e470d0a1a0a");
+  assert.equal(png.subarray(12, 16).toString(), "IHDR");
+  assert.equal(png.readUInt32BE(16), 1731);
+  assert.equal(png.readUInt32BE(20), 909);
+  assert.ok(Math.abs(png.readUInt32BE(16) / png.readUInt32BE(20) - 1.91) < 0.02);
+  assert.ok(png.byteLength < 5 * 1024 * 1024, "Social cover must remain below 5 MB");
+});
