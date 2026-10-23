@@ -22,6 +22,14 @@ test("Every project has meaningful case content, local assets and valid external
       assert.match(p.slug, /^[a-z0-9-]+$/);
       for (const key of ["title", "summary", "problem", "contribution", "limits"]) assert.ok(p[key].length > 20, `${p.slug}: ${key}`);
       assert.ok(p.implementation.length >= 3);
+      for (const item of p.implementation) {
+        if (typeof item === "string") {
+          assert.ok(item.trim().length > 20);
+        } else {
+          assert.ok(item.title.trim().length > 5);
+          assert.ok(item.description.trim().length > 20);
+        }
+      }
       assert.ok(p.tags.length >= 3);
       if (p.image) {
         assert.ok(p.imageAlt);
@@ -30,6 +38,21 @@ test("Every project has meaningful case content, local assets and valid external
       for (const url of [p.url, p.code].filter(Boolean)) assert.equal(new URL(url).protocol, "https:");
       if (p.kind === "demo") { assert.ok(p.url); assert.ok(p.code); }
     }
+  }
+});
+test("Handbook explains enterprise orchestration with matching, scannable case studies", () => {
+  for (const content of [es, en]) {
+    const handbook = content.Projects.find(project => project.slug === "handbook");
+    assert.ok(handbook.summary.length < 170, "Card copy also serves as the SEO description");
+    assert.equal(handbook.implementation.length, 6);
+    assert.ok(handbook.implementation.every(item => typeof item === "object"));
+    assert.equal(new Set(handbook.implementation.map(item => item.title)).size, 6);
+    assert.ok(handbook.tags.includes("Python / FastAPI"));
+    const text = JSON.stringify(handbook);
+    for (const term of ["enterprise", "Microsoft Graph", "Odoo XML-RPC", "Zoho", "OCR", "CI", "PostgreSQL", "runs"]) {
+      assert.ok(text.includes(term), `Missing Handbook scope: ${term}`);
+    }
+    assert.equal(handbook.code, "", "Private employer code must not be shared");
   }
 });
 test("AulaQR leads demos and the approved Spanish CV is a real PDF", () => {

@@ -163,6 +163,8 @@ main:focus { outline: none; }
 .case-sections p, .case-sections li { color: var(--muted); font-size: 17px; line-height: 1.75; }
 .case-sections ul { list-style: disc; padding-left: 19px; }
 .case-sections li + li { margin-top: 10px; }
+.case-sections .case-delivery + .case-delivery { margin-top: 24px; }
+.case-delivery h3 { color: var(--ink); font-size: 18px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
 .case-next { display: flex; flex-direction: column; gap: 6px; padding: 22px 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); margin-top: 20px; }
 .case-next > span { color: var(--muted); font-size: 13px; }
 .case-next > a { min-height: 44px; display: inline-flex; align-items: center; gap: 9px; font-family: var(--font-display-base), Georgia, serif; font-size: 30px; color: var(--accent); }

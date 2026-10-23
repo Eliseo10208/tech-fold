@@ -49,7 +49,13 @@ export default async function ProjectPage({ params }: Props) {
         <div className="case-sections">
           <section><span className="case-number" aria-hidden="true">01</span><div><h2>{copy.project.problem}</h2><p>{project.problem}</p></div></section>
           <section><span className="case-number" aria-hidden="true">02</span><div><h2>{copy.project.contribution}</h2><p>{project.contribution}</p></div></section>
-          <section><span className="case-number" aria-hidden="true">03</span><div><h2>{copy.project.implementation}</h2><ul>{project.implementation.map(item => <li key={item}>{item}</li>)}</ul></div></section>
+          <section><span className="case-number" aria-hidden="true">03</span><div>
+            <h2>{copy.project.implementation}</h2>
+            <ul>{project.implementation.map(item => typeof item === "string"
+              ? <li key={item}>{item}</li>
+              : <li className="case-delivery" key={item.title}><h3>{item.title}</h3><p>{item.description}</p></li>
+            )}</ul>
+          </div></section>
           <section className="case-limits"><span className="case-number" aria-hidden="true">04</span><div><h2>{copy.project.limits}</h2><p>{project.limits}</p></div></section>
         </div>
         <div className="case-next"><span>{copy.project.more}</span><a href={`/${locale}/projects/${next.slug}`}>{next.name}<ArrowIcon direction="right" /></a></div>

@@ -42,6 +42,14 @@ try {
       await page.evaluate(() => document.fonts.ready);
       assert.equal(await page.locator("html").getAttribute("lang"), locale);
       assert.equal(await page.locator("h1").count(), 1, `${route}: one h1`);
+      if (path === "/projects/handbook") {
+        const handbook = content[locale].Projects.find(project => project.slug === "handbook");
+        assert.equal(await page.locator("h1").textContent(), handbook.title);
+        assert.equal(await page.locator('meta[name="description"]').getAttribute("content"), handbook.summary);
+        assert.equal(await page.locator('meta[property="og:description"]').getAttribute("content"), handbook.summary);
+        assert.deepEqual(await page.locator(".case-delivery h3").allTextContents(), handbook.implementation.map(item => item.title));
+        assert.deepEqual(await page.locator(".case-delivery p").allTextContents(), handbook.implementation.map(item => item.description));
+      }
       assert.equal(await page.locator('link[rel="canonical"]').getAttribute("href"), "https://rodrigo-e-g.lat" + route);
       for (const alt of ["es", "en", "x-default"]) {
         const target = alt === "x-default" ? "es" : alt;
@@ -121,6 +129,12 @@ try {
         await page.setViewportSize(size);
         const widths = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth }));
         assert.ok(widths.document <= widths.viewport, `${route} overflows at ${size.width}: ${JSON.stringify(widths)}`);
+      }
+      if (path === "/projects/handbook") {
+        await page.setViewportSize({ width: 390, height: 844 });
+        await page.screenshot({ path: fileURLToPath(new URL(`case-handbook-${locale}.png`, qaDir)), fullPage: true });
+        await page.locator(".case-delivery").first().scrollIntoViewIfNeeded();
+        await page.screenshot({ path: fileURLToPath(new URL(`handbook-details-${locale}.png`, qaDir)) });
       }
       if (path === "/projects/aula-qr") {
         await page.setViewportSize({ width: 390, height: 844 });

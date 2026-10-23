@@ -26,7 +26,7 @@
       "cvLanguage": "Spanish CV · PDF",
       "proof": "My most recent work",
       "proofTitle": "Handbook / AIPlaybookHQ",
-      "proofText": "Frontend, backend and AI agents for a workflow automation platform.",
+      "proofText": "Software for enterprise pilots: AI workflows, documents, and email, ERP and CRM integrations.",
       "proofPeriod": "Feb – Aug 2026",
       "proofLink": "What I worked on",
       "greeting": "Hi, I'm",
@@ -120,8 +120,8 @@
       "slug": "handbook",
       "kind": "work",
       "name": "Handbook",
-      "title": "Workflows, forms and agents.",
-      "summary": "Forms, integrations and agents connected to a workflow automation platform.",
+      "title": "From scattered processes to AI workflows.",
+      "summary": "Full-stack development and AI orchestration for enterprise pilots: email, documents, ERP and CRM connected through traceable workflows.",
       "company": "Handbook / AIPlaybookHQ",
       "role": "AI Full Stack Engineer",
       "period": "Feb – Aug 2026",
@@ -129,21 +129,41 @@
       "imageAlt": "Handbook's public website for its workflow automation platform",
       "tags": [
         "Next.js",
-        "FastAPI",
+        "Python / FastAPI",
         "PostgreSQL",
         "OpenAI Agents"
       ],
       "url": "https://www.handbookai.io/en",
       "code": "",
-      "problem": "Connect process steps, data and human interventions within a single platform.",
-      "contribution": "I developed frontend and backend features and collaborated with clients to clarify requirements, prioritize tasks and coordinate delivery.",
+      "problem": "Client processes were spread across emails, PDFs, ERPs and CRMs. Turning them into software required connecting documents, data and business rules, coordinating human and AI tasks, and keeping a record of each execution.",
+      "contribution": "I helped turn service-delivered AI implementations into software for enterprise pilots. I worked on the architecture and full-stack development of workflows with cases, runs, human and AI tasks, and operational history—from integrations and the execution engine to the user experience.",
       "implementation": [
-        "Workflows with bounded cycles, recovery, history and published-version snapshots.",
-        "Conversational intake with agents, tools, structured outputs and audio ingestion; forms linked to case fields.",
-        "Configurable HTTP integrations, human-review tasks and collaboration in a visual graph editor with React Flow.",
-        "Validation with Pytest, Jest, React Testing Library, MSW and Playwright."
+        {
+          "title": "AI orchestration engine",
+          "description": "I added decision nodes, triggers, external forms and dynamic task assignment. I worked on bounded cycles, recovery, history and published versions. I integrated conversational intake with OpenAI Agents, tools and structured outputs."
+        },
+        {
+          "title": "Enterprise integrations",
+          "description": "I implemented flows with Outlook/Microsoft Graph, Odoo XML-RPC and Zoho to connect email, ERP and CRM with the workflow: triggers, operational data and actions. I also built configurable HTTP connectors with input and response mappings."
+        },
+        {
+          "title": "Document pipelines with real client data",
+          "description": "I stabilized email and PDF triggers, OCR, data extraction and case separation to process real client documents. I connected that information with cases, forms and tasks in the workflow."
+        },
+        {
+          "title": "Full-stack product development",
+          "description": "I built features with Next.js, Python/FastAPI and PostgreSQL: invitations, onboarding, internal collaboration, advanced handbook editing and workflow execution. In the React Flow visual editor, I worked on real-time collaboration, autosave and performance."
+        },
+        {
+          "title": "Quality for frequent releases",
+          "description": "I added CI checks, reusable components, internationalization and frontend modularization to reduce regression risk. I validated features with Pytest, Jest, React Testing Library, MSW and Playwright."
+        },
+        {
+          "title": "Working with founders and clients",
+          "description": "I worked directly with founders, engineers and clients to turn operational needs into production-ready rules, configurations, integrations and automations; I clarified requirements, prioritized tasks and coordinated delivery."
+        }
       ],
-      "limits": "Contributions made as part of the engineering team. The link opens the company's public website; the platform's source code is private."
+      "limits": "Contributions made as part of the engineering team, across enterprise pilots and client-facing features. Source code and client documents are private; the link only opens Handbook's public website."
     },
     {
       "slug": "agora",
